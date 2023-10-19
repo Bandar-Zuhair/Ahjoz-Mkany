@@ -733,7 +733,7 @@ footer {
 /* 800px */
 @media(max-width:800px) {
     #villa_Details_Img_Area {
-        width: 50%;
+        width: 55%;
     }
 
     #villa_Details_Img_Area img {
@@ -947,7 +947,7 @@ footer {
     }
 
     #villa_Details_Img_Area img {
-        width: 55%;
+        width: 60%;
     }
 
     .full_Screen_Image img {
@@ -992,6 +992,14 @@ footer {
         font-size: 9px;
     }
 
+    #villa_Details_Img_Area {
+        width: 85%;
+    }
+
+    #villa_Details_Img_Area img {
+        width: 60%;
+    }
+
     .full_Screen_Image img {
         width: 82%;
     }
@@ -1027,14 +1035,6 @@ footer {
 
     .intro_Area h1 {
         font-size: 17px;
-    }
-
-    #villa_Details_Img_Area {
-        width: 75%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 55%;
     }
 
     .arrow_Icon {
@@ -1086,14 +1086,6 @@ footer {
         font-size: 112px;
     }
 
-    #villa_Details_Img_Area {
-        width: 75%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 60%;
-    }
-
     #villa_Details_Text h1 {
         font-size: 9px;
         margin: 10px 0 0 0;
@@ -1124,14 +1116,6 @@ footer {
     #choose_Villa_Details h1 {
         font-size: 12px;
         padding: 6px 10px;
-    }
-
-    #villa_Details_Img_Area {
-        width: 75%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 60%;
     }
 
     .full_Screen_Image img {
@@ -1215,14 +1199,6 @@ footer {
     #choose_Villa_Details h1 {
         font-size: 12px;
         padding: 6px 10px;
-    }
-
-    #villa_Details_Img_Area {
-        width: 90%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 55%;
     }
 
     #villa_Details_Video_Area {
