@@ -26,10 +26,13 @@ body {
 
 
 
+
+
 /* Unknow Effects */
 .hide_Display {
     display: none;
 }
+
 
 .full_Screen_Image {
     position: fixed;
@@ -65,7 +68,6 @@ body {
     background-color: rgb(59, 59, 59, 1);
     z-index: 997;
 }
-
 
 
 
@@ -645,6 +647,7 @@ footer {
     .villa_Info h1 {
         font-size: 11px;
     }
+
     .villa_Info .villa_id {
         font-size: 9px;
     }
@@ -894,7 +897,7 @@ footer {
     .villa_Info .villa_id {
         font-size: 7px;
     }
-    
+
 
     .choose_Area_Intro {
         font-size: 27px;
