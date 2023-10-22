@@ -1,1238 +1,442 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+/* Comment Photo Data */
+var commentData = [
+    {
+        id: "1",
+        image: "comments/1.jpg",
+        reply: "اشكرك يالغالي الله يسعدك"
+    },
+    {
+        id: "2",
+        image: "comments/2.jpg",
+        reply: "حبيبي"
+    },
+    {
+        id: "3",
+        image: "comments/3.jpg",
+        reply: "اشكرك كثير"
+    },
+    {
+        id: "4",
+        image: "comments/1.jpg",
+        reply: ""
+    },
+    {
+        id: "5",
+        image: "comments/2.jpg",
+        reply: "اتشرفت فيك حبيبي"
+    },
+    {
+        id: "6",
+        image: "comments/3.jpg",
+        reply: "اهلا وسهلا يالغالي"
+    },
+];
+
+
+
+/* Cisarua Card Data Create */
+var cardDataCisarua = [
+    {
+        id: "1",
+        image: "almadina_baFqih_ID1/1.jpg",
+        location: "خلف مطعم بافقيه",
+        price: "مليون واربع مئة وخمسين روبية يوميا"
+    },
+    {
+        id: "2",
+        image: "taxas1_choprial_ID2/2.jpg",
+        location: "بداخل تشوبريال تشوكلت",
+        price: "اربعة مليون وخمس مئة روبية يوميا"
+    },
+    {
+        id: "3",
+        image: "badVilla_nearTaxas1_ID3/2.jpg",
+        location: "بداخل تشوبريال تشوكلت",
+        price: "ست مية وخمسين روبية يوميا"
+    },
+];
+/* Cipanas Card Data Create */
+var cardDataCipanas = [
+    {
+        id: "1",
+        image: "images/villa1.JPG",
+        location: "بجانب مطعم بافقيه",
+        price: "مليون وخمس مئة يوميا"
+    },
+];
 
 
 
-/* html */
-html {
-    scroll-behavior: smooth;
-}
-
-
-/* All */
-* {
-    font-family: 'Readex Pro', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
-/* Body */
-body {
-    background: rgb(59, 59, 59);
-    color: white;
-}
-
-
-
-
-
-/* Unknow Effects */
-.hide_Display {
-    display: none;
-}
-
-
-.full_Screen_Image {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 998;
-    cursor: pointer;
-}
-
-.full_Screen_Image img {
-    width: 24%;
-    z-index: 999;
-    border: 1px solid white;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
-
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(59, 59, 59, 1);
-    z-index: 997;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Header */
-header {
-    background-color: black;
-    position: fixed;
-    z-index: 996;
-    width: 100%;
-    padding: 0 0 10px 0;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-#header_Info {
-    direction: rtl;
-    min-height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-}
-
-#header_Info h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 100%;
-    padding: 10px 10px 20px 10px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: default;
-    padding-right: 15px;
-}
-
-#header_Nav {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-#header_Nav a,
-#hide_Btn,
-#show_Btn,
-#villa_Details_Text_Contact_Us,
-#choose_Villa_Details h1 {
-    background: rgb(41, 38, 38);
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: lighter;
-    padding: 6px 10px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.1s ease;
-}
-
-#header_Nav a:hover,
-#hide_Btn:hover,
-#show_Btn:hover,
-#villa_Details_Text_Contact_Us:hover,
-#choose_Villa_Details h1:hover {
-    background: rgb(77, 66, 66);
-    color: white;
-}
-
-#hide_Btn {
-    position: fixed;
-    left: 12px;
-    top: 12px;
-}
-
-#show_Btn {
-    color: white;
-    background: rgb(0, 0, 0);
-    z-index: 996;
-    position: fixed;
-    left: 12px;
-    top: 12px;
-}
-
-
-
-/* Introduction */
-#sec1 {
-    display: flex;
-    justify-content: center;
-    padding: 140px 0 50px 0;
-}
-
-#sec1_Intro {
-    direction: rtl;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-#sec1_Web_Intro {
-    direction: rtl;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-#sec1_Web_Intro h1 {
-    font-size: 20px;
-    font-weight: lighter;
-    cursor: default;
-    margin-bottom: 10px;
-}
-
-#icon {
-    font-size: 150px;
-    padding: 30px 30px 5px 30px;
-}
-
-#discount_Text {
-    font-size: 20px;
-    font-weight: lighter;
-    cursor: default;
-    padding: 10px 16px;
-    border: 5px solid rgb(94, 94, 94);
-    border-radius: 30px;
-}
-
-
-
-/* Customers Comments */
-#sec2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100px;
-}
-
-#sec2_Intro {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#sec2_Intro h1 {
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-#sec2_Icon {
-    font-size: 150px;
-    padding: 10px;
-}
-
-#sec2_Comments_Intro {
-    padding: 0px 0px 30px 0px;
-    text-align: center;
-}
-
-#sec2_Comments_Intro h1 {
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-#all_Comments_Area {
-    direction: rtl;
-    width: 100%;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-#all_Comments_Area h1 {
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.comment_Card {
-    margin: 0px 10px;
-    width: 900px;
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-#comment_Image {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#comment_Image img {
-    width: 80%;
-    border: 1px solid white;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-#my_Reply {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#my_Reply h1 {
-    color: rgb(0, 255, 255);
-    padding: 12px 16px;
-    font-size: 20px;
-    font-weight: lighter;
-    cursor: default;
-}
-
-
-/* Choose Your Area */
-#sec3 {
-    padding: 70px 0;
-}
-
-#sec3_Content {
-    width: 100%;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#sec3_Content div {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-#sec3_Content div a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: lighter;
-    border: 2px solid white;
-    border-radius: 30px;
-    padding: 14px 18px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#sec3_Content div a:hover {
-    transform: scale(1.1);
-    color: rgb(0, 255, 0);
-    background: rgb(49, 43, 43);
-}
-
-
-
-/* All Villa Cards */
-#sec4,
-#sec5,
-#sec6 {
-    direction: rtl;
-}
-
-.intro_Area {
-    background: rgb(34, 32, 32);
-    width: 100%;
-    height: 100px;
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.intro_Area h1,
-.choose_Area_Intro {
-    font-size: 30px;
-    font-weight: lighter;
-    color: rgb(0, 255, 0);
-    cursor: default;
-}
-
-.villa_Area {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-.villa_Card {
-    direction: ltr;
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 340px;
-    border: 1px solid white;
-    border-radius: 30px;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 15px;
-    transition: all 0.5s ease;
-}
-
-.villa_Card:hover {
-    transform: scale(1.1);
-}
-
-.villa_Card img {
-    width: 50%;
-}
-
-.villa_Info {
-    min-height: 250px;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.villa_Info h1 {
-    line-height: 1.5;
-    font-size: 15px;
-    font-weight: lighter;
-    text-align: center;
-}
-
-.villa_Info .price {
-    color: rgb(0, 255, 0);
-}
-
-.villa_Info .villa_id {
-    border: 1px solid white;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: lighter;
-    padding: 4px 8px;
-}
-
-
-
-/* Villa Details */
-#villa_Details_Area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#choose_Villa_Details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    margin: 10px 0px 10px 0px;
-}
-
-#choose_Villa_Details h1 {
-    font-size: 17px;
-    padding: 10px 14px;
-    color: rgb(0, 255, 0);
-}
-
-.villa_Details_Card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-#villa_Details_Img_Area {
-    width: 30%;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#villa_Details_Img_Area img {
-    width: 50%;
-    border: 1px solid black;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-#villa_Details_Video_Area video {
-    height: 400px;
-    border: 1px solid black;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-#villa_Details_Text {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    min-height: 5px;
-    margin-bottom: 20px;
-}
-
-#villa_Details_Text h1 {
-    line-height: 1.5;
-    text-align: center;
-    font-size: 15px;
-    font-weight: lighter;
-    cursor: default;
-    margin: 10px 0 5px 0;
-}
-
-#villa_Details_Text_Price {
-    color: rgb(0, 255, 0);
-}
-
-#villa_Details_Text_Villa_Id {
-    padding: 10px 14px;
-}
-
-.arrow_Icon {
-    color: white;
-    font-size: 35px;
-    font-weight: lighter;
-    border: 1px solid white;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.arrow_Icon:hover {
-    color: black;
-    background: white;
-}
-
-#villa_Details_Text_Contact_Us {
-    font-size: 15px;
-    padding: 10px 14px;
-    color: rgb(0, 255, 0);
-}
-
-
-/* Footer */
-footer {
-    background: rgb(59, 59, 59);
-    height: 30px;
-}
-
-
-
-
-/* Media Queries */
-/* 1700px */
-@media(max-width:1700px) {
-    #choose_Villa_Details {
-        width: 250px;
-    }
-
-    .full_Screen_Image img {
-        width: 26%;
-    }
-
-}
-
-
-
-/* 1500px */
-@media(max-width:1500px) {
-
-    #villa_Details_Img_Area {
-        width: 35%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 50%;
-    }
-}
-
-
-
-
-/* 1380px */
-@media(max-width:1380px) {
-    #sec3_Content div {
-        width: 50%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 50%;
-    }
-
-    .full_Screen_Image img {
-        width: 32%;
-    }
-}
-
-
-
-/* 1180px */
-@media(max-width:1180px) {
-    #header_Nav {
-        width: 70%;
-    }
-
-    .villa_Area {
-        padding: 0;
-    }
-
-    .villa_Card {
-        width: 300px;
-    }
-
-    .villa_Info {
-        min-height: 200px;
-    }
-
-    .villa_Info h1 {
-        font-size: 13px;
-    }
-
-    .villa_Info .villa_id {
-        font-size: 11px;
-    }
+/* Cisarua Villa Details Create */
+var villaDetailsCisarua = [
+    null,
+    {
+        image: [ "almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
+        video: "almadina_baFqih_ID1/vid.mp4",
+        location: "خلف مطعم بافقيه",
+        description:"للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل",
+        price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
+        villaNumber: "1"
+    },
+    {
+        image: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
+        video: "taxas1_choprial_ID2/vid.mp4",
+        location: "فيلا بداخل تشوبريال تشوكلت",
+        description: "في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل",
+        price: "السعر بعد الخصم = اربعة مليون واربع مئة وخمسين روبية يوميا",
+        villaNumber: "2"
+    },
+    {
+        image: ["badVilla_nearTaxas1_ID3/2.jpg", "badVilla_nearTaxas1_ID3/3.jpg", "badVilla_nearTaxas1_ID3/4.jpg", "badVilla_nearTaxas1_ID3/5.jpg", "badVilla_nearTaxas1_ID3/6.jpg", "badVilla_nearTaxas1_ID3/7.jpg", "badVilla_nearTaxas1_ID3/8.jpg", "badVilla_nearTaxas1_ID3/9.jpg", "badVilla_nearTaxas1_ID3/10.jpg", "badVilla_nearTaxas1_ID3/11.jpg",],
+        video: "badVilla_nearTaxas1_ID3/vid.mp4",
+        location: "فيلا بداخل تشوبريال تشوكلت",
+        description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل",
+        price: "السعر بعد الخصم = ست مية وخمسين روبية يوميا",
+        villaNumber: "3"
+    },
+];
+/* Cipanas Villa Details Create */
+var villaDetailsCipanas = [
+    null,
+    {
+        image: ["images/villa1.JPG", "images/villa2.JPG", "images/villa3.JPG"],
+        video: "images/x.MOV",
+        location: "بجانب شاطئ انشول على منظر خوراااافي ابو الدو قدامك",
+        description: "فيلا ي ابني اطلع من حياتي",
+        price: "ثلاثين روبية في اليوم (حق الاندومي بس)",
+        villaNumber: "1"
+    },
+];
 
-    #villa_Details_Img_Area {
-        width: 35%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 60%;
-    }
-
-    .full_Screen_Image img {
-        width: 50%;
-    }
-}
-
-
-
-/* 1050px */
-@media(max-width:1050px) {
-    .villa_Card {
-        width: 250px;
-    }
-
-    .villa_Info {
-        min-height: 150px;
-    }
-
-    .villa_Info h1 {
-        font-size: 11px;
-    }
-
-    .villa_Info .villa_id {
-        font-size: 9px;
-    }
-
-    .full_Screen_Image img {
-        width: 40%;
-    }
-}
-
-
-/* 1025px */
-@media(max-width:1025px) {
-    #header_Info {
-        min-height: 95px;
-    }
-
-    #header_Nav a {
-        font-size: 15px;
-    }
-
-    .intro_Area h1 {
-        font-size: 25px;
-    }
-
-    #sec3_Content div {
-        width: 60%;
-    }
-
-    #choose_Villa_Details {
-        width: 200px;
-    }
-
-    #choose_Villa_Details h1 {
-        font-size: 15px;
-        padding: 8px 12px;
-    }
-
-    #villa_Details_Text h1 {
-        font-size: 14px;
-    }
-
-    #villa_Details_Text_Contact_Us {
-        font-size: 14px;
-    }
-
-    #villa_Details_Img_Area {
-        width: 45%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 60%;
-    }
-
-    .full_Screen_Image img {
-        width: 45%;
-    }
-}
-
-
-/* 839px */
-@media(max-width:839px) {
-    .villa_Card {
-        width: 220px;
-    }
-
-    .villa_Info {
-        min-height: 100px;
-    }
-
-    .villa_Info h1 {
-        font-size: 9px;
-    }
-
-    .villa_Info .villa_id {
-        font-size: 7px;
-    }
-
-    #villa_Details_Img_Area {
-        width: 50%;
-    }
-
-    .full_Screen_Image img {
-        width: 51%;
-    }
-}
-
-
-/* 800px */
-@media(max-width:800px) {
-    #villa_Details_Img_Area {
-        width: 55%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 65%;
-    }
-
-    #villa_Details_Text h1 {
-        font-size: 12px;
-    }
-}
-
-
-
-/* 750px */
-@media(max-width:750px) {
-    #header_Nav {
-        width: 85%;
-    }
-
-    #hide_Btn {
-        font-size: 15px;
-    }
-
-    #show_Btn {
-        font-size: 16px;
-    }
-
-    .villa_Card {
-        width: 250px;
-    }
-
-    .villa_Info {
-        min-height: 150px;
-    }
-
-    .villa_Info h1 {
-        font-size: 11px;
-    }
-
-    .villa_Info .villa_id {
-        font-size: 9px;
-    }
-
-    #villa_Details_Img_Area {
-        width: 55%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 65%;
-    }
-
-    .full_Screen_Image img {
-        width: 59%;
-    }
-}
-
-
-
-/* 686px */
-@media(max-width:686px) {
-    #sec2 {
-        height: 700px;
-    }
-
-
-    #villa_Details_Img_Area {
-        width: 65%;
-    }
-
-    #villa_Details_Img_Area img {
-        width: 60%;
-    }
-}
-
-
 
-/* 600px */
-@media(max-width:600px) {
-    #header_Info {
-        min-height: 90px;
-    }
-
-    #header_Info h1 {
-        font-size: 17px;
-    }
-
-    #header_Nav {
-        width: 100%;
-        padding: 0 30px;
-    }
-
-    #header_Nav a {
-        font-size: 13px;
-    }
-
-    #hide_Btn {
-        font-size: 12px;
-    }
 
-    #show_Btn {
-        font-size: 13px;
-    }
-
-    #icon {
-        font-size: 140px;
-    }
 
-    #discount_Text {
-        font-size: 15px;
-    }
 
-    #sec2 {
-        height: 650px;
-    }
 
-    #sec2_Intro h1 {
-        font-size: 15px;
-    }
 
-    #sec2_Icon {
-        font-size: 140px;
-    }
 
-    #sec2_Comments_Intro {
-        font-size: 15px;
-    }
 
-    #sec2_Comments_Intro h1 {
-        font-size: 15px;
-    }
 
-    #my_Reply h1 {
-        font-size: 15px;
-    }
 
-    #sec3 {
-        padding: 40px 0;
-    }
 
-    .intro_Area h1 {
-        font-size: 20px;
-    }
 
-    .villa_Card {
-        width: 220px;
-    }
 
-    .villa_Info {
-        min-height: 100px;
-    }
 
-    .villa_Info h1 {
-        font-size: 9px;
-    }
 
-    .villa_Info .villa_id {
-        font-size: 7px;
-    }
 
 
-    .choose_Area_Intro {
-        font-size: 27px;
-    }
 
-    #sec3_Content div a {
-        font-size: 18px;
-    }
 
-    #sec3_Content div {
-        width: 70%;
-    }
 
-    #villa_Details_Img_Area {
-        width: 70%;
-    }
 
-    #villa_Details_Img_Area img {
-        width: 60%;
-    }
 
-    #villa_Details_Text h1 {
-        font-size: 10px;
-    }
 
-    #villa_Details_Text_Contact_Us {
-        font-size: 11px;
-        padding: 8px 12px;
-    }
 
-    .full_Screen_Image img {
-        width: 73%;
-    }
-}
 
 
+/* Scroll Down */
+page_Scroll = function () {
+    setTimeout(function () {
+        document.getElementById("villa_Details_Text_Contact_Us").scrollIntoView();
+    }, 200);
+};
 
-/* 534px */
-@media(max-width:534px) {
-    #header_Nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
 
-    #header_Nav a {
-        margin: 5px 5px 0 5px;
-    }
 
-    #villa_Details_Img_Area {
-        width: 75%;
-    }
+/* Booking Method */
+booking_Method.onclick = function () {
+    var arMethod = "1- اختار الفيلا الي تبغاها\n2- احفظ رقم الفيلا ومكانها واضغط على احجز الان\n3- ارسل رقم الفيلا ومكانها واسم اليوم او رقم التاريخ الي حاب تحجز فيه الفيلا عشان تشوف اذا كانت متاحه ولا لا\n4- الدفع سيكون مباشر وعند الحجز فقط"
+    var enMethod = "\n\n1- Pick the villa the want\n2- Remember the villa id and area\n3- Click on book now and send the villa number with it's area\n4- Send the name of the day or the number of a date to see if the villa you want is avalible or no\n5- The payment will be direct and only upon booking"
+    alert(arMethod + enMethod);
+};
 
-    #villa_Details_Img_Area img {
-        width: 60%;
-    }
 
-    .full_Screen_Image img {
-        width: 78%;
-    }
-}
 
+/* Note */
+note_Btn.onclick = function () {
+    var arNote = "المشكلة الوحيدة الي راح تواجها في موقع احجز مكاني هي ان في بعض الاحيان تكون الفيلا الي تريد حجزها بالفعل محجوزة من شخص اخر، ف افضل حل لهذه المشكلة هو حجز اكثر من فيلا واحدة لكي تضمن مكانك في حال ان كانت الفلل الي اخترتها محجوزة بالفعل وواحدة منها تكون متاحة لك";
+    var enNote = "\n \nThe only problem that you might face in Ahjoz Mkany website is that sometimes the Villa you want is already taken by someone else, therfore The best solution to this problem is that you can book more than one Villa just in case if they were all taken then one of them might be available for you";
+    alert(arNote + enNote);
+};
 
 
-/* 512px */
-@media(max-width:512px) {
-    #header_Info {
-        min-height: 130px;
-    }
 
-    #sec1 {
-        padding: 160px 0 50px 0;
-    }
-}
+/* Hide & Show Header */
+hide_Btn.onclick = function () {
+    header.classList.add("hide_Display");
+    hide_Btn.classList.add("hide_Display");
+    show_Btn.classList.remove("hide_Display");
+};
+show_Btn.onclick = function () {
+    header.classList.remove("hide_Display");
+    hide_Btn.classList.remove("hide_Display");
+    show_Btn.classList.add("hide_Display");
+};
 
 
 
-/* 504px */
-@media(max-width:504px) {
-    #sec2 {
-        height: 600px;
-    }
+/* Create Cisarua Cards */
+cardDataCisarua.forEach((element, i) => {
+    var villa_Card = document.createElement("div");
+    villa_Card.classList.add("villa_card");
+    var card_Info = `
+    <div onclick="show_Villa_details('سيساروا', ${cardDataCisarua[i].id}); page_Scroll();" id="${cardDataCisarua[i].id}" class="villa_Card">
+        <img src="${cardDataCisarua[i].image}" alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا" loading="lazy">
+        <div class="villa_Info">
+            <h1>${cardDataCisarua[i].location}</h1>
+            <h1 class="price">${cardDataCisarua[i].price}</h1>
+            <h1 class="villa_id">رقم الفيلا ${i + 1}</h1>
+        </div>
+    </div>
+    `;
+    villa_Card.innerHTML = card_Info;
+    cisarua_villa_Area_Id.appendChild(villa_Card);
+});
+/* Create Cipanas Cards */
+cardDataCipanas.forEach((element, i) => {
+    var villa_Card = document.createElement("div");
+    villa_Card.classList.add("villa_card");
+    var card_Info = `
+    <div onclick="show_Villa_details('شيباناس', ${cardDataCipanas[i].id}); page_Scroll();" id="${cardDataCipanas[i].id}" class="villa_Card">
+        <img src="${cardDataCipanas[i].image}" alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا" loading="lazy">
+        <div class="villa_Info">
+            <h1>${cardDataCipanas[i].location}</h1>
+            <h1 class="price">${cardDataCipanas[i].price}</h1>
+            <h1 class="villa_id">رقم الفيلا ${i + 1}</h1>
+        </div>
+    </div>
+    `;
+    villa_Card.innerHTML = card_Info;
+    cipanas_villa_Area_Id.appendChild(villa_Card);
+});
 
-    .villa_Card {
-        width: 250px;
-    }
 
-    .villa_Info {
-        min-height: 150px;
-    }
 
-    .villa_Info h1 {
-        font-size: 11px;
-    }
 
-    .villa_Info .villa_id {
-        font-size: 9px;
-    }
 
-    #villa_Details_Img_Area {
-        width: 85%;
-    }
 
-    #villa_Details_Img_Area img {
-        width: 60%;
-    }
 
-    .full_Screen_Image img {
-        width: 82%;
-    }
-}
 
 
 
-/* 465px */
-@media(max-width:465px) {
-    #hide_Btn {
-        font-size: 10px;
-    }
 
-    #show_Btn {
-        font-size: 11px;
-    }
 
-    #discount_Text {
-        font-size: 13px;
-    }
 
-    .choose_Area_Intro {
-        font-size: 25px;
-    }
 
-    #sec3_Content div {
-        width: 80%;
-    }
 
-    #sec3_Content div a {
-        font-size: 17px;
-    }
 
-    .intro_Area h1 {
-        font-size: 17px;
-    }
 
-    .arrow_Icon {
-        font-size: 30px;
-    }
 
-    .full_Screen_Image img {
-        width: 85%;
-    }
-}
+/* Show Cards Details */
+function show_Villa_details(areaLocation, id) {
+    var imgNum = 0;
+    var areaSelected = areaLocation === 'سيساروا' ? villaDetailsCisarua : villaDetailsCipanas;
+    var villa_Details_Card = document.createElement("div");
+    villa_Details_Card.classList.add("villa_Details_Card");
 
+    function updateVillaDetailsInfo() {
+        var villa = areaSelected[id];
 
+        var villa_Details_Info = `
+            <div id="choose_Villa_Details">
+                <h1 id="photo_Villa_Details_Btn">صور</h1>
+                ${villa.video ? `<h1 id="video_Villa_Details_Btn">فيديو</h1>` : `<h1 style="color: rgb(255, 0, 0)">فيديو</h1>`}
+            </div>
+            <div id="villa_Details_Img_Area">
+                <ion-icon id="arrow_Forward" class="arrow_Icon" name="arrow-forward-outline"></ion-icon>
+                <img id="villa_Details_Full_Screen_Image" src=${villa.image[imgNum]} alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا" loading="lazy">
+                <ion-icon id="arrow_Back" class="arrow_Icon" name="arrow-back-outline"></ion-icon>
+            </div>
+            <div id="villa_Details_Video_Area" class="hide_Display">
+                <video controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video" class="hide_Display" loading="lazy">
+                    <source src=${villa.video} type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="villa_Details_Text">
+                <h1>${villa.location}</h1>
+                <h1>${villa.description}</h1>
+                <h1 id="villa_Details_Text_Price">${villa.price}</h1>
+                <h1 id="villa_Details_Text_Villa_Id">رقم الفيلا في ${areaLocation} ${villa.villaNumber}</h1>
+                <a id="villa_Details_Text_Contact_Us" href="https://wa.me/+6282246117155" target="_blank">احجز الان</a>
+            </div>
+        `;
+        villa_Details_Card.innerHTML = villa_Details_Info;
+        villa_Details_Area.innerHTML = "";
+        villa_Details_Area.appendChild(villa_Details_Card);
 
-/* 410px */
-@media(max-width:410px) {
-    #header_Info {
-        min-height: 125px;
-    }
+        photo_Villa_Details_Btn.onclick = function () {
+        villa_Details_Video_Area.classList.add("hide_Display");
+        villa_Details_Video.classList.add("hide_Display");
+        villa_Details_Img_Area.classList.remove("hide_Display");
+        villa_Details_Full_Screen_Image.classList.remove("hide_Display");
+        arrow_Forward.classList.remove("hide_Display");
+        arrow_Back.classList.remove("hide_Display");
+        };
 
-    #sec1_Web_Intro h1 {
-        font-size: 15px;
-    }
+        if (video_Villa_Details_Btn) {
+            video_Villa_Details_Btn.onclick = function () {
+                villa_Details_Video_Area.classList.remove("hide_Display");
+                villa_Details_Video.classList.remove("hide_Display");
+                villa_Details_Img_Area.classList.add("hide_Display");
+                villa_Details_Full_Screen_Image.classList.add("hide_Display");
+                arrow_Forward.classList.add("hide_Display");
+                arrow_Back.classList.add("hide_Display");
+            };
+        }
 
-    #header_Nav a {
-        font-size: 11px;
-    }
+        arrow_Forward.onclick = function () {
+            imgNum = (imgNum + 1) % villa.image.length;
+            villa_Details_Full_Screen_Image.src = villa.image[imgNum];
+        };
+        
+        arrow_Back.onclick = function () {
+            imgNum = imgNum - 1;
+            if (imgNum === -1) {
+                imgNum = villa.image.length - 1;
+            }
+            villa_Details_Full_Screen_Image.src = villa.image[imgNum];
+        };
+        
 
-    #discount_Text {
-        font-size: 10px;
+        villa_Details_Full_Screen_Image.onclick = function () {
+            Full_Screen_Image(villa_Details_Full_Screen_Image.src);
+            var overlay_Layer = document.createElement("div");
+            overlay_Layer.classList.add("overlay");
+            document.body.appendChild(overlay_Layer);
+        };
     }
 
-    #sec1 {
-        padding: 150px 0 50px 0;
-    }
+    updateVillaDetailsInfo();
 
-    #sec2 {
-        height: 530px;
-    }
+    Full_Screen_Image = function (src) {
+        var fullScreenImage = document.createElement("div");
+        fullScreenImage.classList.add("full_Screen_Image");
 
-    #sec2_Comments_Intro {
-        font-size: 12px;
-    }
+        var fullScreenImageInfo = `
+            <img src="${src}" alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا">
+        `;
 
-    #sec2_Comments_Intro h1 {
-        font-size: 12px;
-    }
+        fullScreenImage.innerHTML = fullScreenImageInfo;
 
-    #my_Reply {
-        font-size: 112px;
-    }
+        fullScreenImage.onclick = function () {
+            closeFullScreenImage();
+        };
 
-    #villa_Details_Text h1 {
-        font-size: 9px;
-        margin: 10px 0 0 0;
-    }
+        document.body.appendChild(fullScreenImage);
+    };
 
-    #villa_Details_Text_Contact_Us {
-        font-size: 10px;
-        padding: 6px 10px;
+    function closeFullScreenImage() {
+        var fullScreenImage = document.querySelector(".full_Screen_Image");
+        if (fullScreenImage) {
+            document.body.removeChild(fullScreenImage);
+            var overlay_Layer = document.querySelector(".overlay");
+            if (overlay_Layer) {
+                document.body.removeChild(overlay_Layer);
+            }
+        }
     }
 
-    .full_Screen_Image img {
-        width: 87%;
-    }
+    window.addEventListener("scroll", closeFullScreenImage);
 }
-
 
-
-/* 387px */
-@media(max-width:387px) {
-    #my_Reply h1 {
-        font-size: 12px;
-    }
 
-    #choose_Villa_Details {
-        width: 150px;
-    }
 
-    #choose_Villa_Details h1 {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
 
-    .full_Screen_Image img {
-        width: 88%;
-    }
 
-}
 
 
 
-/* 373px */
-@media(max-width:373px) {
-    #sec2 {
-        height: 500px;
-    }
-}
 
 
 
 
 
 
-/* 350px */
-@media(max-width:350px) {
-    #header_Info {
-        min-height: 115px;
-    }
 
-    #header_Nav a {
-        font-size: 8px;
-    }
 
-    #hide_Btn {
-        font-size: 8px;
-    }
 
-    #show_Btn {
-        font-size: 9px;
-    }
 
-    #sec1 {
-        padding: 140px 0 50px 0;
-    }
 
-    .intro_Area h1 {
-        font-size: 15px;
-    }
 
-    #sec2_Intro h1 {
-        font-size: 12px;
-    }
 
-    #sec1_Web_Intro h1 {
-        font-size: 12px;
-    }
 
-    #discount_Text {
-        font-size: 8px;
-    }
 
-    #sec2_Comments_Intro h1 {
-        font-size: 10px;
-    }
 
-    .villa_Card {
-        width: 220px;
-    }
+/* Create Comment Card */
+var commentNum = 0;
+var comment_Card = document.createElement("div");
+comment_Card.classList.add("comment_Card");
+var fullScreenImage = null;
+var overlay = null;
+function updateCommentInfo() {
+    var comment_Info = `
+    <div id="comment_Card">
+        <div id="comment_Image">
+            <ion-icon id="sec2_Arrow_Forward" class="arrow_Icon" name="arrow-forward-outline"></ion-icon>
+            <img id="comment_Info_Image" src=${commentData[commentNum].image} alt="تعليقات موقع احجز مكاني" title="تعليقات موقع احجز مكاني">
+            <ion-icon id="sec2_Arrow_Back" class="arrow_Icon" name="arrow-back-outline"></ion-icon>
+        </div>
+        <div id="my_Reply">
+            <h1>${commentData[commentNum].reply}</h1>
+        </div>
+    </div>
+  `;
 
-    .villa_Info {
-        min-height: 100px;
-    }
+    comment_Card.innerHTML = comment_Info;
+    all_Comments_Area.innerHTML = "";
+    all_Comments_Area.appendChild(comment_Card);
 
-    .villa_Info h1 {
-        font-size: 9px;
-    }
+    sec2_Arrow_Forward.onclick = function () {
+        commentNum = (commentNum + 1) % commentData.length;
+        updateCommentInfo();
+    };
 
-    .villa_Info .villa_id {
-        font-size: 7px;
-    }
+    sec2_Arrow_Back.onclick = function () {
+        commentNum = (commentNum - 1 + commentData.length) % commentData.length;
+        updateCommentInfo();
+    };
 
-    #choose_Villa_Details h1 {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
+    comment_Info_Image.onclick = function () {
+        openFullScreenImage(commentData[commentNum].image);
+    };
 
-    #villa_Details_Video_Area {
-        height: 20%;
-    }
+    function openFullScreenImage(src) {
+        fullScreenImage = document.createElement("div");
+        fullScreenImage.classList.add("full_Screen_Image");
 
-    #villa_Details_Text h1 {
-        font-size: 7px;
-    }
+        var fullScreenImageInfo = `
+      <img src="${src}" alt="احجز مكاني في فلل اندونيسيا">
+    `;
 
-    #villa_Details_Text_Contact_Us {
-        font-size: 8px;
-    }
+        fullScreenImage.innerHTML = fullScreenImageInfo;
 
-    .full_Screen_Image img {
-        width: 90%;
-    }
+        overlay = document.createElement("div");
+        overlay.classList.add("overlay");
 
-}
+        document.body.appendChild(fullScreenImage);
+        document.body.appendChild(overlay);
 
+        fullScreenImage.onclick = function () {
+            closeFullScreenImage();
+        };
 
+        overlay.onclick = function () {
+            closeFullScreenImage();
+        };
 
-/* 320px */
-@media(max-width:320px) {
-    #sec2 {
-        height: 450px;
+        window.addEventListener("scroll", function () {
+            closeFullScreenImage();
+        });
     }
 
-    #my_Reply h1 {
-        font-size: 10px;
+    function closeFullScreenImage() {
+        if (fullScreenImage) {
+            document.body.removeChild(fullScreenImage);
+            document.body.removeChild(overlay);
+            fullScreenImage = null;
+            overlay = null;
+        }
     }
 }
+updateCommentInfo();
