@@ -33,23 +33,40 @@ var commentData = [
 ];
 
 
+/* Take Me To The Same Card */
+function take_Me_Back(id) {
+    var cardElement = document.getElementById(id);
+    cardElement.scrollIntoView();
+    scrollBy(0, -200);
+    setTimeout(function () {
+        cardElement.style.backgroundColor = "green";
+        cardElement.style.borderColor = "orange";
+    }, 100);
+
+}
+
+
+
 
 /* Cisarua Card Data Create */
 var cardDataCisarua = [
     {
-        id: "1",
+        id: "Cisarua1",
+        cardNum: "1",
         image: "almadina_baFqih_ID1/1.jpg",
         location: "خلف مطعم بافقيه",
         price: "مليون واربع مئة وخمسين روبية يوميا"
     },
     {
-        id: "2",
+        id: "Cisarua2",
+        cardNum: "2",
         image: "taxas1_choprial_ID2/2.jpg",
         location: "بداخل تشوبريال تشوكلت",
         price: "اربعة مليون وخمس مئة روبية يوميا"
     },
     {
-        id: "3",
+        id: "Cisarua3",
+        cardNum: "3",
         image: "badVilla_nearTaxas1_ID3/2.jpg",
         location: "بداخل تشوبريال تشوكلت",
         price: "ست مية وخمسين روبية يوميا"
@@ -58,10 +75,25 @@ var cardDataCisarua = [
 /* Cipanas Card Data Create */
 var cardDataCipanas = [
     {
-        id: "1",
-        image: "images/villa1.JPG",
-        location: "بجانب مطعم بافقيه",
-        price: "مليون وخمس مئة يوميا"
+        id: "Cipanas1",
+        cardNum: "1",
+        image: "almadina_baFqih_ID1/1.jpg",
+        location: "خلف مطعم بافقيه",
+        price: "مليون واربع مئة وخمسين روبية يوميا"
+    },
+    {
+        id: "Cipanas2",
+        cardNum: "2",
+        image: "taxas1_choprial_ID2/2.jpg",
+        location: "بداخل تشوبريال تشوكلت",
+        price: "اربعة مليون وخمس مئة روبية يوميا"
+    },
+    {
+        id: "Cipanas3",
+        cardNum: "3",
+        image: "badVilla_nearTaxas1_ID3/2.jpg",
+        location: "بداخل تشوبريال تشوكلت",
+        price: "ست مية وخمسين روبية يوميا"
     },
 ];
 
@@ -71,10 +103,10 @@ var cardDataCipanas = [
 var villaDetailsCisarua = [
     null,
     {
-        image: [ "almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
+        image: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
         video: "almadina_baFqih_ID1/vid.mp4",
         location: "خلف مطعم بافقيه",
-        description:"للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل",
+        description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل",
         price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
         villaNumber: "1"
     },
@@ -99,33 +131,30 @@ var villaDetailsCisarua = [
 var villaDetailsCipanas = [
     null,
     {
-        image: ["images/villa1.JPG", "images/villa2.JPG", "images/villa3.JPG"],
-        video: "images/x.MOV",
-        location: "بجانب شاطئ انشول على منظر خوراااافي ابو الدو قدامك",
-        description: "فيلا ي ابني اطلع من حياتي",
-        price: "ثلاثين روبية في اليوم (حق الاندومي بس)",
+        image: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
+        video: "almadina_baFqih_ID1/vid.mp4",
+        location: "خلف مطعم بافقيه",
+        description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل",
+        price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
         villaNumber: "1"
     },
+    {
+        image: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
+        video: "taxas1_choprial_ID2/vid.mp4",
+        location: "فيلا بداخل تشوبريال تشوكلت",
+        description: "في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل",
+        price: "السعر بعد الخصم = اربعة مليون واربع مئة وخمسين روبية يوميا",
+        villaNumber: "2"
+    },
+    {
+        image: ["badVilla_nearTaxas1_ID3/2.jpg", "badVilla_nearTaxas1_ID3/3.jpg", "badVilla_nearTaxas1_ID3/4.jpg", "badVilla_nearTaxas1_ID3/5.jpg", "badVilla_nearTaxas1_ID3/6.jpg", "badVilla_nearTaxas1_ID3/7.jpg", "badVilla_nearTaxas1_ID3/8.jpg", "badVilla_nearTaxas1_ID3/9.jpg", "badVilla_nearTaxas1_ID3/10.jpg", "badVilla_nearTaxas1_ID3/11.jpg",],
+        video: "badVilla_nearTaxas1_ID3/vid.mp4",
+        location: "فيلا بداخل تشوبريال تشوكلت",
+        description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل",
+        price: "السعر بعد الخصم = ست مية وخمسين روبية يوميا",
+        villaNumber: "3"
+    },
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -140,7 +169,6 @@ page_Scroll = function () {
         document.getElementById("villa_Details_Text_Contact_Us").scrollIntoView();
     }, 200);
 };
-
 
 
 /* Booking Method */
@@ -175,12 +203,16 @@ show_Btn.onclick = function () {
 
 
 
+
+
+
+
 /* Create Cisarua Cards */
 cardDataCisarua.forEach((element, i) => {
     var villa_Card = document.createElement("div");
     villa_Card.classList.add("villa_card");
     var card_Info = `
-    <div onclick="show_Villa_details('سيساروا', ${cardDataCisarua[i].id}); page_Scroll();" id="${cardDataCisarua[i].id}" class="villa_Card">
+    <div onclick="show_Villa_Details('سيساروا', ${cardDataCisarua[i].cardNum}, '${cardDataCisarua[i].id}'); page_Scroll();" id="${cardDataCisarua[i].id}" class="villa_Card">
         <img src="${cardDataCisarua[i].image}" alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا" loading="lazy">
         <div class="villa_Info">
             <h1>${cardDataCisarua[i].location}</h1>
@@ -197,7 +229,7 @@ cardDataCipanas.forEach((element, i) => {
     var villa_Card = document.createElement("div");
     villa_Card.classList.add("villa_card");
     var card_Info = `
-    <div onclick="show_Villa_details('شيباناس', ${cardDataCipanas[i].id}); page_Scroll();" id="${cardDataCipanas[i].id}" class="villa_Card">
+    <div onclick="show_Villa_Details('شيباناس', ${cardDataCipanas[i].cardNum}, '${cardDataCipanas[i].id}'); page_Scroll();" id="${cardDataCipanas[i].id}" class="villa_Card">
         <img src="${cardDataCipanas[i].image}" alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا" loading="lazy">
         <div class="villa_Info">
             <h1>${cardDataCipanas[i].location}</h1>
@@ -228,16 +260,17 @@ cardDataCipanas.forEach((element, i) => {
 
 
 /* Show Cards Details */
-function show_Villa_details(areaLocation, id) {
+show_Villa_Details = function (areaLocation, cardNum, id) {
     var imgNum = 0;
     var areaSelected = areaLocation === 'سيساروا' ? villaDetailsCisarua : villaDetailsCipanas;
     var villa_Details_Card = document.createElement("div");
     villa_Details_Card.classList.add("villa_Details_Card");
 
-    function updateVillaDetailsInfo() {
-        var villa = areaSelected[id];
+    updateVillaDetailsInfo = function () {
+        var villa = areaSelected[cardNum];
 
         var villa_Details_Info = `
+            <a id="go_Back_Villa" onclick="take_Me_Back('${id}');">فيلا رقم ${cardNum}</a>
             <div id="choose_Villa_Details">
                 <h1 id="photo_Villa_Details_Btn">صور</h1>
                 ${villa.video ? `<h1 id="video_Villa_Details_Btn">فيديو</h1>` : `<h1 style="color: rgb(255, 0, 0)">فيديو</h1>`}
@@ -265,13 +298,14 @@ function show_Villa_details(areaLocation, id) {
         villa_Details_Area.innerHTML = "";
         villa_Details_Area.appendChild(villa_Details_Card);
 
+
         photo_Villa_Details_Btn.onclick = function () {
-        villa_Details_Video_Area.classList.add("hide_Display");
-        villa_Details_Video.classList.add("hide_Display");
-        villa_Details_Img_Area.classList.remove("hide_Display");
-        villa_Details_Full_Screen_Image.classList.remove("hide_Display");
-        arrow_Forward.classList.remove("hide_Display");
-        arrow_Back.classList.remove("hide_Display");
+            villa_Details_Video_Area.classList.add("hide_Display");
+            villa_Details_Video.classList.add("hide_Display");
+            villa_Details_Img_Area.classList.remove("hide_Display");
+            villa_Details_Full_Screen_Image.classList.remove("hide_Display");
+            arrow_Forward.classList.remove("hide_Display");
+            arrow_Back.classList.remove("hide_Display");
         };
 
         if (video_Villa_Details_Btn) {
@@ -289,7 +323,7 @@ function show_Villa_details(areaLocation, id) {
             imgNum = (imgNum + 1) % villa.image.length;
             villa_Details_Full_Screen_Image.src = villa.image[imgNum];
         };
-        
+
         arrow_Back.onclick = function () {
             imgNum = imgNum - 1;
             if (imgNum === -1) {
@@ -297,7 +331,7 @@ function show_Villa_details(areaLocation, id) {
             }
             villa_Details_Full_Screen_Image.src = villa.image[imgNum];
         };
-        
+
 
         villa_Details_Full_Screen_Image.onclick = function () {
             Full_Screen_Image(villa_Details_Full_Screen_Image.src);
@@ -326,7 +360,7 @@ function show_Villa_details(areaLocation, id) {
         document.body.appendChild(fullScreenImage);
     };
 
-    function closeFullScreenImage() {
+    closeFullScreenImage = function () {
         var fullScreenImage = document.querySelector(".full_Screen_Image");
         if (fullScreenImage) {
             document.body.removeChild(fullScreenImage);
@@ -345,31 +379,13 @@ function show_Villa_details(areaLocation, id) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Create Comment Card */
 var commentNum = 0;
 var comment_Card = document.createElement("div");
 comment_Card.classList.add("comment_Card");
 var fullScreenImage = null;
 var overlay = null;
-function updateCommentInfo() {
+updateCommentInfo = function () {
     var comment_Info = `
     <div id="comment_Card">
         <div id="comment_Image">
@@ -401,7 +417,7 @@ function updateCommentInfo() {
         openFullScreenImage(commentData[commentNum].image);
     };
 
-    function openFullScreenImage(src) {
+    openFullScreenImage = function (src) {
         fullScreenImage = document.createElement("div");
         fullScreenImage.classList.add("full_Screen_Image");
 
@@ -430,7 +446,7 @@ function updateCommentInfo() {
         });
     }
 
-    function closeFullScreenImage() {
+    closeFullScreenImage = function () {
         if (fullScreenImage) {
             document.body.removeChild(fullScreenImage);
             document.body.removeChild(overlay);
