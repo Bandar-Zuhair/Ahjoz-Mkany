@@ -32,15 +32,21 @@ var commentData = [
     },
 ];
 
-take_Me_Back = function (id) {
+function take_Me_Back(id) {
     var targetedCard = document.getElementById(id);
-    targetedCard.scrollIntoView();
-    setTimeout(function () {
-        scrollBy(0, -250);
-    }, 1);
-    targetedCard.style.backgroundColor ="green";
-    targetedCard.style.borderColor ="orange";
+
+    if (targetedCard) {
+        var elementTop = targetedCard.getBoundingClientRect().top;
+        var offset = elementTop - (window.innerHeight / 2 - targetedCard.clientHeight / 2);
+        window.scrollBy({
+            top: offset,
+        });
+        targetedCard.style.backgroundColor = "green";
+        targetedCard.style.borderColor = "orange";
+    }
 }
+
+
 
 /* Cisarua Card Data Create */
 var cardDataCisarua = [
@@ -264,7 +270,7 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
         var villa = areaSelected[cardNum];
 
         var villa_Details_Info = `
-            <a href="#${id}" onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
+            <a onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
             <div id="choose_Villa_Details">
                 <h1 id="photo_Villa_Details_Btn">صور</h1>
                 ${villa.video ? `<h1 id="video_Villa_Details_Btn">فيديو</h1>` : `<h1 style="color: rgb(255, 0, 0)">فيديو</h1>`}
