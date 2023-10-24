@@ -121,7 +121,7 @@ header {
 #hide_Btn,
 #show_Btn,
 #villa_Details_Text_Contact_Us,
-#choose_Villa_Details h1, #go_Back_Villa {
+#choose_Villa_Details h1, #go_Back_Card {
     background: rgb(41, 38, 38);
     text-decoration: none;
     font-size: 17px;
@@ -138,7 +138,7 @@ header {
 #hide_Btn:hover,
 #show_Btn:hover,
 #villa_Details_Text_Contact_Us:hover,
-#choose_Villa_Details h1:hover, #go_Back_Villa:hover {
+#choose_Villa_Details h1:hover, #go_Back_Card:hover {
     background: rgb(77, 66, 66);
     color: white;
 }
@@ -158,7 +158,7 @@ header {
     top: 12px;
 }
 
-#go_Back_Villa {
+#go_Back_Card {
     position: fixed;
     right: 12px;
     top: 12px;
@@ -761,7 +761,7 @@ footer {
         width: 85%;
     }
 
-    #hide_Btn, #go_Back_Villa {
+    #hide_Btn, #go_Back_Card {
         font-size: 15px;
     }
 
@@ -837,7 +837,7 @@ footer {
         font-size: 13px;
     }
 
-    #hide_Btn, #go_Back_Villa {
+    #hide_Btn, #go_Back_Card {
         font-size: 12px;
     }
 
@@ -1017,7 +1017,7 @@ footer {
 
 /* 465px */
 @media(max-width:465px) {
-    #hide_Btn, #go_Back_Villa {
+    #hide_Btn, #go_Back_Card {
         font-size: 10px;
     }
 
@@ -1156,7 +1156,7 @@ footer {
         font-size: 8px;
     }
 
-    #hide_Btn, #go_Back_Villa {
+    #hide_Btn, #go_Back_Card {
         font-size: 8px;
     }
 
