@@ -152,7 +152,7 @@ var villaDetailsCipanas = [
 /* Scroll Down */
 page_Scroll = function () {
     setTimeout(function () {
-        document.getElementById("villa_Details_Text_Contact_Us").scrollIntoView();
+        document.body.scrollIntoView({block: 'end', inline: 'end'});
     }, 500);
 };
 
