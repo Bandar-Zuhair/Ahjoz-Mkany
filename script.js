@@ -34,15 +34,13 @@ var commentData = [
 
 
 /* Take Me To The Same Card */
-function take_Me_Back(id) {
-    var cardElement = document.getElementById(id);
-    cardElement.scrollIntoView();
-    scrollBy(0, -200);
+take_Me_Back = function (id) {
     setTimeout(function () {
-        cardElement.style.backgroundColor = "green";
-        cardElement.style.borderColor = "orange";
-    }, 100);
-
+        scrollBy(0, -250);
+    }, 1000);
+    var targetCardLoaction = document.getElementById(id);
+    targetCardLoaction.style.backgroundColor = "green";
+    targetCardLoaction.style.borderColor = "orange";
 }
 
 
@@ -297,15 +295,6 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
         villa_Details_Card.innerHTML = villa_Details_Info;
         villa_Details_Area.innerHTML = "";
         villa_Details_Area.appendChild(villa_Details_Card);
-
-        take_Me_Back = function (id) {
-            setTimeout(function () {
-                scrollBy(0, -250);
-            }, 1);
-            var targetCardLoaction = document.getElementById(id);
-            targetCardLoaction.style.backgroundColor = "green";
-            targetCardLoaction.style.borderColor = "orange";
-        }
 
         photo_Villa_Details_Btn.onclick = function () {
             villa_Details_Video_Area.classList.add("hide_Display");
