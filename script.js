@@ -270,7 +270,7 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
         var villa = areaSelected[cardNum];
 
         var villa_Details_Info = `
-            <a id="go_Back_Villa" onclick="take_Me_Back('${id}');">فيلا رقم ${cardNum}</a>
+            <a href="#${id}" onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
             <div id="choose_Villa_Details">
                 <h1 id="photo_Villa_Details_Btn">صور</h1>
                 ${villa.video ? `<h1 id="video_Villa_Details_Btn">فيديو</h1>` : `<h1 style="color: rgb(255, 0, 0)">فيديو</h1>`}
@@ -298,6 +298,14 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
         villa_Details_Area.innerHTML = "";
         villa_Details_Area.appendChild(villa_Details_Card);
 
+        take_Me_Back = function (id) {
+            setTimeout(function () {
+                scrollBy(0, -250);
+            }, 1);
+            var targetCardLoaction = document.getElementById(id);
+            targetCardLoaction.style.backgroundColor = "green";
+            targetCardLoaction.style.borderColor = "orange";
+        }
 
         photo_Villa_Details_Btn.onclick = function () {
             villa_Details_Video_Area.classList.add("hide_Display");
