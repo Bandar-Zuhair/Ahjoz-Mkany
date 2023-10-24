@@ -32,20 +32,6 @@ var commentData = [
     },
 ];
 
-take_Me_Back = function(id) {
-    var targetedCard = document.getElementById(id);
-
-    if (targetedCard) {
-        var elementTop = targetedCard.getBoundingClientRect().top;
-        var offset = elementTop - (window.innerHeight / 2 - targetedCard.clientHeight / 2);
-        window.scrollBy({
-            top: offset,
-        });
-        targetedCard.style.backgroundColor = "green";
-        targetedCard.style.borderColor = "orange";
-    }
-}
-
 
 
 /* Cisarua Card Data Create */
@@ -297,7 +283,20 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
         villa_Details_Card.innerHTML = villa_Details_Info;
         villa_Details_Area.innerHTML = "";
         villa_Details_Area.appendChild(villa_Details_Card);
-        
+
+        take_Me_Back = function(id) {
+            var targetedCard = document.getElementById(id);
+
+            if (targetedCard) {
+            var elementTop = targetedCard.getBoundingClientRect().top;
+            var offset = elementTop - (window.innerHeight / 2 - targetedCard.clientHeight / 2);
+            window.scrollBy({
+                top: offset,
+            });
+            targetedCard.style.backgroundColor = "green";
+            targetedCard.style.borderColor = "orange";
+            }
+        }
         photo_Villa_Details_Btn.onclick = function () {
             villa_Details_Video_Area.classList.add("hide_Display");
             villa_Details_Video.classList.add("hide_Display");
