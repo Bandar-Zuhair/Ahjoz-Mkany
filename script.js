@@ -35,7 +35,11 @@ var commentData = [
 take_Me_Back = function (id) {
     var targetedCard = document.getElementById(id);
     targetedCard.scrollIntoView();
-    scrollBy(0, -200);
+    setTimeout(function () {
+        scrollBy(0, -250);
+    }, 1);
+    targetedCard.style.backgroundColor ="green";
+    targetedCard.style.borderColor ="orange";
 }
 
 /* Cisarua Card Data Create */
