@@ -33,13 +33,9 @@ var commentData = [
 ];
 
 take_Me_Back = function (id) {
-        setTimeout(function () {
-        scrollBy(0, -250);
-        }, 1);
-        var targetCardLoaction = document.getElementById(id);
-        targetCardLoaction.style.backgroundColor = "green";
-        targetCardLoaction.style.borderColor = "orange";
-    }
+    var targetedCard = document.getElementById(id);
+    targetedCard.scrollIntoView();
+}
 
 /* Cisarua Card Data Create */
 var cardDataCisarua = [
