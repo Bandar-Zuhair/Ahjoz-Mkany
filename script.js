@@ -32,7 +32,7 @@ var commentData = [
     },
 ];
 
-function take_Me_Back(id) {
+take_Me_Back = function(id) {
     var targetedCard = document.getElementById(id);
 
     if (targetedCard) {
@@ -167,7 +167,7 @@ var villaDetailsCipanas = [
 page_Scroll = function () {
     setTimeout(function () {
         document.getElementById("villa_Details_Text_Contact_Us").scrollIntoView();
-    }, 200);
+    }, 500);
 };
 
 
