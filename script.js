@@ -35,6 +35,7 @@ var commentData = [
 take_Me_Back = function (id) {
     var targetedCard = document.getElementById(id);
     targetedCard.scrollIntoView();
+    scrollBy(0, -200);
 }
 
 /* Cisarua Card Data Create */
