@@ -151,7 +151,7 @@ var villaDetailsCipanas = [
 /* Scroll Down */
 page_Scroll = () => {
     var goDownToVillaDetails = document.getElementById("villa_Details_Text_Contact_Us");
-    setTimeout(function () {
+    setTimeout( () => {
         goDownToVillaDetails.scrollIntoView();
     }, 500);
 };
@@ -240,7 +240,7 @@ show_Villa_Details = (areaLocation, cardNum, id) => {
         villa_Details_Area.innerHTML = "";
         villa_Details_Area.appendChild(villa_Details_Card);
 
-        take_Me_Back = function (id) {
+        take_Me_Back = (id) => {
             var targetedCard = document.getElementById(id);
 
             if (targetedCard) {
@@ -276,6 +276,8 @@ show_Villa_Details = (areaLocation, cardNum, id) => {
         arrow_Forward.onclick = () => {
             imgNum = (imgNum + 1) % villa.image.length;
             villa_Details_Full_Screen_Image.src = villa.image[imgNum];
+            arrow_Forward.style.backgroundColor = "green";
+            arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
         };
 
         arrow_Back.onclick = () => {
@@ -284,6 +286,8 @@ show_Villa_Details = (areaLocation, cardNum, id) => {
                 imgNum = villa.image.length - 1;
             }
             villa_Details_Full_Screen_Image.src = villa.image[imgNum];
+            arrow_Back.style.backgroundColor = "green";
+            arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
         };
 
 
@@ -307,7 +311,7 @@ show_Villa_Details = (areaLocation, cardNum, id) => {
 
         fullScreenImage.innerHTML = fullScreenImageInfo;
 
-        fullScreenImage.onclick = function () {
+        fullScreenImage.onclick = () => {
             closeFullScreenImage();
         };
 
@@ -329,45 +333,39 @@ show_Villa_Details = (areaLocation, cardNum, id) => {
 }
 /* Create Comment Card */
 var commentNum = 0;
-var comment_Card = createAndAppend("div", "comment_Card", all_Comments_Area);
+var commentCard = document.createElement("div");
+commentCard.classList.add("comment_Card");
 var fullScreenImage = null;
 var overlay = null;
-
-function createAndAppend(tag, className, parent) {
-    var element = document.createElement(tag);
-    element.classList.add(className);
-    parent.appendChild(element);
-    return element;
-}
-
 updateCommentInfo = () => {
-    var comment_Info = `
-        <div id="comment_Card">
-            <div id="comment_Image">
-                <ion-icon id="sec2_Arrow_Forward" class="arrow_Icon" name="arrow-forward-outline"></ion-icon>
-                <img id="comment_Info_Image" src="${commentData[commentNum].image}" alt="تعليقات موقع احجز مكاني" title="تعليقات موقع احجز مكاني">
-                <ion-icon id="sec2_Arrow_Back" class="arrow_Icon" name="arrow-back-outline"></ion-icon>
-            </div>
-            <div id="my_Reply">
-                <h1>${commentData[commentNum].reply}</h1>
-            </div>
+    var commentInfo = `
+    <div id="comment_Card">
+        <div id="comment_Image">
+            <ion-icon id="sec2_Arrow_Forward" class="arrow_Icon" name="arrow-forward-outline"></ion-icon>
+            <img id="comment_Info_Image" src="${commentData[commentNum].image}" alt="تعليقات موقع احجز مكاني" title="تعليقات موقع احجز مكاني">
+            <ion-icon id="sec2_Arrow_Back" class="arrow_Icon" name="arrow-back-outline"></ion-icon>
         </div>
-    `;
+        <div id="my_Reply">
+            <h1>${commentData[commentNum].reply}</h1>
+        </div>
+    </div>
+  `;
 
-    comment_Card.innerHTML = comment_Info;
-
-    var sec2_Arrow_Forward = document.getElementById("sec2_Arrow_Forward");
-    var sec2_Arrow_Back = document.getElementById("sec2_Arrow_Back");
-    var comment_Info_Image = document.getElementById("comment_Info_Image");
+    commentCard.innerHTML = commentInfo;
+    all_Comments_Area.appendChild(commentCard);
 
     sec2_Arrow_Forward.onclick = () => {
         commentNum = (commentNum + 1) % commentData.length;
         updateImageAndReply();
+        sec2_Arrow_Forward.style.backgroundColor = "green";
+        sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
     };
 
     sec2_Arrow_Back.onclick = () => {
         commentNum = (commentNum - 1 + commentData.length) % commentData.length;
         updateImageAndReply();
+        sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
+        sec2_Arrow_Back.style.backgroundColor = "green";
     };
 
     comment_Info_Image.onclick = () => {
@@ -375,29 +373,39 @@ updateCommentInfo = () => {
     };
 
     openFullScreenImage = (src) => {
-        fullScreenImage = createAndAppend("div", "full_Screen_Comment", document.body);
+        fullScreenImage = document.createElement("div");
+        fullScreenImage.classList.add("full_Screen_Comment");
+
         var fullScreenImageInfo = `
-            <img src="${src}" alt="احجز مكاني في فلل اندونيسيا">
-        `;
+      <img src="${src}" alt="احجز مكاني في فلل اندونيسيا">
+    `;
+
         fullScreenImage.innerHTML = fullScreenImageInfo;
 
-        overlay = createAndAppend("div", "overlay", document.body);
+        overlay = document.createElement("div");
+        overlay.classList.add("overlay");
 
-        fullScreenImage.onclick = closeFullScreenImage;
-        overlay.onclick = closeFullScreenImage;
+        document.body.appendChild(fullScreenImage);
+        document.body.appendChild(overlay);
 
-        window.addEventListener("scroll", closeFullScreenImage);
+        fullScreenImage.onclick = () => {
+            closeFullScreenImage();
+        };
+
+        overlay.onclick = () => {
+            closeFullScreenImage();
+        };
+
+        window.addEventListener("scroll", () => {
+            closeFullScreenImage();
+        });
     }
 
     closeFullScreenImage = () => {
-        if (fullScreenImage) {
-            document.body.removeChild(fullScreenImage);
-            fullScreenImage = null;
-        }
-        if (overlay) {
-            document.body.removeChild(overlay);
-            overlay = null;
-        }
+        document.body.removeChild(fullScreenImage);
+        document.body.removeChild(overlay);
+        fullScreenImage = null;
+        overlay = null;
     }
 
     updateImageAndReply = () => {
