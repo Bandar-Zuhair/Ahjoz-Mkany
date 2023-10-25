@@ -31,10 +31,6 @@ var cardDataCisarua = [
         price: "ست مية وخمسين روبية يوميا"
     },
 ];
-/* Cipanas Card Data Create */
-var cardDataCipanas = [
-
-];
 
 /* Cisarua Villa Details Create */
 var villaDetailsCisarua = [
@@ -63,10 +59,6 @@ var villaDetailsCisarua = [
         price: "السعر بعد الخصم = ست مية وخمسين روبية يوميا",
         villaNumber: "3"
     },
-];
-/* Cipanas Villa Details Create */
-var villaDetailsCipanas = [
-
 ];
 
 
