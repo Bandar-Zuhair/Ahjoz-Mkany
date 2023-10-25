@@ -278,6 +278,9 @@ show_Villa_Details = (areaLocation, cardNum, id) => {
             villa_Details_Full_Screen_Image.src = villa.image[imgNum];
             arrow_Forward.style.backgroundColor = "green";
             arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
+            setTimeout( () => {
+                arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
+            }, 1500);
         };
 
         arrow_Back.onclick = () => {
@@ -288,6 +291,9 @@ show_Villa_Details = (areaLocation, cardNum, id) => {
             villa_Details_Full_Screen_Image.src = villa.image[imgNum];
             arrow_Back.style.backgroundColor = "green";
             arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
+            setTimeout( () => {
+                arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
+            }, 1500);
         };
 
 
@@ -359,13 +365,19 @@ updateCommentInfo = () => {
         updateImageAndReply();
         sec2_Arrow_Forward.style.backgroundColor = "green";
         sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
+        setTimeout( () => {
+            sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
+        }, 1500);
     };
 
     sec2_Arrow_Back.onclick = () => {
         commentNum = (commentNum - 1 + commentData.length) % commentData.length;
         updateImageAndReply();
-        sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
         sec2_Arrow_Back.style.backgroundColor = "green";
+        sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
+        setTimeout( () => {
+            sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
+        }, 1500);
     };
 
     comment_Info_Image.onclick = () => {
