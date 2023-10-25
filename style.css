@@ -176,15 +176,13 @@ header {
 
 /* Introduction */
 #sec1 {
-    background: pink;
     display: flex;
     justify-content: center;
-    padding: 140px 0 50px 0;
+    padding: 140px 0 30px 0;
     min-height: 100px;
 }
 
 #sec1_Intro {
-    background: red;
     direction: rtl;
     min-height: 100px;
     width: 100%;
@@ -196,7 +194,6 @@ header {
 }
 
 #sec1_Web_Intro {
-    background: blue;
     direction: rtl;
     min-height: 10px;
     width: 100%;
@@ -223,7 +220,7 @@ header {
     font-size: 20px;
     font-weight: lighter;
     cursor: default;
-    padding: 10px 16px;
+    padding: 10px 14px;
     border: 5px solid rgb(94, 94, 94);
     border-radius: 30px;
 }
@@ -868,6 +865,10 @@ footer {
         font-size: 13px;
     }
 
+    #sec1 {
+        padding: 140px 0 20px 0;
+    }
+
     #icon {
         font-size: 140px;
     }
@@ -973,6 +974,10 @@ footer {
         margin: 5px 5px 0 5px;
     }
 
+    #sec1 {
+        padding: 170px 0 20px 0;
+    }
+
     #villa_Details_Img_Area {
         width: 75%;
     }
@@ -992,10 +997,6 @@ footer {
 @media(max-width:512px) {
     #header_Info {
         min-height: 130px;
-    }
-
-    #sec1 {
-        padding: 160px 0 50px 0;
     }
 }
 
@@ -1091,21 +1092,22 @@ footer {
         min-height: 125px;
     }
 
+    #header_Nav a {
+        font-size: 11px;
+    }
+
+    #sec1 {
+        padding: 160px 0 10px 0;
+    }
+
     #sec1_Web_Intro h1 {
         font-size: 15px;
         margin-bottom: 15px;
     }
 
-    #header_Nav a {
-        font-size: 11px;
-    }
-
     #discount_Text {
-        font-size: 10px;
-    }
-
-    #sec1 {
-        padding: 150px 0 50px 0;
+        font-size: 11px;
+        padding: 8px 12px;
     }
 
     #sec2 {
@@ -1200,7 +1202,7 @@ footer {
     }
 
     #sec1 {
-        padding: 140px 0 50px 0;
+        padding: 150px 0 10px 0;
     }
 
     .intro_Area h1 {
@@ -1216,7 +1218,7 @@ footer {
     }
 
     #discount_Text {
-        font-size: 8px;
+        font-size: 9px;
     }
 
     #sec2_Comments_Intro h1 {
