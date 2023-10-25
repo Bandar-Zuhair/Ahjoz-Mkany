@@ -5,21 +5,6 @@ var commentData = [
         image: "comments/1.jpg",
         reply: "اشكرك يالغالي الله يسعدك"
     },
-    {
-        id: "2",
-        image: "comments/2.jpg",
-        reply: "حبيبي"
-    },
-    {
-        id: "3",
-        image: "comments/3.jpg",
-        reply: "اشكرك كثير"
-    },
-    {
-        id: "4",
-        image: "comments/1.jpg",
-        reply: ""
-    },
 ];
 
 /* Cisarua Card Data Create */
@@ -48,13 +33,7 @@ var cardDataCisarua = [
 ];
 /* Cipanas Card Data Create */
 var cardDataCipanas = [
-    {
-        id: "Cipanas1",
-        cardNum: "1",
-        image: "almadina_baFqih_ID1/1.jpg",
-        location: "خلف مطعم بافقيه",
-        price: "مليون واربع مئة وخمسين روبية يوميا"
-    },
+
 ];
 
 /* Cisarua Villa Details Create */
@@ -87,15 +66,7 @@ var villaDetailsCisarua = [
 ];
 /* Cipanas Villa Details Create */
 var villaDetailsCipanas = [
-    null,
-    {
-        image: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
-        video: "almadina_baFqih_ID1/vid.mp4",
-        location: "خلف مطعم بافقيه",
-        description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل",
-        price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
-        villaNumber: "1"
-    },
+
 ];
 
 
@@ -111,7 +82,7 @@ var villaDetailsCipanas = [
 /* Scroll Down */
 page_Scroll = function () {
     var goDownToVillaDetails = document.getElementById("villa_Details_Text_Contact_Us");
-    setTimeout( function () {
+    setTimeout(function () {
         goDownToVillaDetails.scrollIntoView();
     }, 500);
 };
@@ -138,8 +109,13 @@ show_Btn.onclick = function () {
     hide_Btn.classList.remove("hide_Display");
     show_Btn.classList.add("hide_Display");
 };
+
+
+
+
+
 /* Create Cards */
-createVillaCard = function (data, areaId, areaName) {
+function createVillaCard (data, areaId, areaName) {
     data.forEach((item, i) => {
         const { cardNum, id, image, location, price } = item;
         const villaCard = document.createElement("div");
@@ -161,6 +137,12 @@ createVillaCard = function (data, areaId, areaName) {
 }
 createVillaCard(cardDataCisarua, cisarua_villa_Area_Id, 'سيساروا');
 createVillaCard(cardDataCipanas, cipanas_villa_Area_Id, 'شيباناس');
+
+
+
+
+
+
 /* Show Cards Details */
 show_Villa_Details = function (areaLocation, cardNum, id) {
     var imgNum = 0;
@@ -238,7 +220,7 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
             villa_Details_Full_Screen_Image.src = villa.image[imgNum];
             arrow_Forward.style.backgroundColor = "green";
             arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
-            setTimeout( function () {
+            setTimeout(function () {
                 arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
             }, 1500);
         };
@@ -251,7 +233,7 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
             villa_Details_Full_Screen_Image.src = villa.image[imgNum];
             arrow_Back.style.backgroundColor = "green";
             arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
-            setTimeout( function () {
+            setTimeout(function () {
                 arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
             }, 1500);
         };
@@ -297,13 +279,22 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
 
     window.addEventListener("scroll", closeFullScreenImage);
 }
+
+
+
+
+
+
+
+
 /* Create Comment Card */
 var commentNum = 0;
 var commentCard = document.createElement("div");
 commentCard.classList.add("comment_Card");
 var fullScreenImage = null;
 var overlay = null;
-updateCommentInfo = function () {
+
+function updateCommentInfo() {
     var commentInfo = `
     <div id="comment_Card">
         <div id="comment_Image">
@@ -315,7 +306,7 @@ updateCommentInfo = function () {
             <h1>${commentData[commentNum].reply}</h1>
         </div>
     </div>
-  `;
+    `;
 
     commentCard.innerHTML = commentInfo;
     all_Comments_Area.appendChild(commentCard);
@@ -325,7 +316,7 @@ updateCommentInfo = function () {
         updateImageAndReply();
         sec2_Arrow_Forward.style.backgroundColor = "green";
         sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
-        setTimeout( function () {
+        setTimeout(function () {
             sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
         }, 1500);
     };
@@ -335,7 +326,7 @@ updateCommentInfo = function () {
         updateImageAndReply();
         sec2_Arrow_Back.style.backgroundColor = "green";
         sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
-        setTimeout( function () {
+        setTimeout(function () {
             sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
         }, 1500);
     };
@@ -344,13 +335,13 @@ updateCommentInfo = function () {
         openFullScreenImage(commentData[commentNum].image);
     };
 
-    openFullScreenImage = function (src) {
+    function openFullScreenImage(src) {
         fullScreenImage = document.createElement("div");
         fullScreenImage.classList.add("full_Screen_Comment");
 
         var fullScreenImageInfo = `
-      <img src="${src}" alt="احجز مكاني في فلل اندونيسيا">
-    `;
+        <img src="${src}" alt="احجز مكاني في فلل اندونيسيا">
+        `;
 
         fullScreenImage.innerHTML = fullScreenImageInfo;
 
@@ -373,16 +364,21 @@ updateCommentInfo = function () {
         });
     }
 
-    closeFullScreenImage = function () {
-        document.body.removeChild(fullScreenImage);
-        document.body.removeChild(overlay);
+    function closeFullScreenImage() {
+        if (fullScreenImage) {
+            document.body.removeChild(fullScreenImage);
+        }
+        if (overlay) {
+            document.body.removeChild(overlay);
+        }
         fullScreenImage = null;
         overlay = null;
     }
 
-    updateImageAndReply = function () {
+    function updateImageAndReply() {
         comment_Info_Image.src = commentData[commentNum].image;
         my_Reply.querySelector('h1').textContent = commentData[commentNum].reply;
     }
 }
+
 updateCommentInfo();
