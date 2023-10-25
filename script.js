@@ -343,7 +343,7 @@ var commentCard = document.createElement("div");
 commentCard.classList.add("comment_Card");
 var fullScreenImage = null;
 var overlay = null;
-updateCommentInfo = () => {
+updateCommentInfo = function () {
     var commentInfo = `
     <div id="comment_Card">
         <div id="comment_Image">
@@ -360,31 +360,31 @@ updateCommentInfo = () => {
     commentCard.innerHTML = commentInfo;
     all_Comments_Area.appendChild(commentCard);
 
-    sec2_Arrow_Forward.onclick = () => {
+    sec2_Arrow_Forward.onclick = function () {
         commentNum = (commentNum + 1) % commentData.length;
         updateImageAndReply();
         sec2_Arrow_Forward.style.backgroundColor = "green";
         sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
-        setTimeout( () => {
+        setTimeout( function () {
             sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
         }, 1500);
     };
 
-    sec2_Arrow_Back.onclick = () => {
+    sec2_Arrow_Back.onclick = function () {
         commentNum = (commentNum - 1 + commentData.length) % commentData.length;
         updateImageAndReply();
         sec2_Arrow_Back.style.backgroundColor = "green";
         sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
-        setTimeout( () => {
+        setTimeout( function () {
             sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
         }, 1500);
     };
 
-    comment_Info_Image.onclick = () => {
+    comment_Info_Image.onclick = function () {
         openFullScreenImage(commentData[commentNum].image);
     };
 
-    openFullScreenImage = (src) => {
+    openFullScreenImage = (src) {
         fullScreenImage = document.createElement("div");
         fullScreenImage.classList.add("full_Screen_Comment");
 
@@ -400,27 +400,27 @@ updateCommentInfo = () => {
         document.body.appendChild(fullScreenImage);
         document.body.appendChild(overlay);
 
-        fullScreenImage.onclick = () => {
+        fullScreenImage.onclick = function () {
             closeFullScreenImage();
         };
 
-        overlay.onclick = () => {
+        overlay.onclick = function () {
             closeFullScreenImage();
         };
 
-        window.addEventListener("scroll", () => {
+        window.addEventListener("scroll", function () {
             closeFullScreenImage();
         });
     }
 
-    closeFullScreenImage = () => {
+    closeFullScreenImage = function () {
         document.body.removeChild(fullScreenImage);
         document.body.removeChild(overlay);
         fullScreenImage = null;
         overlay = null;
     }
 
-    updateImageAndReply = () => {
+    updateImageAndReply = function () {
         comment_Info_Image.src = commentData[commentNum].image;
         my_Reply.querySelector('h1').textContent = commentData[commentNum].reply;
     }
