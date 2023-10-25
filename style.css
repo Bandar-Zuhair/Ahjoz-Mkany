@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 
-
-
 /* html */
 html {
     scroll-behavior: smooth;
 }
-
 
 /* All */
 * {
@@ -16,12 +13,11 @@ html {
     box-sizing: border-box;
 }
 
-
-
 /* Body */
 body {
     background: rgb(59, 59, 59);
     color: white;
+    user-select: none;
 }
 
 
@@ -34,7 +30,8 @@ body {
 }
 
 
-.full_Screen_Image {
+.full_Screen_Image,
+.full_Screen_Comment {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -44,11 +41,18 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 998;
-    cursor: pointer;
 }
 
 .full_Screen_Image img {
-    width: 24%;
+    width: 27%;
+    z-index: 999;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.full_Screen_Comment img {
+    width: 65%;
     z-index: 999;
     border: 1px solid white;
     border-radius: 30px;
@@ -121,7 +125,8 @@ header {
 #hide_Btn,
 #show_Btn,
 #villa_Details_Text_Contact_Us,
-#choose_Villa_Details h1, #go_Back_Card {
+#choose_Villa_Details h1,
+#go_Back_Card {
     background: rgb(41, 38, 38);
     text-decoration: none;
     font-size: 17px;
@@ -138,7 +143,8 @@ header {
 #hide_Btn:hover,
 #show_Btn:hover,
 #villa_Details_Text_Contact_Us:hover,
-#choose_Villa_Details h1:hover, #go_Back_Card:hover {
+#choose_Villa_Details h1:hover,
+#go_Back_Card:hover {
     background: rgb(77, 66, 66);
     color: white;
 }
@@ -557,7 +563,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 26%;
+        width: 28%;
     }
 
 }
@@ -573,6 +579,10 @@ footer {
 
     #villa_Details_Img_Area img {
         width: 50%;
+    }
+
+    .full_Screen_Comment img {
+        width: 75%;
     }
 }
 
@@ -590,7 +600,11 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 32%;
+        width: 37%;
+    }
+
+    .full_Screen_Comment img {
+        width: 80%;
     }
 }
 
@@ -631,7 +645,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 50%;
+        width: 43%;
     }
 }
 
@@ -656,7 +670,11 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 40%;
+        width: 46%;
+    }
+
+    .full_Screen_Comment img {
+        width: 85%;
     }
 }
 
@@ -705,7 +723,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 45%;
+        width: 46%;
     }
 }
 
@@ -733,7 +751,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 51%;
+        width: 58%;
     }
 }
 
@@ -761,7 +779,8 @@ footer {
         width: 85%;
     }
 
-    #hide_Btn, #go_Back_Card {
+    #hide_Btn,
+    #go_Back_Card {
         font-size: 15px;
     }
 
@@ -794,7 +813,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 59%;
+        width: 63%;
     }
 }
 
@@ -837,7 +856,8 @@ footer {
         font-size: 13px;
     }
 
-    #hide_Btn, #go_Back_Card {
+    #hide_Btn,
+    #go_Back_Card {
         font-size: 12px;
     }
 
@@ -932,7 +952,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 73%;
+        width: 77%;
     }
 }
 
@@ -959,7 +979,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 78%;
+        width: 83%;
     }
 }
 
@@ -1009,7 +1029,11 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 82%;
+        width: 87%;
+    }
+
+    .full_Screen_Comment img {
+        width: 90%;
     }
 }
 
@@ -1017,7 +1041,9 @@ footer {
 
 /* 465px */
 @media(max-width:465px) {
-    #hide_Btn, #go_Back_Card {
+
+    #hide_Btn,
+    #go_Back_Card {
         font-size: 10px;
     }
 
@@ -1050,7 +1076,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 85%;
+        width: 89%;
     }
 }
 
@@ -1105,7 +1131,11 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 87%;
+        width: 90%;
+    }
+
+    .full_Screen_Comment img {
+        width: 95%;
     }
 }
 
@@ -1127,7 +1157,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 88%;
+        width: 92%;
     }
 
 }
@@ -1156,7 +1186,8 @@ footer {
         font-size: 8px;
     }
 
-    #hide_Btn, #go_Back_Card {
+    #hide_Btn,
+    #go_Back_Card {
         font-size: 8px;
     }
 
@@ -1222,7 +1253,7 @@ footer {
     }
 
     .full_Screen_Image img {
-        width: 90%;
+        width: 95%;
     }
 
 }
