@@ -32,6 +32,30 @@ var cardDataCisarua = [
     },
 ];
 
+var cardDataCipanas = [
+    {
+        id: "Cisarua1",
+        cardNum: "1",
+        image: "almadina_baFqih_ID1/1.jpg",
+        location: "خلف مطعم بافقيه",
+        price: "مليون واربع مئة وخمسين روبية يوميا"
+    },
+    {
+        id: "Cisarua2",
+        cardNum: "2",
+        image: "taxas1_choprial_ID2/2.jpg",
+        location: "بداخل تشوبريال تشوكلت",
+        price: "اربعة مليون وخمس مئة روبية يوميا"
+    },
+    {
+        id: "Cisarua3",
+        cardNum: "3",
+        image: "badVilla_nearTaxas1_ID3/2.jpg",
+        location: "بداخل تشوبريال تشوكلت",
+        price: "ست مية وخمسين روبية يوميا"
+    },
+];
+
 /* Cisarua Villa Details Create */
 var villaDetailsCisarua = [
     null,
@@ -62,7 +86,33 @@ var villaDetailsCisarua = [
 ];
 
 
-
+var villaDetailsCipanas = [
+    null,
+    {
+        image: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
+        video: "almadina_baFqih_ID1/vid.mp4",
+        location: "خلف مطعم بافقيه",
+        description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل",
+        price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
+        villaNumber: "1"
+    },
+    {
+        image: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
+        video: "taxas1_choprial_ID2/vid.mp4",
+        location: "فيلا بداخل تشوبريال تشوكلت",
+        description: "في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل",
+        price: "السعر بعد الخصم = اربعة مليون واربع مئة وخمسين روبية يوميا",
+        villaNumber: "2"
+    },
+    {
+        image: ["badVilla_nearTaxas1_ID3/2.jpg", "badVilla_nearTaxas1_ID3/3.jpg", "badVilla_nearTaxas1_ID3/4.jpg", "badVilla_nearTaxas1_ID3/5.jpg", "badVilla_nearTaxas1_ID3/6.jpg", "badVilla_nearTaxas1_ID3/7.jpg", "badVilla_nearTaxas1_ID3/8.jpg", "badVilla_nearTaxas1_ID3/9.jpg", "badVilla_nearTaxas1_ID3/10.jpg", "badVilla_nearTaxas1_ID3/11.jpg",],
+        video: "badVilla_nearTaxas1_ID3/vid.mp4",
+        location: "فيلا بداخل تشوبريال تشوكلت",
+        description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل",
+        price: "السعر بعد الخصم = ست مية وخمسين روبية يوميا",
+        villaNumber: "3"
+    },
+];
 
 
 
