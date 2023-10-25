@@ -535,8 +535,7 @@ header {
 }
 
 .arrow_Icon:hover {
-    color: black;
-    background: white;
+    background: green;
 }
 
 #villa_Details_Text_Contact_Us {
