@@ -203,7 +203,7 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
     var villa_Details_Info = `
             <a onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
             <div id="villa_Details_Video_Area">
-                <video controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video" loading="lazy">
+                <video controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video">
                     <source src=${villa.video} type="video/mp4">
                     خطأ، الفيديو لايعمل على هذا المتصفح.
                 </video>
