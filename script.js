@@ -122,7 +122,7 @@ page_Scroll = function () {
     var goDownToVillaDetails = document.getElementById("villa_Details_Text_Contact_Us");
     setTimeout(function () {
         goDownToVillaDetails.scrollIntoView();
-    }, 500);
+    }, 1000);
 };
 /* Booking Method */
 booking_Method.onclick = function () {
