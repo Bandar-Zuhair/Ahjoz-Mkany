@@ -1,1 +1,1147 @@
-@import url(https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap);#header_Nav,#my_Reply,#sec1_Intro,#sec1_Web_Intro,#sec2_Comments_Intro,#sec2_Intro,#villa_Details_Text,.villa_Info h1{text-align:center}html{scroll-behavior:smooth}*{font-family:'Readex Pro',sans-serif;padding:0;margin:0;box-sizing:border-box}body{background:#3b3b3b;color:#fff;user-select:none}.hide_Display{display:none}.full_Screen_Comment,.overlay,header{width:100%;display:flex;position:fixed}.full_Screen_Comment{bottom:0;right:0;height:100%;justify-content:center;align-items:center;z-index:998}.full_Screen_Comment img{width:65%;z-index:999;border:1px solid #fff;border-radius:30px;transition:.3s}.overlay{top:0;left:0;height:100%;justify-content:center;align-items:center;background-color:#3b3b3b;z-index:997}header{background-color:#000;z-index:996;padding:0 0 10px;justify-content:flex-end}#header_Info,#sec1_Intro{display:flex;flex-direction:column;width:100%;direction:rtl}#header_Info{min-height:100px;justify-content:end;align-items:center}#header_Info h1{display:flex;justify-content:center;align-items:center;color:#fff;width:100%;padding:10px 15px 20px 10px;font-size:20px;font-weight:700;cursor:default}#header_Nav{width:50%;display:flex;justify-content:space-between;align-items:center}#all_Comments_Area,#sec1{min-height:100px;justify-content:center}#PDF_File_Div a,#go_Back_Card,#header_Nav a,#hide_Btn,#show_Btn,#villa_Details_Text_Contact_Us{background:#292626;text-decoration:none;font-size:17px;font-weight:lighter;padding:6px 10px;color:#fff;border:1px solid #fff;border-radius:30px;cursor:pointer;transition:.1s}#discount_Text,#villa_Details_Text_Villa_Id{padding:10px 14px}#PDF_File_Div a:hover,#go_Back_Card:hover,#header_Nav a:hover,#hide_Btn:hover,#show_Btn:hover,#villa_Details_Text_Contact_Us:hover{background:#4d4242;color:#fff}#hide_Btn{position:fixed;left:12px;top:12px}#show_Btn{color:#fff;background:#000;z-index:996;position:fixed;left:12px;top:12px}#go_Back_Card{position:fixed;right:12px;top:12px;z-index:996;border:1px solid orange}#sec1{display:flex;padding:140px 0 30px}#sec1_Intro{min-height:100px;justify-content:space-between;align-items:center}#sec1_Web_Intro,#sec2{flex-direction:column;display:flex}#sec1_Web_Intro{direction:rtl;min-height:10px;width:100%;justify-content:space-between;align-items:center}#sec1_Web_Intro h1{font-size:20px;font-weight:lighter;cursor:default;margin-bottom:20px}#icon{font-size:150px;padding:10px 30px 5px}#discount_Text{font-size:20px;font-weight:lighter;cursor:default;border:5px solid #5e5e5e;border-radius:30px}#sec2{align-items:center;min-height:100px}#sec2_Intro{width:100%;padding:10px;display:flex;flex-direction:column;justify-content:center;align-items:center}#all_Comments_Area h1,#sec2_Comments_Intro h1,#sec2_Intro h1{font-size:20px;font-weight:lighter}#sec2_Icon{font-size:150px;padding:10px}#sec2_Comments_Intro{padding:0 0 30px}#all_Comments_Area{direction:rtl;width:100%;display:flex}.comment_Card{margin:0 10px;width:900px;min-height:500px;display:flex;justify-content:center;overflow:hidden}#comment_Image{width:100%;display:flex;flex-direction:row;justify-content:space-around;align-items:center}#comment_Image img{width:80%;border:1px solid #fff;border-radius:30px;cursor:pointer}#my_Reply{margin:10px;display:flex;justify-content:center}#my_Reply h1{color:#0ff;padding:12px 16px;font-size:20px;font-weight:lighter;cursor:default}#sec3{padding:70px 0}#sec3_Content{width:100%;height:160px;display:flex;flex-direction:column;justify-content:space-between;align-items:center}#sec3_Content div{width:40%;display:flex;align-items:center;justify-content:space-around}#sec3_Content div a{text-decoration:none;color:#fff;font-size:20px;font-weight:lighter;border:2px solid #fff;border-radius:30px;padding:14px 18px;cursor:pointer;transition:.3s}#sec3_Content div a:hover{transform:scale(1.1);background:green}#sec4,#sec5,#sec6{direction:rtl}.intro_Area{background:#222020;width:100%;display:flex;justify-content:center;align-items:center}.choose_Area_Intro,.intro_Area h1{font-size:30px;padding:20px;font-weight:lighter;color:#0f0;cursor:default}.villa_Area{display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;padding:10px}.villa_Card{direction:ltr;background:#000;display:flex;justify-content:center;align-items:center;flex-direction:row;width:340px;border:1px solid #fff;border-radius:30px;overflow:hidden;cursor:pointer;margin:15px;transition:.5s}.villa_Card:hover{transform:scale(1.1)}.villa_Card img{width:50%}.villa_Info{min-height:250px;padding:0 15px;display:flex;flex-direction:column;align-items:center;justify-content:space-around}.villa_Info h1{line-height:1.5;font-size:15px;font-weight:lighter}#villa_Details_Text_Price,.villa_Info .price{color:#0f0}.villa_Info .villa_id{border:1px solid #fff;border-radius:50px;font-size:14px;font-weight:lighter;padding:4px 8px}#villa_Details_Area{direction:ltr;display:flex;align-items:center;justify-content:center;padding-bottom:50px}.villa_Details_Card{display:flex;justify-content:space-between;padding:0 20px;align-items:center}#villa_Details_Text_Div{display:flex;flex-direction:column;align-items:center;width:70%;margin:0 0 0 20px}#villa_Details_Video_Area{width:20%;display:flex;justify-content:center;align-items:center;margin-left:200px}#villa_Details_Video_Area video{width:100%;border-radius:30px;cursor:pointer}#PDF_File_Div{width:100%;display:flex;justify-content:center;align-items:center}#PDF_File_Div a{color:#0f0;padding:8px 12px;margin:10px;font-size:20px}#villa_Details_Text{width:100%;display:flex;flex-direction:column;align-items:center;min-height:5px}#villa_Details_Text h1{line-height:1.5;text-align:center;font-size:15px;font-weight:lighter;cursor:default;margin:10px 0 5px}.arrow_Icon{color:#fff;font-size:35px;font-weight:lighter;border:1px solid #fff;border-radius:50px;cursor:pointer;transition:.2s}.arrow_Icon:hover{background:green}#villa_Details_Text_Contact_Us{font-size:15px;padding:10px 14px;margin-bottom:20px;color:#0f0}@media(max-width:1500px){.full_Screen_Comment img{width:75%}#villa_Details_Video_Area{width:25%}}@media(max-width:1380px){#sec3_Content div{width:50%}.full_Screen_Comment img{width:80%}#villa_Details_Video_Area{width:27%;margin-left:100px}}@media(max-width:1180px){#header_Nav{width:70%}.villa_Area{padding:0}.villa_Card{width:300px}.villa_Info{min-height:200px}.villa_Info h1{font-size:13px}.villa_Info .villa_id{font-size:11px}#villa_Details_Video_Area{width:33%;margin-left:0}}@media(max-width:1050px){.villa_Card{width:250px}.villa_Info{min-height:150px}.villa_Info h1{font-size:11px}.villa_Info .villa_id{font-size:9px}.full_Screen_Comment img{width:85%}}@media(max-width:1025px){#header_Info{min-height:95px}#header_Nav a{font-size:15px}.intro_Area h1{font-size:25px}#sec3_Content div{width:60%}#villa_Details_Text h1,#villa_Details_Text_Contact_Us{font-size:14px}}@media(max-width:839px){.villa_Card{width:220px}.villa_Info{min-height:100px}.villa_Info h1{font-size:9px}.villa_Info .villa_id{font-size:7px}}@media(max-width:800px){#villa_Details_Text h1{font-size:12px}}@media(max-width:750px){#header_Nav{width:85%}#go_Back_Card,#hide_Btn{font-size:15px}#show_Btn{font-size:16px}.villa_Card{width:250px}.villa_Info{min-height:150px}.villa_Info h1{font-size:11px}.villa_Details_Card{padding:0 10px}#PDF_File_Div a{font-size:17px}.villa_Info .villa_id{font-size:9px}#villa_Details_Video_Area{width:36%}}@media(max-width:686px){#sec2{height:700px}}@media(max-width:600px){#header_Info{min-height:90px}#header_Info h1{font-size:17px}#header_Nav{width:100%;padding:0 30px}#header_Nav a,#show_Btn{font-size:13px}#go_Back_Card,#hide_Btn{font-size:12px}#sec1{padding:140px 0 20px}#icon,#sec2_Icon{font-size:140px}#PDF_File_Div a,#discount_Text,#my_Reply h1,#sec2_Comments_Intro,#sec2_Comments_Intro h1,#sec2_Intro h1{font-size:15px}#sec2{height:650px}#sec3{padding:40px 0}.intro_Area h1{font-size:20px}.villa_Card{width:220px}.villa_Info{min-height:100px}.villa_Info h1{font-size:9px}.villa_Info .villa_id{font-size:7px}.choose_Area_Intro{font-size:27px}#sec3_Content div a{font-size:18px}#sec3_Content div{width:70%}#villa_Details_Video_Area{width:40%}#villa_Details_Text h1{font-size:10px}#villa_Details_Text_Contact_Us{font-size:11px;padding:8px 12px}}@media(max-width:534px){#header_Nav{display:flex;justify-content:center;flex-wrap:wrap}#header_Nav a{margin:5px 5px 0}#sec1{padding:170px 0 20px}#villa_Details_Video_Area{width:43%}}@media(max-width:512px){#header_Info{min-height:130px}}@media(max-width:504px){#sec2{height:600px}.villa_Card{width:250px}.villa_Info{min-height:150px}.villa_Info h1{font-size:11px}.villa_Info .villa_id{font-size:9px}#villa_Details_Video_Area{width:46%}#PDF_File_Div a{font-size:13px;padding:6px 10px}.full_Screen_Comment img{width:90%}}@media(max-width:465px){#go_Back_Card,#hide_Btn{font-size:10px}#show_Btn{font-size:11px}#discount_Text{font-size:13px}.choose_Area_Intro{font-size:25px}#sec3_Content div{width:80%}#sec3_Content div a,.intro_Area h1{font-size:17px}.arrow_Icon{font-size:30px}#villa_Details_Video_Area{width:49%}}@media(max-width:410px){#PDF_File_Div a,#discount_Text,#header_Nav a{font-size:11px}#header_Info{min-height:125px}#sec1{padding:160px 0 10px}#sec1_Web_Intro h1{font-size:15px;margin-bottom:15px}#discount_Text{padding:8px 12px}#sec2{height:530px}#sec2_Comments_Intro,#sec2_Comments_Intro h1{font-size:12px}#my_Reply{font-size:112px}#villa_Details_Text h1{font-size:9px;margin:10px 0 0}#villa_Details_Text_Contact_Us{font-size:10px;padding:6px 10px}.full_Screen_Comment img{width:95%}}@media(max-width:387px){#my_Reply h1{font-size:12px}}@media(max-width:373px){#sec2{height:500px}}@media(max-width:350px){#header_Info{min-height:115px}#go_Back_Card,#header_Nav a,#hide_Btn,#villa_Details_Text h1{font-size:8px}#PDF_File_Div a,#discount_Text,#show_Btn,#villa_Details_Text_Contact_Us,.villa_Info h1{font-size:9px}#sec1{padding:150px 0 10px}.intro_Area h1{font-size:15px}#sec1_Web_Intro h1,#sec2_Intro h1{font-size:12px}#sec2_Comments_Intro h1{font-size:10px}.villa_Card{width:220px}.villa_Info{min-height:100px}.villa_Info .villa_id{font-size:7px}}@media(max-width:320px){#sec2{height:450px}#my_Reply h1{font-size:10px}#villa_Details_Video_Area{width:70%}#villa_Details_Text h1{font-size:7px}}
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+/* html */
+html {
+    scroll-behavior: smooth;
+}
+
+/* All */
+* {
+    font-family: 'Readex Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: rgb(59, 59, 59);
+    color: white;
+    user-select: none;
+}
+
+
+/* Unknow Effects */
+.hide_Display {
+    display: none;
+}
+
+
+.full_Screen_Comment {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+}
+
+.full_Screen_Comment img {
+    width: 65%;
+    z-index: 999;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 59, 59, 1);
+    z-index: 997;
+}
+
+
+
+
+
+
+/* Header */
+header {
+    background-color: black;
+    position: fixed;
+    z-index: 996;
+    width: 100%;
+    padding: 0 0 10px 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#header_Info {
+    direction: rtl;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#header_Info h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: default;
+    padding-right: 15px;
+}
+
+#header_Nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#header_Nav a,
+#hide_Btn,
+#show_Btn,
+#PDF_File_Div button,
+#villa_Details_Text_Contact_Us,
+#go_Back_Card {
+    background: rgb(41, 38, 38);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: lighter;
+    padding: 6px 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+#header_Nav a:hover,
+#hide_Btn:hover,
+#show_Btn:hover,
+#PDF_File_Div button:hover,
+#villa_Details_Text_Contact_Us:hover,
+#go_Back_Card:hover {
+    background: rgb(77, 66, 66);
+    color: white;
+}
+
+#hide_Btn {
+    position: fixed;
+    left: 12px;
+    top: 12px;
+}
+
+#show_Btn {
+    color: white;
+    background: rgb(0, 0, 0);
+    z-index: 996;
+    position: fixed;
+    left: 12px;
+    top: 12px;
+}
+
+#go_Back_Card {
+    position: fixed;
+    right: 12px;
+    top: 12px;
+    z-index: 996;
+    border: 1px solid orange;
+}
+
+
+
+/* Introduction */
+#sec1 {
+    display: flex;
+    justify-content: center;
+    padding: 140px 0 30px 0;
+    min-height: 100px;
+}
+
+#sec1_Intro {
+    direction: rtl;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#sec1_Web_Intro {
+    direction: rtl;
+    min-height: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#sec1_Web_Intro h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+#icon {
+    font-size: 150px;
+    padding: 10px 30px 5px 30px;
+}
+
+#discount_Text {
+    font-size: 20px;
+    font-weight: lighter;
+    cursor: default;
+    padding: 10px 14px;
+    border: 5px solid rgb(94, 94, 94);
+    border-radius: 30px;
+}
+
+
+
+/* Customers Comments */
+#sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+}
+
+#sec2_Intro {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#sec2_Intro h1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#sec2_Icon {
+    font-size: 150px;
+    padding: 10px;
+}
+
+#sec2_Comments_Intro {
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+#sec2_Comments_Intro h1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#all_Comments_Area {
+    direction: rtl;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#all_Comments_Area h1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.comment_Card {
+    margin: 0px 10px;
+    width: 900px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#comment_Image {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#comment_Image img {
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#my_Reply {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#my_Reply h1 {
+    color: rgb(0, 255, 255);
+    padding: 12px 16px;
+    font-size: 20px;
+    font-weight: lighter;
+    cursor: default;
+}
+
+
+/* Choose Your Area */
+#sec3 {
+    padding: 70px 0;
+    margin-bottom: 50px;
+}
+
+#sec3_Content {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec3_Content div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#sec3_Content div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 14px 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#sec3_Content div a:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* All Villa Cards */
+#sec4,
+#sec5 {
+    direction: rtl;
+    margin-bottom: 100px;
+}
+
+.intro_Area {
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_Area h1,
+.choose_Area_Intro {
+    font-size: 30px;
+    padding: 20px;
+    font-weight: lighter;
+    color: rgb(0, 255, 0);
+    cursor: default;
+}
+
+.villa_Area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.villa_Card {
+    direction: ltr;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 340px;
+    border: 1px solid white;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px;
+    transition: all 0.5s ease;
+}
+
+.villa_Card:hover {
+    transform: scale(1.1);
+}
+
+.villa_Card img {
+    width: 50%;
+}
+
+.villa_Info {
+    min-height: 250px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.villa_Info h1 {
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.villa_Info .price {
+    color: rgb(0, 255, 0);
+}
+
+.villa_Info .villa_id {
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 4px 8px;
+}
+
+
+
+/* Villa Details */
+#villa_Details_Area {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.villa_Details_Card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 50px 20px;
+    align-items: center;
+}
+
+#villa_Details_Text_Div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 0 0 20px;
+}
+
+#villa_Details_Video_Area {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+#villa_Details_Video_Area video {
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#PDF_File_Div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#PDF_File_Div button {
+    color: rgb(0, 255, 0);
+    padding: 8px 12px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#villa_Details_Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 5px;
+}
+
+#villa_Details_Text h1 {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    cursor: default;
+    margin: 10px 0 5px 0;
+}
+
+#villa_Details_Text_Price {
+    color: rgb(0, 255, 0);
+}
+
+#villa_Details_Text_Villa_Id {
+    padding: 10px 14px;
+}
+
+.arrow_Icon {
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.arrow_Icon:hover {
+    background: green;
+}
+
+#villa_Details_Text_Contact_Us {
+    font-size: 15px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    color: rgb(0, 255, 0);
+}
+
+
+
+
+/* Media Queries */
+/* 1500px */
+@media(max-width:1500px) {
+    .full_Screen_Comment img {
+        width: 75%;
+    }
+
+    #villa_Details_Video_Area {
+        width: 25%;
+    }
+}
+
+
+
+
+/* 1380px */
+@media(max-width:1380px) {
+    #sec3_Content div {
+        width: 50%;
+    }
+
+    .full_Screen_Comment img {
+        width: 80%;
+    }
+
+    #villa_Details_Video_Area {
+        width: 27%;
+        margin-left: 100px;
+    }
+}
+
+
+/* 1180px */
+@media(max-width:1180px) {
+    #header_Nav {
+        width: 70%;
+    }
+
+    .villa_Area {
+        padding: 0;
+    }
+
+    .villa_Card {
+        width: 300px;
+    }
+
+    .villa_Info {
+        min-height: 200px;
+    }
+
+    .villa_Info h1 {
+        font-size: 13px;
+    }
+
+    .villa_Info .villa_id {
+        font-size: 11px;
+    }
+
+    #villa_Details_Video_Area {
+        width: 33%;
+        margin-left: 0;
+    }
+}
+
+
+
+/* 1050px */
+@media(max-width:1050px) {
+    .villa_Card {
+        width: 250px;
+    }
+
+    .villa_Info {
+        min-height: 150px;
+    }
+
+    .villa_Info h1 {
+        font-size: 11px;
+    }
+
+    .villa_Info .villa_id {
+        font-size: 9px;
+    }
+
+    .full_Screen_Comment img {
+        width: 85%;
+    }
+}
+
+
+/* 1025px */
+@media(max-width:1025px) {
+    #header_Info {
+        min-height: 95px;
+    }
+
+    #header_Nav a {
+        font-size: 15px;
+    }
+
+    .intro_Area h1 {
+        font-size: 25px;
+    }
+
+    #sec3_Content div {
+        width: 60%;
+    }
+
+    #villa_Details_Text h1 {
+        font-size: 14px;
+    }
+
+    #villa_Details_Text_Contact_Us {
+        font-size: 14px;
+    }
+}
+
+
+/* 839px */
+@media(max-width:839px) {
+    .villa_Card {
+        width: 220px;
+    }
+
+    .villa_Info {
+        min-height: 100px;
+    }
+
+    .villa_Info h1 {
+        font-size: 9px;
+    }
+
+    .villa_Info .villa_id {
+        font-size: 7px;
+    }
+}
+
+
+/* 800px */
+@media(max-width:800px) {
+
+    #villa_Details_Text h1 {
+        font-size: 12px;
+    }
+}
+
+
+
+/* 750px */
+@media(max-width:750px) {
+    #header_Nav {
+        width: 85%;
+    }
+
+    #hide_Btn,
+    #go_Back_Card {
+        font-size: 15px;
+    }
+
+    #show_Btn {
+        font-size: 16px;
+    }
+
+    .villa_Card {
+        width: 250px;
+    }
+
+    .villa_Info {
+        min-height: 150px;
+    }
+
+    .villa_Info h1 {
+        font-size: 11px;
+    }
+
+    .villa_Details_Card {
+        padding: 0 10px 50px 10px;
+    }
+
+    #PDF_File_Div button {
+        font-size: 17px;
+    }
+
+    .villa_Info .villa_id {
+        font-size: 9px;
+    }
+
+    #villa_Details_Video_Area {
+        width: 36%;
+    }
+}
+
+
+
+/* 686px */
+@media(max-width:686px) {
+    #sec2 {
+        height: 700px;
+    }
+}
+
+
+
+/* 600px */
+@media(max-width:600px) {
+    #header_Info {
+        min-height: 90px;
+    }
+
+    #header_Info h1 {
+        font-size: 17px;
+    }
+
+    #header_Nav {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    #header_Nav a {
+        font-size: 13px;
+    }
+
+    #hide_Btn,
+    #go_Back_Card {
+        font-size: 12px;
+    }
+
+    #show_Btn {
+        font-size: 13px;
+    }
+
+    #sec1 {
+        padding: 140px 0 20px 0;
+    }
+
+    #icon {
+        font-size: 140px;
+    }
+
+    #discount_Text {
+        font-size: 15px;
+    }
+
+    #sec2 {
+        height: 650px;
+    }
+
+    #sec2_Intro h1 {
+        font-size: 15px;
+    }
+
+    #sec2_Icon {
+        font-size: 140px;
+    }
+
+    #sec2_Comments_Intro {
+        font-size: 15px;
+    }
+
+    #sec2_Comments_Intro h1 {
+        font-size: 15px;
+    }
+
+    #my_Reply h1 {
+        font-size: 15px;
+    }
+
+    #sec3 {
+        padding: 40px 0;
+    }
+
+    .intro_Area h1 {
+        font-size: 20px;
+    }
+
+    .villa_Card {
+        width: 220px;
+    }
+
+    .villa_Info {
+        min-height: 100px;
+    }
+
+    .villa_Info h1 {
+        font-size: 9px;
+    }
+
+    .villa_Info .villa_id {
+        font-size: 7px;
+    }
+
+    #PDF_File_Div button {
+        font-size: 15px;
+    }
+
+
+    .choose_Area_Intro {
+        font-size: 27px;
+    }
+
+    #sec3_Content div a {
+        font-size: 18px;
+    }
+
+    #sec3_Content div {
+        width: 70%;
+    }
+
+    #villa_Details_Video_Area {
+        width: 40%;
+    }
+
+    #villa_Details_Text h1 {
+        font-size: 10px;
+    }
+
+    #villa_Details_Text_Contact_Us {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+/* 534px */
+@media(max-width:534px) {
+    #header_Nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #header_Nav a {
+        margin: 5px 5px 0 5px;
+    }
+
+    #sec1 {
+        padding: 170px 0 20px 0;
+    }
+
+    #villa_Details_Video_Area {
+        width: 43%;
+    }
+}
+
+
+
+/* 512px */
+@media(max-width:512px) {
+    #header_Info {
+        min-height: 130px;
+    }
+}
+
+
+
+/* 504px */
+@media(max-width:504px) {
+    #sec2 {
+        height: 600px;
+    }
+
+    .villa_Card {
+        width: 250px;
+    }
+
+    .villa_Info {
+        min-height: 150px;
+    }
+
+    .villa_Info h1 {
+        font-size: 11px;
+    }
+
+    .villa_Info .villa_id {
+        font-size: 9px;
+    }
+
+    #villa_Details_Video_Area {
+        width: 46%;
+    }
+
+    #PDF_File_Div button {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .full_Screen_Comment img {
+        width: 90%;
+    }
+}
+
+
+
+/* 465px */
+@media(max-width:465px) {
+
+    #hide_Btn,
+    #go_Back_Card {
+        font-size: 10px;
+    }
+
+    #show_Btn {
+        font-size: 11px;
+    }
+
+    #discount_Text {
+        font-size: 13px;
+    }
+
+    .choose_Area_Intro {
+        font-size: 25px;
+    }
+
+    #sec3_Content div {
+        width: 80%;
+    }
+
+    #sec3_Content div a {
+        font-size: 17px;
+    }
+
+    .intro_Area h1 {
+        font-size: 17px;
+    }
+
+    .arrow_Icon {
+        font-size: 30px;
+    }
+
+    #villa_Details_Video_Area {
+        width: 49%;
+    }
+}
+
+
+
+/* 410px */
+@media(max-width:410px) {
+    #header_Info {
+        min-height: 125px;
+    }
+
+    #header_Nav a {
+        font-size: 11px;
+    }
+
+    #sec1 {
+        padding: 160px 0 10px 0;
+    }
+
+    #sec1_Web_Intro h1 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    #discount_Text {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    #sec2 {
+        height: 530px;
+    }
+
+    #sec2_Comments_Intro {
+        font-size: 12px;
+    }
+
+    #sec2_Comments_Intro h1 {
+        font-size: 12px;
+    }
+
+    #my_Reply {
+        font-size: 112px;
+    }
+
+    #PDF_File_Div button {
+        font-size: 11px;
+    }
+
+    #villa_Details_Text h1 {
+        font-size: 9px;
+        margin: 10px 0 0 0;
+    }
+
+    #villa_Details_Text_Contact_Us {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .full_Screen_Comment img {
+        width: 95%;
+    }
+}
+
+
+
+/* 387px */
+@media(max-width:387px) {
+    #my_Reply h1 {
+        font-size: 12px;
+    }
+}
+
+
+
+/* 373px */
+@media(max-width:373px) {
+    #sec2 {
+        height: 500px;
+    }
+}
+
+
+
+
+
+
+/* 350px */
+@media(max-width:350px) {
+    #header_Info {
+        min-height: 115px;
+    }
+
+    #header_Nav a {
+        font-size: 8px;
+    }
+
+    #hide_Btn,
+    #go_Back_Card {
+        font-size: 8px;
+    }
+
+    #show_Btn {
+        font-size: 9px;
+    }
+
+    #sec1 {
+        padding: 150px 0 10px 0;
+    }
+
+    .intro_Area h1 {
+        font-size: 15px;
+    }
+
+    #sec2_Intro h1 {
+        font-size: 12px;
+    }
+
+    #sec1_Web_Intro h1 {
+        font-size: 12px;
+    }
+
+    #discount_Text {
+        font-size: 9px;
+    }
+
+    #sec2_Comments_Intro h1 {
+        font-size: 10px;
+    }
+
+    .villa_Card {
+        width: 220px;
+    }
+
+    .villa_Info {
+        min-height: 100px;
+    }
+
+    .villa_Info h1 {
+        font-size: 9px;
+    }
+
+    .villa_Info .villa_id {
+        font-size: 7px;
+    }
+
+    #PDF_File_Div button {
+        font-size: 9px;
+    }
+
+    #villa_Details_Text h1 {
+        font-size: 8px;
+    }
+
+    #villa_Details_Text_Contact_Us {
+        font-size: 9px;
+    }
+}
+
+
+
+/* 320px */
+@media(max-width:320px) {
+    #sec2 {
+        height: 450px;
+    }
+
+    #my_Reply h1 {
+        font-size: 10px;
+    }
+
+    #villa_Details_Video_Area {
+        width: 70%;
+    }
+
+    #villa_Details_Text h1 {
+        font-size: 7px;
+    }
+}
