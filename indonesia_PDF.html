@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="احجز مكاني، احجز مكاني اندونيسيا، فلل اندونيسيا، حجز فلل اندونيسيا، استئجار فلل اندونيسيا، احجز مكاني فيلا، فيلا اندونيسيا، فيلا اندونيسيا، حجز فلل استئجار فلل">
+    <title>PDF</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="show_PDF"></div>
+    <script>
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        const pdfFile = getQueryParam('pdf');
+        if (pdfFile) {
+            const show_PDF = document.getElementById('show_PDF');
+            const embedTag = document.createElement('embed');
+            embedTag.src = pdfFile;
+            embedTag.type = 'application/pdf';
+            embedTag.width = '100%';
+            embedTag.height = '960px';
+            show_PDF.appendChild(embedTag);
+        }
+    </script>
+</body>
+</html>
