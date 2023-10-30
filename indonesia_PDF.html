@@ -20,7 +20,6 @@
             return urlParams.get(name);
         }
         const pdfFile = getQueryParam('pdf');
-        if (pdfFile) {
             const show_PDF = document.getElementById('show_PDF');
             const embedTag = document.createElement('embed');
             embedTag.src = pdfFile;
@@ -28,7 +27,6 @@
             embedTag.width = '100%';
             embedTag.height = '960px';
             show_PDF.appendChild(embedTag);
-        }
     </script>
 </body>
 </html>
