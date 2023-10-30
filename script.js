@@ -72,7 +72,7 @@ var villaDetailsCisarua = [
     null,
     {
         video: "almadina_baFqih_ID1/vid1.mp4",
-        picPDF: "almadina_baFqih_ID1/pic1.pdf",
+        picPDF: "almadina_baFqih_ID1/VILLA_CISARUA_1.pdf",
         location: "خلف مطعم بافقيه",
         description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل",
         price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
@@ -115,22 +115,6 @@ var villaDetailsCipanas = [
 
 
 
-
-/* ON Reload */
-onload = function () {
-    setTimeout(function () {
-        document.getElementById("sec1").scrollIntoView();
-    }, 1);
-};
-/* Card Area To The Center */
-to_The_Center = function (id) {
-    var targetedArea = document.getElementById(id);
-    var areaTop = targetedArea.getBoundingClientRect().top;
-    var offsetArea = areaTop - (window.innerHeight / 2 - targetedArea.clientHeight / 2);
-    window.scrollBy({
-        top: offsetArea,
-    });
-};
 /* Scroll Down To Villa Details */
 page_Scroll = function () {
     setTimeout(function () {
@@ -166,8 +150,8 @@ show_Btn.onclick = function () {
 /* Create Cards */
 function createVillaCard(data, areaId, areaName) {
     data.forEach((item, i) => {
-        const { cardNum, id, image, location, price } = item;
-        const villaCard = document.createElement("div");
+        var { cardNum, id, image, location, price } = item;
+        var villaCard = document.createElement("div");
         villaCard.className = "villa_card";
 
         villaCard.innerHTML = `
@@ -177,6 +161,7 @@ function createVillaCard(data, areaId, areaName) {
             <h1>${location}</h1>
             <h1 class="price">${price}</h1>
             <h1 class="villa_id">رقم الفيلا ${i + 1}</h1>
+            <h1 class="villa_Area_Name">${areaName}</h1>
           </div>
         </div>
       `;
@@ -208,7 +193,7 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
 
             <div id="villa_Details_Text_Div">
                 <div id="PDF_File_Div">
-                    <button onclick="window.open('${villa.picPDF}', '_blank')">صور الفيلا</button>
+                    <a onclick="take_PDF_File('${villa.picPDF}');">صور الفيلا</a>
                 </div>
 
                 <div id="villa_Details_Text">
@@ -225,9 +210,16 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
     villa_Details_Area.innerHTML = "";
     villa_Details_Area.appendChild(villa_Details_Card);
 
+    take_PDF_File = function (picPDF) {
+        var pdfViewerURL = "indonesia_PDF.html?pdf=" + encodeURIComponent(picPDF);
+        var pdfWindow = window.open(pdfViewerURL, "_blank");
+        if (pdfWindow) {
+            pdfWindow.focus();
+        }
+    }
+
     take_Me_Back = function (id) {
         var targetedCard = document.getElementById(id);
-
         var elementTop = targetedCard.getBoundingClientRect().top;
         var offset = elementTop - (window.innerHeight / 2 - targetedCard.clientHeight / 2);
         window.scrollBy({
