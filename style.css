@@ -112,7 +112,7 @@ header {
 #header_Nav a,
 #hide_Btn,
 #show_Btn,
-#PDF_File_Div button,
+#PDF_File_Div a,
 #villa_Details_Text_Contact_Us,
 #go_Back_Card {
     background: rgb(41, 38, 38);
@@ -130,7 +130,7 @@ header {
 #header_Nav a:hover,
 #hide_Btn:hover,
 #show_Btn:hover,
-#PDF_File_Div button:hover,
+#PDF_File_Div a:hover,
 #villa_Details_Text_Contact_Us:hover,
 #go_Back_Card:hover {
     background: rgb(77, 66, 66);
@@ -309,7 +309,6 @@ header {
 /* Choose Your Area */
 #sec3 {
     padding: 70px 0;
-    margin-bottom: 50px;
 }
 
 #sec3_Content {
@@ -351,7 +350,6 @@ header {
 #sec4,
 #sec5 {
     direction: rtl;
-    margin-bottom: 100px;
 }
 
 .intro_Area {
@@ -377,9 +375,11 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 .villa_Card {
+    background: red;
     direction: ltr;
     background: rgb(0, 0, 0);
     display: flex;
@@ -404,7 +404,7 @@ header {
 }
 
 .villa_Info {
-    min-height: 250px;
+    min-height: 280px;
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -427,7 +427,6 @@ header {
     border: 1px solid white;
     border-radius: 50px;
     font-size: 14px;
-    font-weight: lighter;
     padding: 4px 8px;
 }
 
@@ -477,7 +476,7 @@ header {
     align-items: center;
 }
 
-#PDF_File_Div button {
+#PDF_File_Div a {
     color: rgb(0, 255, 0);
     padding: 8px 12px;
     margin: 10px;
@@ -581,7 +580,7 @@ header {
     }
 
     .villa_Info {
-        min-height: 200px;
+        min-height: 220px;
     }
 
     .villa_Info h1 {
@@ -607,7 +606,7 @@ header {
     }
 
     .villa_Info {
-        min-height: 150px;
+        min-height: 190px;
     }
 
     .villa_Info h1 {
@@ -659,7 +658,7 @@ header {
     }
 
     .villa_Info {
-        min-height: 100px;
+        min-height: 150px;
     }
 
     .villa_Info h1 {
@@ -702,7 +701,7 @@ header {
     }
 
     .villa_Info {
-        min-height: 150px;
+        min-height: 170px;
     }
 
     .villa_Info h1 {
@@ -713,7 +712,7 @@ header {
         padding: 0 10px 50px 10px;
     }
 
-    #PDF_File_Div button {
+    #PDF_File_Div a {
         font-size: 17px;
     }
 
@@ -814,7 +813,7 @@ header {
     }
 
     .villa_Info {
-        min-height: 100px;
+        min-height: 150px;
     }
 
     .villa_Info h1 {
@@ -825,7 +824,7 @@ header {
         font-size: 7px;
     }
 
-    #PDF_File_Div button {
+    #PDF_File_Div a {
         font-size: 15px;
     }
 
@@ -901,7 +900,7 @@ header {
     }
 
     .villa_Info {
-        min-height: 150px;
+        min-height: 180px;
     }
 
     .villa_Info h1 {
@@ -916,7 +915,7 @@ header {
         width: 46%;
     }
 
-    #PDF_File_Div button {
+    #PDF_File_Div a {
         font-size: 13px;
         padding: 6px 10px;
     }
@@ -1011,7 +1010,7 @@ header {
         font-size: 112px;
     }
 
-    #PDF_File_Div button {
+    #PDF_File_Div a {
         font-size: 11px;
     }
 
@@ -1101,7 +1100,7 @@ header {
     }
 
     .villa_Info {
-        min-height: 100px;
+        min-height: 150px;
     }
 
     .villa_Info h1 {
@@ -1112,7 +1111,7 @@ header {
         font-size: 7px;
     }
 
-    #PDF_File_Div button {
+    #PDF_File_Div a {
         font-size: 9px;
     }
 
