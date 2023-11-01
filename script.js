@@ -125,7 +125,7 @@ page_Scroll = function () {
         window.scrollBy({
             top: scrollY,
         });
-    }, 500);
+    }, 1000);
 };
 
 Scroll_Up = function () {
