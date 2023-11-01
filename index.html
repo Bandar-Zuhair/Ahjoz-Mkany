@@ -23,8 +23,8 @@
         <div id="header_Info">
             <h1>احجز مكاني</h1>
             <nav id="header_Nav">
-                <a href="#Indonesia_Cisarua_Area">سيساروا</a>
-                <a href="#Indonesia_Cipanas_Area">شيباناس</a>
+                <a onclick="go_To_Area_Part('come_To_Cisarua')">سيساروا</a>
+                <a onclick="go_To_Area_Part('come_To_Cipanas')">شيباناس</a>
                 <a id="booking_Method">كيف احجز؟</a>
                 <a id="note_Btn">ملاحظة</a>
                 <a href="https://wa.me/+6282246117155" target="_blank">تواصل معنا</a>
@@ -78,8 +78,8 @@
         <div id="sec3_Content">
             <h1 class="choose_Area_Intro">المنطقة</h1>
             <div>
-                <a href="#Indonesia_Cipanas_Area">شيباناس</a>
-                <a href="#Indonesia_Cisarua_Area">سيساروا</a>
+                <a onclick="go_To_Area_Part('come_To_Cipanas')">شيباناس</a>
+                <a onclick="go_To_Area_Part('come_To_Cisarua')">سيساروا</a>
             </div>
         </div>
     </section>
@@ -87,13 +87,13 @@
 
 
     <!-- Horizontal Line for Cisarua -->
-    <hr id="Indonesia_Cisarua_Area" style="border: none; height: 130px; background-color: rgb(100, 100, 100, 0.5);">
+    <hr id="Indonesia_Cisarua_Area" style="border: none; height: 60px; background-color: rgba(145, 145, 145, 0.4); box-shadow: 0 0 5px 5px rgba(145, 145, 145, 0.4);">
 
 
 
     <!-- Choosing Villa In Cisarua Section -->
     <section id="sec4">
-        <div class="intro_Area">
+        <div class="intro_Area" id="come_To_Cisarua">
             <h1>احجز مكاني في منطقة سيساروا</h1>
         </div>
         <div id="cisarua_villa_Area_Id" class="villa_Area">
@@ -104,13 +104,13 @@
 
 
     <!-- Horizontal Line for Cipanas -->
-    <hr id="Indonesia_Cipanas_Area" style="border: none; height: 130px; background-color: rgb(100, 100, 100, 0.5);">
+    <hr id="Indonesia_Cipanas_Area" style="border: none; height: 60px; background-color: rgba(145, 145, 145, 0.4); box-shadow: 0 0 5px 5px rgba(145, 145, 145, 0.4);">
 
 
 
     <!-- Choosing Villa In Cipanas Section -->
     <section id="sec5">
-        <div class="intro_Area">
+        <div class="intro_Area" id="come_To_Cipanas">
             <h1>احجز مكاني في منطقة شيباناس</h1>
         </div>
         <div id="cipanas_villa_Area_Id" class="villa_Area">
@@ -121,7 +121,7 @@
 
 
     <!-- Horizontal Line for Cipanas -->
-    <hr id="hr_Villa_Details" style="border: none; height: 130px; background-color: rgb(100, 100, 100, 0.5);">
+    <hr id="hr_Villa_Details" style="border: none; height: 60px; background-color: rgba(145, 145, 145, 0.4); box-shadow: 0 0 5px 5px rgba(145, 145, 145, 0.4);">
 
 
 
@@ -139,7 +139,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 
 
     <script src="script.js"></script>
