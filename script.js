@@ -51,7 +51,7 @@ var cardDataCisarua = [
     {
         id: "Cisarua3",
         cardNum: "3",
-        image: "badVilla_nearTaxas1_ID3/2.jpg",
+        image: "real_choprial_ID3/2.jpg",
         location: "بداخل تشوبريال تشوكلت",
         price: "ست مية وخمسين روبية يوميا"
     },
@@ -87,8 +87,8 @@ var villaDetailsCisarua = [
         villaNumber: "2"
     },
     {
-        video: "badVilla_nearTaxas1_ID3/vid.mp4",
-        picPage: ["badVilla_nearTaxas1_ID3/2.jpg", "badVilla_nearTaxas1_ID3/3.jpg", "badVilla_nearTaxas1_ID3/4.jpg", "badVilla_nearTaxas1_ID3/5.jpg", "badVilla_nearTaxas1_ID3/6.jpg", "badVilla_nearTaxas1_ID3/7.jpg", "badVilla_nearTaxas1_ID3/8.jpg", "badVilla_nearTaxas1_ID3/9.jpg", "badVilla_nearTaxas1_ID3/10.jpg", "badVilla_nearTaxas1_ID3/11.jpg",],
+        video: "real_choprial_ID3/vid.mp4",
+        picPage: ["real_choprial_ID3/2.jpg", "real_choprial_ID3/3.jpg", "real_choprial_ID3/4.jpg", "real_choprial_ID3/5.jpg", "real_choprial_ID3/6.jpg", "real_choprial_ID3/7.jpg", "real_choprial_ID3/8.jpg", "real_choprial_ID3/9.jpg", "real_choprial_ID3/10.jpg", "real_choprial_ID3/11.jpg",],
         location: "فيلا بداخل تشوبريال تشوكلت",
         description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = ست مية وخمسين روبية يوميا",
