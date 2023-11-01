@@ -624,10 +624,6 @@ header {
         width: 70%;
     }
 
-    .villa_Area {
-        padding: 0;
-    }
-
     .villa_Card {
         width: 300px;
     }
@@ -1013,6 +1009,7 @@ header {
 
     .choose_Area_Intro {
         font-size: 25px;
+        padding: 15px;
     }
 
     #sec3_Content div {
@@ -1021,10 +1018,12 @@ header {
 
     #sec3_Content div a {
         font-size: 17px;
+        padding: 10px 14px;
     }
 
     .intro_Area h1 {
         font-size: 17px;
+        padding: 15px;
     }
 
     .arrow_Icon {
@@ -1144,6 +1143,16 @@ header {
 
     #sec1 {
         padding: 150px 0 10px 0;
+    }
+
+    .choose_Area_Intro {
+        font-size: 22px;
+        padding: 12px;
+    }
+
+    #sec3_Content div a {
+        font-size: 15px;
+        padding: 8px 12px;
     }
 
     .intro_Area h1 {
