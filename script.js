@@ -71,26 +71,26 @@ var cardDataCipanas = [
 var villaDetailsCisarua = [
     null,
     {
-        video: "almadina_baFqih_ID1/vid1.mp4",
-        picPDF: "almadina_baFqih_ID1/VILLA_CISARUA_1.pdf",
+        video: "almadina_baFqih_ID1/vid.mp4",
+        picPage: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
         location: "خلف مطعم بافقيه",
-        description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل",
+        description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
         villaNumber: "1"
     },
     {
-        video: "taxas1_choprial_ID2/vid2.mp4",
-        picPDF: "taxas1_choprial_ID2/pic2.pdf",
+        video: "taxas1_choprial_ID2/vid.mp4",
+        picPage: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
         location: "فيلا بداخل تشوبريال تشوكلت",
-        description: "في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل",
+        description: "في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = اربعة مليون واربع مئة وخمسين روبية يوميا",
         villaNumber: "2"
     },
     {
-        video: "badVilla_nearTaxas1_ID3/vid3.mp4",
-        picPDF: "badVilla_nearTaxas1_ID3/pic3.pdf",
+        video: "badVilla_nearTaxas1_ID3/vid.mp4",
+        picPage: ["badVilla_nearTaxas1_ID3/2.jpg", "badVilla_nearTaxas1_ID3/3.jpg", "badVilla_nearTaxas1_ID3/4.jpg", "badVilla_nearTaxas1_ID3/5.jpg", "badVilla_nearTaxas1_ID3/6.jpg", "badVilla_nearTaxas1_ID3/7.jpg", "badVilla_nearTaxas1_ID3/8.jpg", "badVilla_nearTaxas1_ID3/9.jpg", "badVilla_nearTaxas1_ID3/10.jpg", "badVilla_nearTaxas1_ID3/11.jpg",],
         location: "فيلا بداخل تشوبريال تشوكلت",
-        description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل",
+        description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = ست مية وخمسين روبية يوميا",
         villaNumber: "3"
     },
@@ -113,14 +113,40 @@ var villaDetailsCipanas = [
 
 
 
-
-
 /* Scroll Down To Villa Details */
 page_Scroll = function () {
     setTimeout(function () {
-        document.getElementById("villa_Details_Text_Contact_Us").scrollIntoView();
+        var element = document.getElementById("villa_Details_Video_Area");
+        var elementRect = element.getBoundingClientRect();
+        var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        var scrollY = elementRect.bottom - viewHeight + 50;
+
+        window.scrollBy({
+            top: scrollY,
+        });
     }, 500);
 };
+
+Scroll_Up = function () {
+    var element = document.getElementById("villa_Details_Video_Area");
+    var elementRect = element.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    var scrollY = elementRect.bottom - viewHeight + 50;
+    window.scrollBy({
+        top: scrollY,
+    });
+};
+go_To_Area_Part = function (id) {
+    var goToAreaName = document.getElementById(id);
+    var goToAreaNameRect = goToAreaName.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    var scrollY = goToAreaNameRect.top - (viewHeight / 2) + (goToAreaNameRect.height / 2 + 150);
+    window.scrollBy({
+        top: scrollY,
+    });
+}
+
 /* Booking Method */
 booking_Method.onclick = function () {
     var arMethod = "1- اختار الفيلا الي تبغاها\n2- احفظ رقم الفيلا ومكانها واضغط على احجز الان\n3- ارسل رقم الفيلا ومكانها واسم اليوم او رقم التاريخ الي حاب تحجز فيه الفيلا عشان تشوف اذا كانت متاحه ولا لا\n4- الدفع سيكون مباشر وعند الحجز فقط"
@@ -174,66 +200,102 @@ createVillaCard(cardDataCipanas, cipanas_villa_Area_Id, 'شيباناس');
 
 
 
-
-
-
 /* Show Cards Details */
 show_Villa_Details = function (areaLocation, cardNum, id) {
     var areaSelected = areaLocation === 'سيساروا' ? villaDetailsCisarua : villaDetailsCipanas;
     var villa_Details_Card = document.createElement("div");
     villa_Details_Card.classList.add("villa_Details_Card");
 
+
     var villa = areaSelected[cardNum];
 
+
     var villa_Details_Info = `
-            <a onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
-            <div id="villa_Details_Video_Area">
-                <video src=${villa.video} controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video"></video>
+        <a onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
+        <div id="villa_Details_Video_Area">
+            <video src='${villa.video}' controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video"></video>
+        </div>
+
+        <div id="villa_Details_Text_Div">
+            <div id="villa_Details_Text">
+                <h1>${villa.location}</h1>
+                <h1>${villa.description}</h1>
+                <h1 id="villa_Details_Text_Price">${villa.price}</h1>
+                <h1 id="villa_Details_Text_Villa_Id">رقم الفيلا في ${areaLocation} ${villa.villaNumber}</h1>
+                <a id="villa_Details_Text_Contact_Us" href="https://wa.me/+6282246117155" target="_blank">احجز الان</a>
             </div>
+        </div>
+    `;
 
-            <div id="villa_Details_Text_Div">
-                <div id="PDF_File_Div">
-                    <a onclick="take_PDF_File('${villa.picPDF}');">صور الفيلا</a>
-                </div>
-
-                <div id="villa_Details_Text">
-                    <h1>${villa.location}</h1>
-                    <h1>${villa.description}</h1>
-                    <h1 id="villa_Details_Text_Price">${villa.price}</h1>
-                    <h1 id="villa_Details_Text_Villa_Id">رقم الفيلا في ${areaLocation} ${villa.villaNumber}</h1>
-                    <a id="villa_Details_Text_Contact_Us" href="https://wa.me/+6282246117155" target="_blank">احجز الان</a>
-                </div>
-
-            </div>
-        `;
     villa_Details_Card.innerHTML = villa_Details_Info;
     villa_Details_Area.innerHTML = "";
     villa_Details_Area.appendChild(villa_Details_Card);
 
-    take_PDF_File = function (picPDF) {
-        var pdfViewerURL = "indonesia_PDF.html?pdf=" + encodeURIComponent(picPDF);
-        var pdfWindow = window.open(pdfViewerURL, "_blank");
-        if (pdfWindow) {
-            pdfWindow.focus();
+    build_Big_Pic(villa.picPage);
+}
+function build_Big_Pic(picPage) {
+    // Clear all existing images in bigImgDiv
+    var bigImgDiv = document.getElementById('big_Pic_Div');
+    if (bigImgDiv) {
+        bigImgDiv.innerHTML = '';
+    } else {
+        bigImgDiv = document.createElement('div');
+        bigImgDiv.id = 'big_Pic_Div';
+    }
+
+    var bigPicTitle = document.createElement('h1');
+    bigPicTitle.textContent = 'صور الفيلا';
+    bigPicTitle.id = 'big_Pic_Title';
+    bigImgDiv.appendChild(bigPicTitle);
+
+    var goBackVillaDetails = document.createElement('a');
+    goBackVillaDetails.textContent = 'صعود';
+    goBackVillaDetails.id = 'go_Back_Villa_Details';
+    bigImgDiv.appendChild(goBackVillaDetails);
+
+    function handleScroll() {
+        var titleElement = document.getElementById('big_Pic_Title');
+        var titleOffsetTop = titleElement.offsetTop;
+
+        if (window.scrollY > titleOffsetTop + titleElement.clientHeight - 200) {
+            goBackVillaDetails.style.visibility = 'visible';
+        } else {
+            goBackVillaDetails.style.visibility = 'hidden';
         }
     }
 
-    take_Me_Back = function (id) {
-        var targetedCard = document.getElementById(id);
-        var elementTop = targetedCard.getBoundingClientRect().top;
-        var offset = elementTop - (window.innerHeight / 2 - targetedCard.clientHeight / 2);
-        window.scrollBy({
-            top: offset,
-        });
-        targetedCard.style.backgroundColor = "green";
-        targetedCard.style.borderColor = "orange";
+    window.addEventListener('scroll', handleScroll);
+
+    goBackVillaDetails.onclick = function () {
+        Scroll_Up();
+    }
+
+    for (var i = 0; i < picPage.length; i++) {
+        var imgCreate = document.createElement('img');
+        imgCreate.src = picPage[i];
+        imgCreate.alt = 'فلل اندونيسيا';
+        imgCreate.setAttribute('loading', 'lazy');
+        bigImgDiv.appendChild(imgCreate);
+    }
+
+    if (!document.getElementById('big_Pic_Div')) {
+        document.body.appendChild(bigImgDiv);
     }
 }
 
 
 
 
-
+function take_Me_Back(id) {
+    var targetedCard = document.getElementById(id);
+    var elementTop = targetedCard.getBoundingClientRect().top;
+    var offset = elementTop - (window.innerHeight / 2 - targetedCard.clientHeight / 2);
+    window.scrollBy({
+        top: offset,
+    });
+    targetedCard.style.backgroundColor = "green";
+    targetedCard.style.borderColor = "orange";
+}
 
 
 
