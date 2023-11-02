@@ -125,7 +125,7 @@ page_Scroll = function () {
         window.scrollBy({
             top: scrollY,
         });
-    }, 200);
+    }, 300);
 };
 
 Scroll_Up = function () {
@@ -150,13 +150,13 @@ go_To_Area_Part = function (id) {
 /* Booking Method */
 booking_Method.onclick = function () {
     var arMethod = "1- اختار الفيلا الي تبغاها\n2- احفظ رقم الفيلا ومكانها واضغط على احجز الان\n3- ارسل رقم الفيلا ومكانها واسم اليوم او رقم التاريخ الي حاب تحجز فيه الفيلا عشان تشوف اذا كانت متاحه ولا لا\n4- الدفع سيكون مباشر وعند الحجز فقط"
-    var enMethod = "\n\n1- Imgk the villa the want\n2- Remember the villa id and area\n3- Click on book now and send the villa number with it's area\n4- Send the name of the day or the number of a date to see if the villa you want is avalible or no\n5- The payment will be direct and only upon booking"
+    var enMethod = "\n\n1- Pick the villa you want\n2- Remember the villa id and area and then press on book now\n3- Send the villa number with it's area and the date that you want to book the villa to check if the villa you want is avalible or no\n4- The payment will be direct and only upon booking"
     alert(arMethod + enMethod);
 };
 /* Note */
 note_Btn.onclick = function () {
-    var arNote = "المشكلة الوحيدة الي راح تواجها في موقع احجز مكاني هي ان في بعض الاحيان تكون الفيلا الي تريد حجزها بالفعل محجوزة من شخص اخر، ف افضل حل لهذه المشكلة هو حجز اكثر من فيلا واحدة لكي تضمن مكانك في حال ان كانت الفلل الي اخترتها محجوزة بالفعل وواحدة منها تكون متاحة لك";
-    var enNote = "\n \nThe only problem that you might face in Ahjoz Mkany website is that sometimes the Villa you want is already taken by someone else, therfore The best solution to this problem is that you can book more than one Villa just in case if they were all taken then one of them might be available for you";
+    var arNote = "فلل اندونيسيا غالبا تكون محجوزة بالفعل وخصوصا في يوم السبت والأحد، وافضل حل لهذه المشكلة هو حجز اكثر من فيلا واحدة لكي تضمن مكانك في حال كانت الفلل الي اخترتها محجوزة بالفعل وواحدة منهم تكون متاحة لك";
+    var enNote = "\n \nVillas in Indonesia are often already booked, especially on Saturdays and Sundays, so the best solution for this problem is by booking more than one villa to guarantee your place in case if the villas you chose are already booked and one of them is available for you.";
     alert(arNote + enNote);
 };
 /* Hide & Show Header */
@@ -201,30 +201,26 @@ createVillaCard(cardDataCipanas, cipanas_villa_Area_Id, 'شيباناس');
 
 
 /* Show Cards Details */
-show_Villa_Details = function (areaLocation, cardNum, id) {
+function show_Villa_Details(areaLocation, cardNum, id) {
     var areaSelected = areaLocation === 'سيساروا' ? villaDetailsCisarua : villaDetailsCipanas;
     var villa_Details_Card = document.createElement("div");
     villa_Details_Card.classList.add("villa_Details_Card");
 
-
     var villa = areaSelected[cardNum];
-
-
     var villa_Details_Info = `
-        <a onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
-        <div id="villa_Details_Video_Area">
-            <video src='${villa.video}' controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video"></video>
+      <a onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
+      <div id="villa_Details_Video_Area">
+        <video src='${villa.video}' controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video"></video>
+      </div>
+      <div id="villa_Details_Text_Div">
+        <div id="villa_Details_Text">
+          <h1>${villa.location}</h1>
+          <h1>${villa.description}</h1>
+          <h1 id="villa_Details_Text_Price">${villa.price}</h1>
+          <h1 id="villa_Details_Text_Villa_Id">رقم الفيلا في ${areaLocation} ${villa.villaNumber}</h1>
+          <a id="villa_Details_Text_Contact_Us" href="https://wa.me/+6282246117155" target="_blank">احجز الان</a>
         </div>
-
-        <div id="villa_Details_Text_Div">
-            <div id="villa_Details_Text">
-                <h1>${villa.location}</h1>
-                <h1>${villa.description}</h1>
-                <h1 id="villa_Details_Text_Price">${villa.price}</h1>
-                <h1 id="villa_Details_Text_Villa_Id">رقم الفيلا في ${areaLocation} ${villa.villaNumber}</h1>
-                <a id="villa_Details_Text_Contact_Us" href="https://wa.me/+6282246117155" target="_blank">احجز الان</a>
-            </div>
-        </div>
+      </div>
     `;
 
     villa_Details_Card.innerHTML = villa_Details_Info;
@@ -236,77 +232,58 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
 
 
 
+
 function build_Big_Img(ImgPage) {
+    var createElem = (tag, props = {}) => Object.assign(document.createElement(tag), props);
+
     var bigImgDiv = document.getElementById('big_Img_Div');
-    if (bigImgDiv) {
-        bigImgDiv.innerHTML = '';
+    if (!bigImgDiv) {
+        bigImgDiv = createElem('div', { id: 'big_Img_Div' });
+        document.body.appendChild(bigImgDiv);
     } else {
-        bigImgDiv = document.createElement('div');
-        bigImgDiv.id = 'big_Img_Div';
+        bigImgDiv.innerHTML = '';
     }
 
-    var bigImgTitle = document.createElement('h1');
-    bigImgTitle.textContent = 'صور الفيلا';
-    bigImgTitle.id = 'big_Img_Title';
-    bigImgDiv.appendChild(bigImgTitle);
+    bigImgDiv.appendChild(createElem('h1', { textContent: 'صور الفيلا', id: 'big_Img_Title' }));
 
-    var goBackVillaDetails = document.createElement('a');
-    goBackVillaDetails.textContent = 'صعود';
-    goBackVillaDetails.id = 'go_Back_Villa_Details';
+    var goBackVillaDetails = createElem('a', { textContent: 'صعود', id: 'go_Back_Villa_Details' });
     bigImgDiv.appendChild(goBackVillaDetails);
 
-    function handleScroll() {
+    window.addEventListener('scroll', () => {
         var titleElement = document.getElementById('big_Img_Title');
-        var titleOffsetTop = titleElement.offsetTop;
-
-        if (window.scrollY > titleOffsetTop + titleElement.clientHeight - 200) {
-            goBackVillaDetails.style.visibility = 'visible';
-        } else {
-            goBackVillaDetails.style.visibility = 'hidden';
-        }
-    }
-
-    window.addEventListener('scroll', handleScroll);
-
+        goBackVillaDetails.style.visibility = window.scrollY > (titleElement.offsetTop + titleElement.clientHeight - 200) ? 'visible' : 'hidden';
+    });
     goBackVillaDetails.onclick = function () {
         Scroll_Up();
     }
 
-    for (var i = 0; i < ImgPage.length; i++) {
-        var imgCreate = document.createElement('img');
-        imgCreate.src = ImgPage[i];
-        imgCreate.id = 'big_Villa_Img';
-        imgCreate.alt = 'فلل اندونيسيا';
-        imgCreate.title = 'فلل اندونيسيا';
-        imgCreate.setAttribute('loading', 'lazy');
-        imgCreate.addEventListener('click', function () {
-            console.log(this.src);
-            var full_Screen_Img_Overlay = document.createElement('div');
-            full_Screen_Img_Overlay.classList.add("full_Screen_Img_Div");
-            var full_Screen_Img = document.createElement('img');
-            full_Screen_Img.src = this.src;
-            var exit_Full_Screen_Btn = document.createElement('a');
-            exit_Full_Screen_Btn.classList.add("exit_Full_Screen_Btn");
-            exit_Full_Screen_Btn.textContent = 'عودة';
-            exit_Full_Screen_Btn.onclick = function(){
-                document.body.removeChild(full_Screen_Img_Overlay);
-                full_Screen_Img_Overlay.removeChild(full_Screen_Img);
-                full_Screen_Img_Overlay.removeChild(exit_Full_Screen_Btn);
-            }
+    ImgPage.forEach(imgSrc => {
+        var imgCreate = createElem('img', {
+            src: imgSrc,
+            id: 'big_Villa_Img',
+            alt: 'فلل اندونيسيا',
+            title: 'فلل اندونيسيا',
+            loading: 'lazy'
+        });
 
-            full_Screen_Img_Overlay.appendChild(full_Screen_Img);
+        imgCreate.addEventListener('click', () => {
+            var full_Screen_Img_Overlay = createElem('div', { className: 'full_Screen_Img_Div' });
+            var exit_Full_Screen_Btn = createElem('a', {
+                className: 'exit_Full_Screen_Btn',
+                textContent: 'عودة',
+                onclick: () => document.body.removeChild(full_Screen_Img_Overlay)
+            });
+
+            full_Screen_Img_Overlay.appendChild(createElem('img', { src: imgCreate.src }));
             full_Screen_Img_Overlay.appendChild(exit_Full_Screen_Btn);
 
             document.body.appendChild(full_Screen_Img_Overlay);
         });
 
         bigImgDiv.appendChild(imgCreate);
-    }
-
-    if (!document.getElementById('big_Img_Div')) {
-        document.body.appendChild(bigImgDiv);
-    }
+    });
 }
+
 
 
 
@@ -318,106 +295,60 @@ function build_Big_Img(ImgPage) {
 
 
 function take_Me_Back(id) {
-    var targetedCard = document.getElementById(id);
-    var elementTop = targetedCard.getBoundingClientRect().top;
-    var offset = elementTop - (window.innerHeight / 2 - targetedCard.clientHeight / 2);
-    window.scrollBy({
-        top: offset,
-    });
-    targetedCard.style.backgroundColor = "green";
-    targetedCard.style.borderColor = "orange";
+    var card = document.getElementById(id);
+    var offset = card.getBoundingClientRect().top - (window.innerHeight / 2 - card.clientHeight / 2);
+    window.scrollBy({ top: offset });
+    card.style.backgroundColor = "green";
+    card.style.borderColor = "orange";
 }
 
 
 
 
+
 /* Create Comment Card */
-var commentNum = 0;
-var commentCard = document.createElement("div");
+var commentNum = 0, commentCard = document.createElement("div");
 commentCard.classList.add("comment_Card");
-var fullScreenImage = null;
-var overlay = null;
 
 function updateCommentInfo() {
-    var commentInfo = `
-    <div id="comment_Card">
-        <div id="comment_Image">
-            <ion-icon id="sec2_Arrow_Forward" class="arrow_Icon" name="arrow-forward-outline"></ion-icon>
-            <img id="comment_Info_Image" src="${commentData[commentNum].image}" alt="تعليقات موقع احجز مكاني" title="تعليقات موقع احجز مكاني">
-            <ion-icon id="sec2_Arrow_Back" class="arrow_Icon" name="arrow-back-outline"></ion-icon>
-        </div>
-        <div id="my_Reply">
-            <h1>${commentData[commentNum].reply}</h1>
-        </div>
-    </div>
-    `;
-
-    commentCard.innerHTML = commentInfo;
+    commentCard.innerHTML = `<div id="comment_Card"><div id="comment_Image"><ion-icon id="sec2_Arrow_Forward" class="arrow_Icon" name="arrow-forward-outline"></ion-icon><img id="comment_Info_Image" src="${commentData[commentNum].image}" alt="تعليقات موقع احجز مكاني" title="تعليقات موقع احجز مكاني"><ion-icon id="sec2_Arrow_Back" class="arrow_Icon" name="arrow-back-outline"></ion-icon></div><div id="my_Reply"><h1>${commentData[commentNum].reply}</h1></div></div>`;
     all_Comments_Area.appendChild(commentCard);
 
-    sec2_Arrow_Forward.onclick = function () {
+    sec2_Arrow_Forward.onclick = () => {
         commentNum = (commentNum + 1) % commentData.length;
         updateImageAndReply();
         sec2_Arrow_Forward.style.backgroundColor = "green";
+        setTimeout(() => sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)", 1500);
         sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
-        setTimeout(function () {
-            sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
-        }, 1500);
     };
 
-    sec2_Arrow_Back.onclick = function () {
+    sec2_Arrow_Back.onclick = () => {
         commentNum = (commentNum - 1 + commentData.length) % commentData.length;
         updateImageAndReply();
         sec2_Arrow_Back.style.backgroundColor = "green";
+        setTimeout(() => sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)", 1500);
         sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
-        setTimeout(function () {
-            sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
-        }, 1500);
     };
 
-    comment_Info_Image.onclick = function () {
-        openFullScreenImage(commentData[commentNum].image);
+    comment_Info_Image.onclick = () => {
+        console.log(commentData[commentNum].image);
+
+        var fullScreenCommentDiv = document.createElement("div");
+        fullScreenCommentDiv.classList.add("full_Screen_Comment_Div");
+        var returnButton = document.createElement('a');
+        returnButton.innerText = 'عودة';
+        returnButton.classList.add('exit_Full_Screen_Btn');
+        var fullScreenCommentImage = document.createElement("img");
+        fullScreenCommentImage.src = commentData[commentNum].image;
+        fullScreenCommentImage.alt = "تعليقات موقع احجز مكاني";
+        fullScreenCommentImage.title = "تعليقات موقع احجز مكاني";
+
+        fullScreenCommentDiv.appendChild(returnButton);
+        fullScreenCommentDiv.appendChild(fullScreenCommentImage);
+        document.body.appendChild(fullScreenCommentDiv);
+
+        returnButton.onclick = () => document.body.removeChild(fullScreenCommentDiv);
     };
-
-    function openFullScreenImage(src) {
-        fullScreenImage = document.createElement("div");
-        fullScreenImage.classList.add("full_Screen_Comment");
-
-        var fullScreenImageInfo = `
-        <img src="${src}" alt="احجز مكاني في فلل اندونيسيا">
-        `;
-
-        fullScreenImage.innerHTML = fullScreenImageInfo;
-
-        overlay = document.createElement("div");
-        overlay.classList.add("overlay");
-
-        document.body.appendChild(fullScreenImage);
-        document.body.appendChild(overlay);
-
-        fullScreenImage.onclick = function () {
-            closeFullScreenImage();
-        };
-
-        overlay.onclick = function () {
-            closeFullScreenImage();
-        };
-
-        window.addEventListener("scroll", function () {
-            closeFullScreenImage();
-        });
-    }
-
-    function closeFullScreenImage() {
-        if (fullScreenImage) {
-            document.body.removeChild(fullScreenImage);
-        }
-        if (overlay) {
-            document.body.removeChild(overlay);
-        }
-        fullScreenImage = null;
-        overlay = null;
-    }
 
     function updateImageAndReply() {
         comment_Info_Image.src = commentData[commentNum].image;
