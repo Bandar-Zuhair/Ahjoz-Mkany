@@ -48,27 +48,7 @@ body {
     box-shadow: 0px 0px 10px 1px black;
 }
 
-.full_Screen_Comment {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 998;
-}
-
-.full_Screen_Comment img {
-    height: 100vh;
-    z-index: 999;
-    border: 1px solid white;
-    border-radius: 30px;
-}
-
-
-.overlay {
+.full_Screen_Comment_Div {
     position: fixed;
     top: 0;
     left: 0;
@@ -78,25 +58,16 @@ body {
     justify-content: center;
     align-items: center;
     background: rgb(59, 59, 59);
-    z-index: 997;
+    z-index: 998;
 }
 
-#big_Img_Div {
-    background: rgb(59, 59, 59);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0 20px 0;
-}
-
-#big_Img_Div img {
-    width: 20%;
-    margin-bottom: 20px;
+.full_Screen_Comment_Div img {
+    height: 95vh;
+    z-index: 999;
     border: 1px solid black;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 1px black;
 }
-
 
 
 
@@ -132,7 +103,7 @@ header {
     width: 100%;
     padding: 10px 10px 20px 10px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     cursor: default;
     padding-right: 15px;
 }
@@ -217,7 +188,7 @@ header {
     z-index: 999;
     padding: 8px 12px;
     border: 1px solid orange;
-    box-shadow: 0px 0px 10px 1px black;
+    box-shadow: 0px 0px 10px 1px white;
 }
 
 
@@ -333,7 +304,6 @@ header {
     min-height: 500px;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 #comment_Image {
@@ -345,10 +315,24 @@ header {
 }
 
 #comment_Image img {
-    width: 80%;
+    width: 70%;
     border: 1px solid white;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.arrow_Icon {
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.arrow_Icon:hover {
+    background: green;
 }
 
 #my_Reply {
@@ -565,20 +549,6 @@ header {
     padding: 10px 14px;
 }
 
-.arrow_Icon {
-    color: white;
-    font-size: 35px;
-    font-weight: lighter;
-    border: 1px solid white;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.arrow_Icon:hover {
-    background: green;
-}
-
 #villa_Details_Text_Contact_Us {
     font-size: 15px;
     padding: 10px 14px;
@@ -601,6 +571,23 @@ header {
     box-shadow: 0px 0px 5px 1px white;
 }
 
+#big_Img_Div {
+    background: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+#big_Img_Div img {
+    width: 20%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 1px black;
+    cursor: pointer;
+}
+
 
 
 /* Media Queries */
@@ -615,8 +602,8 @@ header {
 
 /* 1500px */
 @media(max-width:1500px) {
-    .full_Screen_Comment img {
-        width: 75%;
+    .full_Screen_Comment_Div img {
+        height: 90vh;
     }
 
     #villa_Details_Video_Area {
@@ -632,13 +619,9 @@ header {
     #big_Img_Div img {
         width: 28%;
     }
-
+    
     #sec3_Content div {
         width: 50%;
-    }
-
-    .full_Screen_Comment img {
-        width: 80%;
     }
 
     #villa_Details_Video_Area {
@@ -650,6 +633,10 @@ header {
 
 /* 1180px */
 @media(max-width:1180px) {
+    .full_Screen_Comment_Div img {
+        height: 80vh;
+    }
+
     #header_Nav {
         width: 70%;
     }
@@ -684,6 +671,10 @@ header {
         width: 32%;
     }
 
+    .full_Screen_Comment_Div img {
+        height: 75vh;
+    }
+
     .villa_Card {
         width: 250px;
     }
@@ -699,15 +690,15 @@ header {
     .villa_Info .villa_id {
         font-size: 9px;
     }
-
-    .full_Screen_Comment img {
-        width: 85%;
-    }
 }
 
 
 /* 1025px */
 @media(max-width:1025px) {
+    .full_Screen_Comment_Div img {
+        height: 80vh;
+    }
+
     #header_Info {
         min-height: 95px;
     }
@@ -739,6 +730,10 @@ header {
     #big_Img_Div img {
         width: 40%;
     }
+
+    .full_Screen_Comment_Div img {
+        height: 45vh;
+    }
 }
 
 
@@ -765,6 +760,10 @@ header {
 
 /* 800px */
 @media(max-width:800px) {
+    .full_Screen_Comment_Div img {
+        height: 50vh;
+    }
+
     #big_Img_Div img {
         width: 45%;
     }
@@ -824,6 +823,9 @@ header {
 
 /* 686px */
 @media(max-width:686px) {
+    .full_Screen_Comment_Div img {
+        height: 45vh;
+    }
     #sec2 {
         height: 700px;
     }
@@ -833,6 +835,10 @@ header {
 
 /* 600px */
 @media(max-width:600px) {
+    .full_Screen_Comment_Div img {
+        height: 45vh;
+    }
+
     #big_Img_Div img {
         width: 55%;
     }
@@ -954,6 +960,10 @@ header {
 
 /* 534px */
 @media(max-width:534px) {
+    .full_Screen_Comment_Div img {
+        height: 35vh;
+    }
+
     #header_Nav {
         display: flex;
         justify-content: center;
@@ -1021,16 +1031,16 @@ header {
     #villa_Details_Video_Area {
         width: 44%;
     }
-
-    .full_Screen_Comment img {
-        width: 90%;
-    }
 }
 
 
 
 /* 465px */
 @media(max-width:465px) {
+    .full_Screen_Comment_Div img {
+        height: 30vh;
+    }
+
     #hide_Btn,
     #go_Back_Card {
         font-size: 10px;
@@ -1135,16 +1145,16 @@ header {
     .full_Screen_Img_Div img {
         height: 70vh;
     }
-
-    .full_Screen_Comment img {
-        width: 95%;
-    }
 }
 
 
 
 /* 387px */
 @media(max-width:387px) {
+    .full_Screen_Comment_Div img {
+        height: 35vh;
+    }
+
     #big_Img_Div img {
         width: 70%;
     }
@@ -1154,7 +1164,7 @@ header {
     }
 
     .full_Screen_Img_Div img {
-        height: 65vh;
+        height: 90vh;
     }
 }
 
@@ -1162,12 +1172,16 @@ header {
 
 /* 373px */
 @media(max-width:373px) {
-    #sec2 {
-        height: 500px;
+    .full_Screen_Comment_Div img {
+        height: 30vh;
     }
 
     .full_Screen_Img_Div img {
-        height: 60vh;
+        height: 85vh;
+    }
+
+    #sec2 {
+        height: 500px;
     }
 }
 
@@ -1178,6 +1192,14 @@ header {
 
 /* 350px */
 @media(max-width:350px) {
+    .full_Screen_Img_Div img {
+        height: 55vh;
+    }
+
+    .full_Screen_Comment_Div img {
+        height: 30vh;
+    }
+
     #header_Info {
         min-height: 115px;
     }
@@ -1252,10 +1274,6 @@ header {
     #villa_Details_Text_Contact_Us {
         font-size: 9px;
     }
-
-    .full_Screen_Img_Div img {
-        height: 55vh;
-    }
 }
 
 
@@ -1279,6 +1297,6 @@ header {
     }
 
     .full_Screen_Img_Div img {
-        height: 50vh;
+        height: 75vh;
     }
 }
