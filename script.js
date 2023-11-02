@@ -39,21 +39,21 @@ var cardDataCisarua = [
         cardNum: "1",
         image: "almadina_baFqih_ID1/1.jpg",
         location: "خلف مطعم بافقيه",
-        price: "مليون واربع مئة وخمسين روبية يوميا"
+        price: "مليون واربع مئة وخمسين روبية يوميا",
     },
     {
         id: "Cisarua2",
         cardNum: "2",
         image: "taxas1_choprial_ID2/2.jpg",
         location: "بداخل تشوبريال تشوكلت",
-        price: "اربعة مليون وخمس مئة روبية يوميا"
+        price: "اربعة مليون وخمس مئة روبية يوميا",
     },
     {
         id: "Cisarua3",
         cardNum: "3",
         image: "real_choprial_ID3/2.jpg",
         location: "بداخل تشوبريال تشوكلت",
-        price: "ست مية وخمسين روبية يوميا"
+        price: "ست مية وخمسين روبية يوميا",
     },
 ];
 /* Cipanas Card Data Create */
@@ -72,7 +72,7 @@ var villaDetailsCisarua = [
     null,
     {
         video: "almadina_baFqih_ID1/vid.mp4",
-        picPage: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
+        ImgPage: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
         location: "خلف مطعم بافقيه",
         description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
@@ -80,7 +80,7 @@ var villaDetailsCisarua = [
     },
     {
         video: "taxas1_choprial_ID2/vid.mp4",
-        picPage: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
+        ImgPage: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
         location: "فيلا بداخل تشوبريال تشوكلت",
         description: "في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = اربعة مليون واربع مئة وخمسين روبية يوميا",
@@ -88,7 +88,7 @@ var villaDetailsCisarua = [
     },
     {
         video: "real_choprial_ID3/vid.mp4",
-        picPage: ["real_choprial_ID3/2.jpg", "real_choprial_ID3/3.jpg", "real_choprial_ID3/4.jpg", "real_choprial_ID3/5.jpg", "real_choprial_ID3/6.jpg", "real_choprial_ID3/7.jpg", "real_choprial_ID3/8.jpg", "real_choprial_ID3/9.jpg", "real_choprial_ID3/10.jpg", "real_choprial_ID3/11.jpg",],
+        ImgPage: ["real_choprial_ID3/2.jpg", "real_choprial_ID3/3.jpg", "real_choprial_ID3/4.jpg", "real_choprial_ID3/5.jpg", "real_choprial_ID3/6.jpg", "real_choprial_ID3/7.jpg", "real_choprial_ID3/8.jpg", "real_choprial_ID3/9.jpg", "real_choprial_ID3/10.jpg", "real_choprial_ID3/11.jpg",],
         location: "فيلا بداخل تشوبريال تشوكلت",
         description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = ست مية وخمسين روبية يوميا",
@@ -125,7 +125,7 @@ page_Scroll = function () {
         window.scrollBy({
             top: scrollY,
         });
-    }, 1000);
+    }, 200);
 };
 
 Scroll_Up = function () {
@@ -150,7 +150,7 @@ go_To_Area_Part = function (id) {
 /* Booking Method */
 booking_Method.onclick = function () {
     var arMethod = "1- اختار الفيلا الي تبغاها\n2- احفظ رقم الفيلا ومكانها واضغط على احجز الان\n3- ارسل رقم الفيلا ومكانها واسم اليوم او رقم التاريخ الي حاب تحجز فيه الفيلا عشان تشوف اذا كانت متاحه ولا لا\n4- الدفع سيكون مباشر وعند الحجز فقط"
-    var enMethod = "\n\n1- Pick the villa the want\n2- Remember the villa id and area\n3- Click on book now and send the villa number with it's area\n4- Send the name of the day or the number of a date to see if the villa you want is avalible or no\n5- The payment will be direct and only upon booking"
+    var enMethod = "\n\n1- Imgk the villa the want\n2- Remember the villa id and area\n3- Click on book now and send the villa number with it's area\n4- Send the name of the day or the number of a date to see if the villa you want is avalible or no\n5- The payment will be direct and only upon booking"
     alert(arMethod + enMethod);
 };
 /* Note */
@@ -231,22 +231,24 @@ show_Villa_Details = function (areaLocation, cardNum, id) {
     villa_Details_Area.innerHTML = "";
     villa_Details_Area.appendChild(villa_Details_Card);
 
-    build_Big_Pic(villa.picPage);
+    build_Big_Img(villa.ImgPage);
 }
-function build_Big_Pic(picPage) {
-    // Clear all existing images in bigImgDiv
-    var bigImgDiv = document.getElementById('big_Pic_Div');
+
+
+
+function build_Big_Img(ImgPage) {
+    var bigImgDiv = document.getElementById('big_Img_Div');
     if (bigImgDiv) {
         bigImgDiv.innerHTML = '';
     } else {
         bigImgDiv = document.createElement('div');
-        bigImgDiv.id = 'big_Pic_Div';
+        bigImgDiv.id = 'big_Img_Div';
     }
 
-    var bigPicTitle = document.createElement('h1');
-    bigPicTitle.textContent = 'صور الفيلا';
-    bigPicTitle.id = 'big_Pic_Title';
-    bigImgDiv.appendChild(bigPicTitle);
+    var bigImgTitle = document.createElement('h1');
+    bigImgTitle.textContent = 'صور الفيلا';
+    bigImgTitle.id = 'big_Img_Title';
+    bigImgDiv.appendChild(bigImgTitle);
 
     var goBackVillaDetails = document.createElement('a');
     goBackVillaDetails.textContent = 'صعود';
@@ -254,7 +256,7 @@ function build_Big_Pic(picPage) {
     bigImgDiv.appendChild(goBackVillaDetails);
 
     function handleScroll() {
-        var titleElement = document.getElementById('big_Pic_Title');
+        var titleElement = document.getElementById('big_Img_Title');
         var titleOffsetTop = titleElement.offsetTop;
 
         if (window.scrollY > titleOffsetTop + titleElement.clientHeight - 200) {
@@ -270,18 +272,47 @@ function build_Big_Pic(picPage) {
         Scroll_Up();
     }
 
-    for (var i = 0; i < picPage.length; i++) {
+    for (var i = 0; i < ImgPage.length; i++) {
         var imgCreate = document.createElement('img');
-        imgCreate.src = picPage[i];
+        imgCreate.src = ImgPage[i];
+        imgCreate.id = 'big_Villa_Img';
         imgCreate.alt = 'فلل اندونيسيا';
+        imgCreate.title = 'فلل اندونيسيا';
         imgCreate.setAttribute('loading', 'lazy');
+        imgCreate.addEventListener('click', function () {
+            console.log(this.src);
+            var full_Screen_Img_Overlay = document.createElement('div');
+            full_Screen_Img_Overlay.classList.add("full_Screen_Img_Div");
+            var full_Screen_Img = document.createElement('img');
+            full_Screen_Img.src = this.src;
+            var exit_Full_Screen_Btn = document.createElement('a');
+            exit_Full_Screen_Btn.classList.add("exit_Full_Screen_Btn");
+            exit_Full_Screen_Btn.textContent = 'عودة';
+            exit_Full_Screen_Btn.onclick = function(){
+                document.body.removeChild(full_Screen_Img_Overlay);
+                full_Screen_Img_Overlay.removeChild(full_Screen_Img);
+                full_Screen_Img_Overlay.removeChild(exit_Full_Screen_Btn);
+            }
+
+            full_Screen_Img_Overlay.appendChild(full_Screen_Img);
+            full_Screen_Img_Overlay.appendChild(exit_Full_Screen_Btn);
+
+            document.body.appendChild(full_Screen_Img_Overlay);
+        });
+
         bigImgDiv.appendChild(imgCreate);
     }
 
-    if (!document.getElementById('big_Pic_Div')) {
+    if (!document.getElementById('big_Img_Div')) {
         document.body.appendChild(bigImgDiv);
     }
 }
+
+
+
+
+
+
 
 
 
