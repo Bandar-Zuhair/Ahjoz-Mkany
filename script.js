@@ -93,7 +93,7 @@ var villaDetailsCisarua = [
     },
     {
         video: "real_choprial_ID3/vid.mp4",
-        imgAraay: ["real_choprial_ID3/1.JPG", "real_choprial_ID3/2.JPG", "real_choprial_ID3/3.JPG", "real_choprial_ID3/4.JPG", "real_choprial_ID3/5.JPG", "real_choprial_ID3/6.JPG", "real_choprial_ID3/7.JPG", "real_choprial_ID3/8.JPG", "real_choprial_ID3/9.JPG", "real_choprial_ID3/10.JPG", "real_choprial_ID3/11.JPG",],
+        imgAraay: ["real_choprial_ID3/1.JPG", "real_choprial_ID3/2.jpg", "real_choprial_ID3/3.jpg", "real_choprial_ID3/4.jpg", "real_choprial_ID3/5.jpg", "real_choprial_ID3/6.jpg", "real_choprial_ID3/7.jpg", "real_choprial_ID3/8.jpg", "real_choprial_ID3/9.jpg", "real_choprial_ID3/10.jpg", "real_choprial_ID3/11.jpg",],
         location: "فيلا بداخل تشوبريال تشوكلت",
         description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = سبع مية وخمسين روبية يوميا",
@@ -255,6 +255,22 @@ function create_Big_Img(imgArray) {
     bigImgDiv.appendChild(createElem('h1', { textContent: 'صور الفيلا', id: 'big_Img_Title' }));
     var goBackVillaDetails = createElem('a', { textContent: 'صعود', id: 'go_Back_Villa_Details' });
     bigImgDiv.appendChild(goBackVillaDetails);
+    goBackVillaDetails.onclick = function() {
+        Scroll_Up()
+    }
+
+    window.addEventListener('scroll', function() {
+        var bigImgTitle = document.getElementById('villa_Details_Video');
+        if (bigImgTitle) {
+            var titlePosition = bigImgTitle.getBoundingClientRect();
+            if (titlePosition.bottom <= 100) {
+                goBackVillaDetails.style.display = 'block';
+            } else {
+                goBackVillaDetails.style.display = 'none';
+            }
+        }
+    });
+
     var currentImageIndex = 0;
     function openFullScreen(imageSrc) {
         var full_Screen_Img_Overlay = createElem('div', { className: 'full_Screen_Img_Div' });
