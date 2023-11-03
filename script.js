@@ -50,7 +50,7 @@ var cardDataCisarua = [
     {
         id: "Cisarua3",
         cardNum: "3",
-        image: "real_choprial_ID3/1.jpg",
+        image: "real_choprial_ID3/1.JPG",
         location: "بداخل تشوبريال تشوكلت",
         price: "سبع مية وخمسين روبية يوميا",
     },
