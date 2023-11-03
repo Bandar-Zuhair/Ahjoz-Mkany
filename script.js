@@ -340,48 +340,50 @@ function updateCommentInfo() {
         var returnButton = document.createElement('a');
         returnButton.innerText = 'عودة';
         returnButton.classList.add('exit_Full_Screen_Btn');
-    
+
         var fullScreenCommentImage = document.createElement("img");
         fullScreenCommentImage.src = commentData[commentNum].image;
         fullScreenCommentImage.alt = "تعليقات موقع احجز مكاني";
         fullScreenCommentImage.title = "تعليقات موقع احجز مكاني";
-    
+
         fullScreenCommentDiv.appendChild(returnButton);
         fullScreenCommentDiv.appendChild(fullScreenCommentImage);
         document.body.appendChild(fullScreenCommentDiv);
-    
+
         var currentImageIndex = commentNum;
-    
+
         function updateImage() {
             fullScreenCommentImage.src = commentData[currentImageIndex].image;
         }
-    
+
         function handleTap(event) {
             var screenWidth = window.innerWidth;
             var tapX = event.clientX;
-    
+
             if (tapX < screenWidth / 2) {
                 currentImageIndex = (currentImageIndex - 1 + commentData.length) % commentData.length;
             } else {
                 currentImageIndex = (currentImageIndex + 1) % commentData.length;
             }
-    
+
             updateImage();
         }
-    
+
         fullScreenCommentImage.addEventListener('click', handleTap);
-    
-        document.addEventListener('click', handleTap);
-    
+
         returnButton.onclick = () => document.body.removeChild(fullScreenCommentDiv);
-    
+
+        setTimeout(() => {
+            document.addEventListener('click', handleTap);
+        }, 5);
+
         updateImage();
     };
-    
 
     function updateImageAndReply() {
         comment_Info_Image.src = commentData[commentNum].image;
         my_Reply.querySelector('h1').textContent = commentData[commentNum].reply;
     }
 }
+
 updateCommentInfo();
