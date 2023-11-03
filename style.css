@@ -179,7 +179,7 @@ header {
     bottom: 10px;
     border: 1px solid orange;
     box-shadow: 0px 0px 5px 1px white;
-    visibility: hidden;
+    display: none;
 }
 
 .exit_Full_Screen_Btn{
