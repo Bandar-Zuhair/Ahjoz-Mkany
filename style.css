@@ -36,9 +36,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(59, 59, 59);
+    background: linear-gradient(to top, rgb(103, 103, 103) 50%, rgb(56, 56, 56) 50%);
     z-index: 998;
 }
+
 
 .full_Screen_Img_Div img {
     height: 95vh;
@@ -57,7 +58,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(59, 59, 59);
+    background: linear-gradient(to left, rgb(103, 103, 103) 50%, rgb(56, 56, 56) 50%);
     z-index: 998;
 }
 
