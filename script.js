@@ -77,7 +77,7 @@ var villaDetailsCisarua = [
     null,
     {
         video: "almadina_baFqih_ID1/vid.mp4",
-        ImgPage: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
+        imgAraay: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
         location: "خلف مطعم بافقيه",
         description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
@@ -85,7 +85,7 @@ var villaDetailsCisarua = [
     },
     {
         video: "taxas1_choprial_ID2/vid.mp4",
-        ImgPage: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
+        imgAraay: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
         location: "فيلا بداخل تشوبريال تشوكلت",
         description: "في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = اربعة مليون واربع مئة وخمسين روبية يوميا",
@@ -93,7 +93,7 @@ var villaDetailsCisarua = [
     },
     {
         video: "real_choprial_ID3/vid.mp4",
-        ImgPage: ["real_choprial_ID3/1.jpg", "real_choprial_ID3/2.jpg", "real_choprial_ID3/3.jpg", "real_choprial_ID3/4.jpg", "real_choprial_ID3/5.jpg", "real_choprial_ID3/6.jpg", "real_choprial_ID3/7.jpg", "real_choprial_ID3/8.jpg", "real_choprial_ID3/9.jpg", "real_choprial_ID3/10.jpg", "real_choprial_ID3/11.jpg",],
+        imgAraay: ["real_choprial_ID3/1.JPG", "real_choprial_ID3/2.JPG", "real_choprial_ID3/3.JPG", "real_choprial_ID3/4.JPG", "real_choprial_ID3/5.JPG", "real_choprial_ID3/6.JPG", "real_choprial_ID3/7.JPG", "real_choprial_ID3/8.JPG", "real_choprial_ID3/9.JPG", "real_choprial_ID3/10.JPG", "real_choprial_ID3/11.JPG",],
         location: "فيلا بداخل تشوبريال تشوكلت",
         description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = سبع مية وخمسين روبية يوميا",
@@ -101,7 +101,7 @@ var villaDetailsCisarua = [
     },
     {
         video: "real_choprial_ID3/vid.mp4",
-        ImgPage: ["harizbon_choprial_ID4/1.jpg", "harizbon_choprial_ID4/2.jpg", "harizbon_choprial_ID4/3.jpg", "harizbon_choprial_ID4/4.jpg", "harizbon_choprial_ID4/5.jpg", "harizbon_choprial_ID4/6.jpg",],
+        imgAraay: ["harizbon_choprial_ID4/1.JPG", "harizbon_choprial_ID4/2.JPG", "harizbon_choprial_ID4/3.JPG", "harizbon_choprial_ID4/4.JPG", "harizbon_choprial_ID4/5.JPG", "harizbon_choprial_ID4/6.JPG",],
         location: "فيلا بداخل تشوبريال تشوكلت",
         description: "صالة - ثلاث غرف مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",
         price: "السعر بعد الخصم = مليون وثلاث مئة وخمسين روبية يوميا",
@@ -237,13 +237,13 @@ function show_Villa_Details(areaLocation, cardNum, id) {
     villa_Details_Area.innerHTML = "";
     villa_Details_Area.appendChild(villa_Details_Card);
 
-    create_Big_Img(villa.ImgPage);
+    create_Big_Img(villa.imgAraay);
 }
 
 
 
 /* Create Villa Images */
-function create_Big_Img(ImgPage) {
+function create_Big_Img(imgArray) {
     var createElem = (tag, props = {}) => Object.assign(document.createElement(tag), props);
     var bigImgDiv = document.getElementById('big_Img_Div');
     if (!bigImgDiv) {
@@ -255,46 +255,65 @@ function create_Big_Img(ImgPage) {
     bigImgDiv.appendChild(createElem('h1', { textContent: 'صور الفيلا', id: 'big_Img_Title' }));
     var goBackVillaDetails = createElem('a', { textContent: 'صعود', id: 'go_Back_Villa_Details' });
     bigImgDiv.appendChild(goBackVillaDetails);
-    window.addEventListener('scroll', () => {
-        var titleElement = document.getElementById('big_Img_Title');
-        goBackVillaDetails.style.visibility = window.scrollY > (titleElement.offsetTop + titleElement.clientHeight - 200) ? 'visible' : 'hidden';
-    });
-    goBackVillaDetails.onclick = function () {
-        Scroll_Up();
+    var currentImageIndex = 0;
+    function openFullScreen(imageSrc) {
+        var full_Screen_Img_Overlay = createElem('div', { className: 'full_Screen_Img_Div' });
+        var exit_Full_Screen_Btn = createElem('a', {
+            className: 'exit_Full_Screen_Btn',
+            textContent: 'عودة',
+        });
+
+        var img = createElem('img', { src: imageSrc });
+        full_Screen_Img_Overlay.appendChild(img);
+        full_Screen_Img_Overlay.appendChild(exit_Full_Screen_Btn);
+        document.body.appendChild(full_Screen_Img_Overlay);
+
+        currentImageIndex = imgArray.indexOf(imageSrc);
+
+        exit_Full_Screen_Btn.addEventListener('click', function () {
+            document.body.removeChild(full_Screen_Img_Overlay);
+            scrollToImage(imgArray[currentImageIndex]);
+        });
+
+
+        full_Screen_Img_Overlay.addEventListener('click', function (event) {
+            const imgIndex = currentImageIndex;
+            if (event.clientY < window.innerHeight / 2) {
+                currentImageIndex = (imgIndex - 1 + imgArray.length) % imgArray.length;
+            } else {
+                currentImageIndex = (imgIndex + 1) % imgArray.length;
+            }
+            const newImageSrc = imgArray[currentImageIndex];
+            img.src = newImageSrc;
+        });
     }
-    ImgPage.forEach(imgSrc => {
+
+    imgArray.forEach(imgSrc => {
         var imgCreate = createElem('img', {
             src: imgSrc,
-            id: 'big_Villa_Img',
+            class: 'big_Villa_Img',
             alt: 'فلل اندونيسيا',
             title: 'فلل اندونيسيا',
+            loading: 'lazy',
         });
+
+        imgCreate.setAttribute('data-image-source', imgSrc);
         imgCreate.addEventListener('click', () => {
-            var full_Screen_Img_Overlay = createElem('div', { className: 'full_Screen_Img_Div' });
-            var exit_Full_Screen_Btn = createElem('a', {
-                className: 'exit_Full_Screen_Btn',
-                textContent: 'عودة',
-                onclick: () => document.body.removeChild(full_Screen_Img_Overlay)
-            });
-            full_Screen_Img_Overlay.appendChild(createElem('img', { src: imgCreate.src }));
-            full_Screen_Img_Overlay.appendChild(exit_Full_Screen_Btn);
-            document.body.appendChild(full_Screen_Img_Overlay);
-            var currentImageIndex = 0;
-            full_Screen_Img_Overlay.addEventListener('click', function (event) {
-                var img = this.querySelector('img');
-                var imgHeight = img.clientHeight;
-                var clickY = event.clientY - this.getBoundingClientRect().top;
-                if (clickY < imgHeight / 2) {
-                    currentImageIndex = (currentImageIndex - 1 + ImgPage.length) % ImgPage.length;
-                } else {
-                    currentImageIndex = (currentImageIndex + 1) % ImgPage.length;
-                }
-                img.src = ImgPage[currentImageIndex];
-            });
+            openFullScreen(imgSrc);
         });
 
         bigImgDiv.appendChild(imgCreate);
     });
+
+    function scrollToImage(imageSrc) {
+        const imageToScrollTo = document.querySelector(`[data-image-source="${imageSrc}"]`);
+        if (imageToScrollTo) {
+            const windowHeight = window.innerHeight;
+            const imageHeight = imageToScrollTo.clientHeight;
+            const topOffset = (windowHeight - imageHeight) / 2;
+            window.scrollTo(0, imageToScrollTo.offsetTop - topOffset);
+        }
+    }
 }
 
 
@@ -339,42 +358,57 @@ function updateCommentInfo() {
         var returnButton = document.createElement('a');
         returnButton.innerText = 'عودة';
         returnButton.classList.add('exit_Full_Screen_Btn');
-
+    
         var fullScreenCommentImage = document.createElement("img");
         fullScreenCommentImage.src = commentData[commentNum].image;
         fullScreenCommentImage.alt = "تعليقات موقع احجز مكاني";
         fullScreenCommentImage.title = "تعليقات موقع احجز مكاني";
-
+    
         fullScreenCommentDiv.appendChild(returnButton);
         fullScreenCommentDiv.appendChild(fullScreenCommentImage);
         document.body.appendChild(fullScreenCommentDiv);
-
+    
         var currentImageIndex = commentNum;
-
+    
         function updateImage() {
             fullScreenCommentImage.src = commentData[currentImageIndex].image;
         }
-
+    
+        returnButton.onclick = () => {
+            // Get the image source from the fullScreenCommentImage and set it to comment_Info_Image
+            comment_Info_Image.src = fullScreenCommentImage.src;
+            document.body.removeChild(fullScreenCommentDiv);
+        };
+    
+        updateImage();
+    
+        // Attach a click event listener to the entire document for image navigation
+        setTimeout(() => {
+            document.addEventListener('click', handleTap);
+        }, 500);
+        
         function handleTap(event) {
-            var screenWidth = window.innerWidth;
+                var screenWidth = window.innerWidth;
             var tapX = event.clientX;
-
-            if (tapX < screenWidth / 2) {
+    
+            // Calculate the threshold for dividing the screen into left and right sides
+            var threshold = screenWidth / 2;
+    
+            if (tapX < threshold) {
                 currentImageIndex = (currentImageIndex - 1 + commentData.length) % commentData.length;
             } else {
                 currentImageIndex = (currentImageIndex + 1) % commentData.length;
             }
-
+            
             updateImage();
         }
-
+        
         fullScreenCommentImage.addEventListener('click', handleTap);
 
-        returnButton.onclick = () => document.body.removeChild(fullScreenCommentDiv);
-
-        setTimeout(() => {
-            document.addEventListener('click', handleTap);
-        }, 5);
+        returnButton.onclick = () => {
+            comment_Info_Image.src = fullScreenCommentImage.src;
+            document.body.removeChild(fullScreenCommentDiv);
+        };
 
         updateImage();
     };
