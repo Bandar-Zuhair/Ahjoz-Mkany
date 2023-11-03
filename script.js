@@ -268,7 +268,6 @@ function create_Big_Img(ImgPage) {
             id: 'big_Villa_Img',
             alt: 'فلل اندونيسيا',
             title: 'فلل اندونيسيا',
-            loading: 'lazy'
         });
         imgCreate.addEventListener('click', () => {
             var full_Screen_Img_Overlay = createElem('div', { className: 'full_Screen_Img_Div' });
