@@ -1,438 +1,47 @@
-/* Comment Photo Data */
-var commentData = [
-    {
-        id: "1",
-        image: "comments/1.jpg",
-        reply: "اشكرك يالغالي الله يسعدك"
-    },
-    {
-        id: "2",
-        image: "comments/2.jpg",
-        reply: "حبيبي"
-    },
-    {
-        id: "3",
-        image: "comments/3.jpg",
-        reply: "اشكرك كثير"
-    },
-    {
-        id: "4",
-        image: "comments/1.jpg",
-        reply: ""
-    },
-    {
-        id: "5",
-        image: "comments/2.jpg",
-        reply: "اتشرفت فيك حبيبي"
-    },
-    {
-        id: "6",
-        image: "comments/3.jpg",
-        reply: "اهلا وسهلا يالغالي"
-    },
-];
-/* Cisarua Card Data Create */
-var cardDataCisarua = [
-    {
-        id: "Cisarua1",
-        cardNum: "1",
-        image: "almadina_baFqih_ID1/1.jpg",
-        location: "خلف مطعم بافقيه",
-        price: "مليون واربع مئة وخمسين روبية يوميا",
-    },
-    {
-        id: "Cisarua2",
-        cardNum: "2",
-        image: "taxas1_choprial_ID2/2.jpg",
-        location: "بداخل تشوبريال تشوكلت",
-        price: "اربعة مليون وخمس مئة روبية يوميا",
-    },
-    {
-        id: "Cisarua3",
-        cardNum: "3",
-        image: "real_choprial_ID3/1.JPG",
-        location: "بداخل تشوبريال تشوكلت",
-        price: "سبع مية وخمسين روبية يوميا",
-    },
-    {
-        id: "Cisarua4",
-        cardNum: "4",
-        image: "harizbon_choprial_ID4/1.JPG",
-        location: "بداخل تشوبريال تشوكلت",
-        price: "مليون وثلاث مئة وخمسين روبية يوميا",
-    },
-];
-/* Cipanas Card Data Create */
-var cardDataCipanas = [
-    {
-        id: "Cipanas1",
-        cardNum: "1",
-        image: "",
-        location: "",
-        price: ""
-    },
-];
-/* Cisarua Villa Details Create */
-var villaDetailsCisarua = [
-    null,
-    {
-        video: "almadina_baFqih_ID1/vid.mp4",
-        imgAraay: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
-        location: "خلف مطعم بافقيه",
-        description: "للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",
-        price: "السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",
-        villaNumber: "1"
-    },
-    {
-        video: "taxas1_choprial_ID2/vid.mp4",
-        imgAraay: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
-        location: "فيلا بداخل تشوبريال تشوكلت",
-        description: "في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",
-        price: "السعر بعد الخصم = اربعة مليون واربع مئة وخمسين روبية يوميا",
-        villaNumber: "2"
-    },
-    {
-        video: "real_choprial_ID3/vid.mp4",
-        imgAraay: ["real_choprial_ID3/1.JPG", "real_choprial_ID3/2.jpg", "real_choprial_ID3/3.jpg", "real_choprial_ID3/4.jpg", "real_choprial_ID3/5.jpg", "real_choprial_ID3/6.jpg", "real_choprial_ID3/7.jpg", "real_choprial_ID3/8.jpg", "real_choprial_ID3/9.jpg", "real_choprial_ID3/10.jpg", "real_choprial_ID3/11.jpg",],
-        location: "فيلا بداخل تشوبريال تشوكلت",
-        description: "صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",
-        price: "السعر بعد الخصم = سبع مية وخمسين روبية يوميا",
-        villaNumber: "3"
-    },
-    {
-        video: "real_choprial_ID3/vid.mp4",
-        imgAraay: ["harizbon_choprial_ID4/1.JPG", "harizbon_choprial_ID4/2.JPG", "harizbon_choprial_ID4/3.JPG", "harizbon_choprial_ID4/4.JPG", "harizbon_choprial_ID4/5.JPG", "harizbon_choprial_ID4/6.JPG",],
-        location: "فيلا بداخل تشوبريال تشوكلت",
-        description: "صالة - ثلاث غرف مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",
-        price: "السعر بعد الخصم = مليون وثلاث مئة وخمسين روبية يوميا",
-        villaNumber: "4"
-    },
-];
-/* Cipanas Villa Details Create */
-var villaDetailsCipanas = [
-    null,
-    {
-        video: "",
-        location: "",
-        description: "",
-        price: "",
-        villaNumber: ""
-    },
-];
-
-
-
-
-/* Scroll Down To Villa Details */
-page_Scroll = function () {
-    setTimeout(function () {
-        var element = document.getElementById("villa_Details_Video_Area");
-        var elementRect = element.getBoundingClientRect();
-        var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
-        var scrollY = elementRect.bottom - viewHeight + 50;
-
-        window.scrollBy({
-            top: scrollY,
-        });
-    }, 300);
-};
-/* Go Back To The Villa Details */
-Scroll_Up = function () {
-    var element = document.getElementById("villa_Details_Video_Area");
-    var elementRect = element.getBoundingClientRect();
-    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    var scrollY = elementRect.bottom - viewHeight + 50;
-    window.scrollBy({
-        top: scrollY,
-    });
-};
-/* Go To This Area */
-go_To_Area_Part = function (id) {
-    var goToAreaName = document.getElementById(id);
-    var goToAreaNameRect = goToAreaName.getBoundingClientRect();
-    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    var scrollY = goToAreaNameRect.top - (viewHeight / 2) + (goToAreaNameRect.height / 2 + 150);
-    window.scrollBy({
-        top: scrollY,
-    });
-}
-/* Booking Method */
-booking_Method.onclick = function () {
-    var arMethod = "1- اختار الفيلا الي تبغاها\n2- احفظ رقم الفيلا ومكانها واضغط على احجز الان\n3- ارسل رقم الفيلا ومكانها واسم اليوم او رقم التاريخ الي حاب تحجز فيه الفيلا عشان تشوف اذا كانت متاحه ولا لا\n4- الدفع سيكون مباشر وعند الحجز فقط"
-    var enMethod = "\n\n1- Pick the villa you want\n2- Remember the villa id and area and then press on book now\n3- Send the villa number with it's area and the date that you want to book the villa to check if the villa you want is avalible or no\n4- The payment will be direct and only upon booking"
-    alert(arMethod + enMethod);
-};
-/* Note */
-note_Btn.onclick = function () {
-    var arNote = "فلل اندونيسيا غالبا تكون محجوزة بالفعل وخصوصا في يوم السبت والأحد، وافضل حل لهذه المشكلة هو حجز اكثر من فيلا واحدة لكي تضمن مكانك في حال كانت الفلل الي اخترتها محجوزة بالفعل وواحدة منهم تكون متاحة لك";
-    var enNote = "\n \nVillas in Indonesia are often already booked, especially on Saturdays and Sundays, so the best solution for this problem is by booking more than one villa to guarantee your place in case if the villas you chose are already booked and one of them is available for you.";
-    alert(arNote + enNote);
-};
-/* Hide & Show Header */
-hide_Btn.onclick = function () {
-    header.classList.add("hide_Display");
-    hide_Btn.classList.add("hide_Display");
-    show_Btn.classList.remove("hide_Display");
-};
-show_Btn.onclick = function () {
-    header.classList.remove("hide_Display");
-    hide_Btn.classList.remove("hide_Display");
-    show_Btn.classList.add("hide_Display");
-};
-
-
-
-/* Create Cards */
-function createVillaCard(data, areaId, areaName) {
-    data.forEach((item, i) => {
-        var { cardNum, id, image, location, price } = item;
-        var villaCard = document.createElement("div");
-        villaCard.className = "villa_card";
-
-        villaCard.innerHTML = `
-        <div onclick="show_Villa_Details('${areaName}', ${cardNum}, '${id}'); page_Scroll();" id="${id}" class="villa_Card">
-          <img src="${image}" alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا">
+let cardDataCisarua=[{id:"Cisarua1",cardNum:"1",image:"almadina_baFqih_ID1/1.jpg",location:"خلف مطعم بافقيه",price:"مليون واربع مئة وخمسين روبية يوميا"},{id:"Cisarua2",cardNum:"2",image:"taxas1_choprial_ID2/2.jpg",location:"بداخل تشوبريال تشوكلت",price:"اربعة مليون وخمس مئة روبية يوميا"},{id:"Cisarua3",cardNum:"3",image:"real_choprial_ID3/1.JPG",location:"بداخل تشوبريال تشوكلت",price:"سبع مية وخمسين روبية يوميا"},{id:"Cisarua4",cardNum:"4",image:"harizbon_choprial_ID4/1.JPG",location:"بداخل تشوبريال تشوكلت",price:"مليون وثلاث مئة وخمسين روبية يوميا"},],cardDataCipanas=[{id:"Cipanas1",cardNum:"1",image:"",location:"",price:""},],villaDetailsCisarua=[null,{video:"almadina_baFqih_ID1/vid.mp4",imgAraay:["almadina_baFqih_ID1/1.jpg","almadina_baFqih_ID1/2.jpg","almadina_baFqih_ID1/3.jpg","almadina_baFqih_ID1/4.jpg","almadina_baFqih_ID1/5.jpg","almadina_baFqih_ID1/6.jpg","almadina_baFqih_ID1/7.jpg","almadina_baFqih_ID1/8.jpg","almadina_baFqih_ID1/9.jpg","almadina_baFqih_ID1/10.jpg","almadina_baFqih_ID1/11.jpg","almadina_baFqih_ID1/12.jpg",],location:"خلف مطعم بافقيه",description:"للعوائل فقط - صالة - ثلاث غرف مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - مسبح - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",price:"السعر بعد الخصم = مليون واربع مئة وخمسين روبيه يوميا",villaNumber:"1"},{video:"taxas1_choprial_ID2/vid.mp4",imgAraay:["taxas1_choprial_ID2/2.jpg","taxas1_choprial_ID2/3.jpg","taxas1_choprial_ID2/4.jpg","taxas1_choprial_ID2/5.jpg","taxas1_choprial_ID2/6.jpg","taxas1_choprial_ID2/7.jpg","taxas1_choprial_ID2/8.jpg","taxas1_choprial_ID2/9.jpg","taxas1_choprial_ID2/10.jpg","taxas1_choprial_ID2/11.jpg","taxas1_choprial_ID2/12.jpg","taxas1_choprial_ID2/13.jpg","taxas1_choprial_ID2/14.jpg","taxas1_choprial_ID2/15.jpg","taxas1_choprial_ID2/16.jpg","taxas1_choprial_ID2/17.jpg","taxas1_choprial_ID2/18.jpg","taxas1_choprial_ID2/19.jpg","taxas1_choprial_ID2/20.jpg","taxas1_choprial_ID2/21.jpg","taxas1_choprial_ID2/22.jpg",],location:"فيلا بداخل تشوبريال تشوكلت",description:"في الدور الاول صالة كبيرة - غرفتين مع مكيف مركزي ودورة مياه لكل غرفة - مطبخ - وفي الدور الارضي صالة - اربع غرف مع مكيف مركزي ودوره مياه لكل غرفة - مطبخين - طاولة بلياردو - مسبح - جلسة خارجية - حديقة بسيطة - مطله على منظر جميل - انترنت مجاني",price:"السعر بعد الخصم = اربعة مليون واربع مئة وخمسين روبية يوميا",villaNumber:"2"},{video:"real_choprial_ID3/vid.mp4",imgAraay:["real_choprial_ID3/1.JPG","real_choprial_ID3/2.jpg","real_choprial_ID3/3.jpg","real_choprial_ID3/4.jpg","real_choprial_ID3/5.jpg","real_choprial_ID3/6.jpg","real_choprial_ID3/7.jpg","real_choprial_ID3/8.jpg","real_choprial_ID3/9.jpg","real_choprial_ID3/10.jpg","real_choprial_ID3/11.jpg",],location:"فيلا بداخل تشوبريال تشوكلت",description:"صالة - غرفتين مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",price:"السعر بعد الخصم = سبع مية وخمسين روبية يوميا",villaNumber:"3"},{video:"real_choprial_ID3/vid.mp4",imgAraay:["harizbon_choprial_ID4/1.JPG","harizbon_choprial_ID4/2.JPG","harizbon_choprial_ID4/3.JPG","harizbon_choprial_ID4/4.JPG","harizbon_choprial_ID4/5.JPG","harizbon_choprial_ID4/6.JPG",],location:"فيلا بداخل تشوبريال تشوكلت",description:"صالة - ثلاث غرف مع دورة مياه لكل غرفة - مطبخ - مطله على منظر جميل - انترنت مجاني",price:"السعر بعد الخصم = مليون وثلاث مئة وخمسين روبية يوميا",villaNumber:"4"},],villaDetailsCipanas=[null,{video:"",location:"",description:"",price:"",villaNumber:""},];function createVillaCard(e,a,i){e.forEach((e,t)=>{let{cardNum:l,id:n,image:o,location:s,price:c}=e,d=document.createElement("div");d.className="villa_card",d.innerHTML=`
+        <div onclick="show_Villa_Details('${i}', ${l}, '${n}'); page_Scroll();" id="${n}" class="villa_Card">
+          <img src="${o}" alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا">
           <div class="villa_Info">
-            <h1>${location}</h1>
-            <h1 class="price">${price}</h1>
-            <h1 class="villa_id">رقم الفيلا ${i + 1}</h1>
-            <h1 class="villa_Area_Name">${areaName}</h1>
+            <h1>${s}</h1>
+            <h1 class="price">${c}</h1>
+            <h1 class="villa_id">رقم الفيلا ${t+1}</h1>
+            <h1 class="villa_Area_Name">${i}</h1>
           </div>
         </div>
-      `;
-
-        areaId.appendChild(villaCard);
-    });
-}
-createVillaCard(cardDataCisarua, cisarua_villa_Area_Id, 'سيساروا');
-createVillaCard(cardDataCipanas, cipanas_villa_Area_Id, 'شيباناس');
-
-
-
-/* Show Villa Details */
-function show_Villa_Details(areaLocation, cardNum, id) {
-    var areaSelected = areaLocation === 'سيساروا' ? villaDetailsCisarua : villaDetailsCipanas;
-    var villa_Details_Card = document.createElement("div");
-    villa_Details_Card.classList.add("villa_Details_Card");
-
-    var villa = areaSelected[cardNum];
-    var villa_Details_Info = `
-      <a onclick="take_Me_Back('${id}');" id="go_Back_Card">فيلا رقم ${cardNum}</a>
+      `,a.appendChild(d)})}function show_Villa_Details(e,a,i){let t=document.createElement("div");t.classList.add("villa_Details_Card");let l=("سيساروا"===e?villaDetailsCisarua:villaDetailsCipanas)[a],n=`
+      <a onclick="take_Me_Back('${i}');" id="go_Back_Card">فيلا رقم ${a}</a>
       <div id="villa_Details_Video_Area">
-        <video src='${villa.video}' controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video"></video>
+        <video src='${l.video}' controls title="احجز مكاني في فلل اندونيسيا" id="villa_Details_Video"></video>
       </div>
       <div id="villa_Details_Text_Div">
         <div id="villa_Details_Text">
-          <h1>${villa.location}</h1>
-          <h1>${villa.description}</h1>
-          <h1 id="villa_Details_Text_Price">${villa.price}</h1>
-          <h1 id="villa_Details_Text_Villa_Id">رقم الفيلا في ${areaLocation} ${villa.villaNumber}</h1>
+          <h1>${l.location}</h1>
+          <h1>${l.description}</h1>
+          <h1 id="villa_Details_Text_Price">${l.price}</h1>
+          <h1 id="villa_Details_Text_Villa_Id">رقم الفيلا في ${e} ${l.villaNumber}</h1>
           <a id="villa_Details_Text_Contact_Us" href="https://wa.me/+6282246117155" target="_blank">احجز الان</a>
         </div>
       </div>
-    `;
+    `;t.innerHTML=n,villa_Details_Area.innerHTML="",villa_Details_Area.appendChild(t),create_Big_Img(l.imgAraay)}page_Scroll=function(){setTimeout(function(){let e=document.getElementById("villa_Details_Video_Area").getBoundingClientRect(),a=Math.max(document.documentElement.clientHeight,window.innerHeight||0),i=e.bottom-a+50;window.scrollBy({top:i})},300)},Scroll_Up=function(){let e=document.getElementById("villa_Details_Video_Area").getBoundingClientRect(),a=Math.max(document.documentElement.clientHeight,window.innerHeight||0),i=e.bottom-a+50;window.scrollBy({top:i})},go_To_Area_Part=function(e){let a=document.getElementById(e).getBoundingClientRect(),i=Math.max(document.documentElement.clientHeight,window.innerHeight||0),t=a.top-i/2+(a.height/2+150);window.scrollBy({top:t})},booking_Method.onclick=function(){alert("1- اختار الفيلا الي تبغاها\n2- احفظ رقم الفيلا ومكانها واضغط على احجز الان\n3- ارسل رقم الفيلا ومكانها واسم اليوم او رقم التاريخ الي حاب تحجز فيه الفيلا عشان تشوف اذا كانت متاحه ولا لا\n4- الدفع سيكون مباشر وعند الحجز فقط\n\n1- Pick the villa you want\n2- Remember the villa id and area and then press on book now\n3- Send the villa number with it's area and the date that you want to book the villa to check if the villa you want is avalible or no\n4- The payment will be direct and only upon booking")},note_Btn.onclick=function(){alert("فلل اندونيسيا غالبا تكون محجوزة بالفعل وخصوصا في يوم السبت والأحد، وافضل حل لهذه المشكلة هو حجز اكثر من فيلا واحدة لكي تضمن مكانك في حال كانت الفلل الي اخترتها محجوزة بالفعل وواحدة منهم تكون متاحة لك\n \nVillas in Indonesia are often already booked, especially on Saturdays and Sundays, so the best solution for this problem is by booking more than one villa to guarantee your place in case if the villas you chose are already booked and one of them is available for you.")},hide_Btn.onclick=function(){header.classList.add("hide_Display"),hide_Btn.classList.add("hide_Display"),show_Btn.classList.remove("hide_Display")},show_Btn.onclick=function(){header.classList.remove("hide_Display"),hide_Btn.classList.remove("hide_Display"),show_Btn.classList.add("hide_Display")},createVillaCard(cardDataCisarua,cisarua_villa_Area_Id,"سيساروا"),createVillaCard(cardDataCipanas,cipanas_villa_Area_Id,"شيباناس");let ahjoz_Mkany=document.getElementById("ahjoz_Mkany"),big_Images_Div=document.getElementById("big_Images_Div");function create_Big_Img(e){let a=(e,a={})=>Object.assign(document.createElement(e),a),i=document.getElementById("big_Img_Div");i?i.innerHTML="":(i=a("div",{id:"big_Img_Div"}),document.body.appendChild(i)),i.appendChild(a("h1",{textContent:"صور الفيلا",id:"big_Img_Title"}));let t=a("a",{textContent:"صعود",id:"go_Back_Villa_Details"});i.appendChild(t),t.onclick=function(){Scroll_Up()},e.forEach(t=>{let n=a("img",{src:t,class:"big_Villa_Img",alt:"فلل اندونيسيا",title:"فلل اندونيسيا",loading:"lazy"});n.setAttribute("data-image-source",t),n.addEventListener("click",()=>{var n;let o,s,c;n=t,o=a("div",{className:"full_Screen_Img_Div"}),s=a("a",{className:"exit_Full_Screen_Btn",textContent:"عودة"}),c=a("img",{src:n}),o.appendChild(c),o.appendChild(s),ahjoz_Mkany.style.display="none",i.style.display="none",big_Images_Div.appendChild(o),big_Images_Div.style.display="block",l=e.indexOf(n),s.addEventListener("click",function(){big_Images_Div.style.display="none",ahjoz_Mkany.style.display="block",i.style.display="flex",big_Images_Div.removeChild(o),function e(a){let i=document.querySelector(`[data-image-source="${a}"]`);if(i){let t=window.innerHeight,l=i.clientHeight;window.scrollTo(0,i.offsetTop-(t-l)/2)}}(e[l])}),o.addEventListener("click",function(a){let i=l,t=e[l=a.clientY<window.innerHeight/2?(i-1+e.length)%e.length:(i+1)%e.length];c.src=t})}),i.appendChild(n)}),window.addEventListener("scroll",function(){let e=document.getElementById("villa_Details_Video");e&&(e.getBoundingClientRect().bottom<=100?t.style.display="block":t.style.display="none")});let l=0}function take_Me_Back(e){let a=document.getElementById(e),i=a.getBoundingClientRect().top-(window.innerHeight/2-a.clientHeight/2);window.scrollBy({top:i}),a.style.backgroundColor="green",a.style.borderColor="orange"}let all_Comments_Page_Div=document.getElementById("all_Comments_Page_Div");open_Comments_Page=function(){let e=document.getElementById("big_Img_Div");e&&(e.style.display="none");let a=document.createElement("div");a.classList.add("full_Screen_Comment_Div");let i=document.createElement("a");i.innerText="عودة",i.classList.add("exit_Full_Screen_Btn"),i.onclick=function(){e&&(e.style.display="block"),all_Comments_Page_Div.style.display="none",ahjoz_Mkany.style.display="block",all_Comments_Page_Div.removeChild(a),a.removeChild(i)};let t=`
+    <div id="all_Comments_Info">
+        <div id="all_Comments_Title">
+            <h1>شاركنا تجربتك مع خدمة موقعنا</h1>
+        </div>
 
-    villa_Details_Card.innerHTML = villa_Details_Info;
-    villa_Details_Area.innerHTML = "";
-    villa_Details_Area.appendChild(villa_Details_Card);
+        <div id="comments_Image">
+            <img src="comments/1.jpg" alt="تعليقات احجز مكاني" title="تعليقات احجز مكاني">
+        </div>
 
-    create_Big_Img(villa.imgAraay);
-}
+        <div id="comments_Input_Div">
+            <a id="comments_Note_Btn" onclick="comments_Note()">ملاحظة</a>
+            <input type="text" placeholder="اسمك" class="comments_Input" id="name_Input">
+            <input type="text" placeholder="تعليقك" class="comments_Input" id="comments_Input">
+            <div id=all_Input_Btn_Div>
+            <a id=clear_Comments_Input>مسح</a>
+            <a id="post_Comment_Btn">نشر</a>
+            </div>
+        </div>
 
-
-
-/* Create Villa Images */
-function create_Big_Img(imgArray) {
-    var createElem = (tag, props = {}) => Object.assign(document.createElement(tag), props);
-    var bigImgDiv = document.getElementById('big_Img_Div');
-    if (!bigImgDiv) {
-        bigImgDiv = createElem('div', { id: 'big_Img_Div' });
-        document.body.appendChild(bigImgDiv);
-    } else {
-        bigImgDiv.innerHTML = '';
-    }
-    bigImgDiv.appendChild(createElem('h1', { textContent: 'صور الفيلا', id: 'big_Img_Title' }));
-    var goBackVillaDetails = createElem('a', { textContent: 'صعود', id: 'go_Back_Villa_Details' });
-    bigImgDiv.appendChild(goBackVillaDetails);
-    goBackVillaDetails.onclick = function() {
-        Scroll_Up()
-    }
-
-    window.addEventListener('scroll', function() {
-        var bigImgTitle = document.getElementById('villa_Details_Video');
-        if (bigImgTitle) {
-            var titlePosition = bigImgTitle.getBoundingClientRect();
-            if (titlePosition.bottom <= 100) {
-                goBackVillaDetails.style.display = 'block';
-            } else {
-                goBackVillaDetails.style.display = 'none';
-            }
-        }
-    });
-
-    var currentImageIndex = 0;
-    function openFullScreen(imageSrc) {
-        var full_Screen_Img_Overlay = createElem('div', { className: 'full_Screen_Img_Div' });
-        var exit_Full_Screen_Btn = createElem('a', {
-            className: 'exit_Full_Screen_Btn',
-            textContent: 'عودة',
-        });
-
-        var img = createElem('img', { src: imageSrc });
-        full_Screen_Img_Overlay.appendChild(img);
-        full_Screen_Img_Overlay.appendChild(exit_Full_Screen_Btn);
-        document.body.appendChild(full_Screen_Img_Overlay);
-
-        currentImageIndex = imgArray.indexOf(imageSrc);
-
-        exit_Full_Screen_Btn.addEventListener('click', function () {
-            document.body.removeChild(full_Screen_Img_Overlay);
-            scrollToImage(imgArray[currentImageIndex]);
-        });
-
-
-        full_Screen_Img_Overlay.addEventListener('click', function (event) {
-            const imgIndex = currentImageIndex;
-            if (event.clientY < window.innerHeight / 2) {
-                currentImageIndex = (imgIndex - 1 + imgArray.length) % imgArray.length;
-            } else {
-                currentImageIndex = (imgIndex + 1) % imgArray.length;
-            }
-            const newImageSrc = imgArray[currentImageIndex];
-            img.src = newImageSrc;
-        });
-    }
-
-    imgArray.forEach(imgSrc => {
-        var imgCreate = createElem('img', {
-            src: imgSrc,
-            class: 'big_Villa_Img',
-            alt: 'فلل اندونيسيا',
-            title: 'فلل اندونيسيا',
-            loading: 'lazy',
-        });
-
-        imgCreate.setAttribute('data-image-source', imgSrc);
-        imgCreate.addEventListener('click', () => {
-            openFullScreen(imgSrc);
-        });
-
-        bigImgDiv.appendChild(imgCreate);
-    });
-
-    function scrollToImage(imageSrc) {
-        const imageToScrollTo = document.querySelector(`[data-image-source="${imageSrc}"]`);
-        if (imageToScrollTo) {
-            const windowHeight = window.innerHeight;
-            const imageHeight = imageToScrollTo.clientHeight;
-            const topOffset = (windowHeight - imageHeight) / 2;
-            window.scrollTo(0, imageToScrollTo.offsetTop - topOffset);
-        }
-    }
-}
-
-
-
-/* Go Back To The Same Card */
-function take_Me_Back(id) {
-    var card = document.getElementById(id);
-    var offset = card.getBoundingClientRect().top - (window.innerHeight / 2 - card.clientHeight / 2);
-    window.scrollBy({ top: offset });
-    card.style.backgroundColor = "green";
-    card.style.borderColor = "orange";
-}
-
-
-
-/* Create Comment Card */
-var commentNum = 0, commentCard = document.createElement("div");
-commentCard.classList.add("comment_Card");
-function updateCommentInfo() {
-    commentCard.innerHTML = `<div id="comment_Card"><div id="comment_Image"><ion-icon id="sec2_Arrow_Forward" class="arrow_Icon" name="arrow-forward-outline"></ion-icon><img id="comment_Info_Image" src="${commentData[commentNum].image}" alt="تعليقات موقع احجز مكاني" title="تعليقات موقع احجز مكاني"><ion-icon id="sec2_Arrow_Back" class="arrow_Icon" name="arrow-back-outline"></ion-icon></div><div id="my_Reply"><h1>${commentData[commentNum].reply}</h1></div></div>`;
-    all_Comments_Area.appendChild(commentCard);
-
-    sec2_Arrow_Forward.onclick = () => {
-        commentNum = (commentNum + 1) % commentData.length;
-        updateImageAndReply();
-        sec2_Arrow_Forward.style.backgroundColor = "green";
-        setTimeout(() => sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)", 1500);
-        sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)";
-    };
-
-    sec2_Arrow_Back.onclick = () => {
-        commentNum = (commentNum - 1 + commentData.length) % commentData.length;
-        updateImageAndReply();
-        sec2_Arrow_Back.style.backgroundColor = "green";
-        setTimeout(() => sec2_Arrow_Back.style.backgroundColor = "rgb(59, 59, 59)", 1500);
-        sec2_Arrow_Forward.style.backgroundColor = "rgb(59, 59, 59)";
-    };
-
-    comment_Info_Image.onclick = () => {
-        var fullScreenCommentDiv = document.createElement("div");
-        fullScreenCommentDiv.classList.add("full_Screen_Comment_Div");
-        var returnButton = document.createElement('a');
-        returnButton.innerText = 'عودة';
-        returnButton.classList.add('exit_Full_Screen_Btn');
-    
-        var fullScreenCommentImage = document.createElement("img");
-        fullScreenCommentImage.src = commentData[commentNum].image;
-        fullScreenCommentImage.alt = "تعليقات موقع احجز مكاني";
-        fullScreenCommentImage.title = "تعليقات موقع احجز مكاني";
-    
-        fullScreenCommentDiv.appendChild(returnButton);
-        fullScreenCommentDiv.appendChild(fullScreenCommentImage);
-        document.body.appendChild(fullScreenCommentDiv);
-    
-        var currentImageIndex = commentNum;
-    
-        function updateImage() {
-            fullScreenCommentImage.src = commentData[currentImageIndex].image;
-        }
-    
-        returnButton.onclick = () => {
-            // Get the image source from the fullScreenCommentImage and set it to comment_Info_Image
-            comment_Info_Image.src = fullScreenCommentImage.src;
-            document.body.removeChild(fullScreenCommentDiv);
-        };
-    
-        updateImage();
-    
-        // Attach a click event listener to the entire document for image navigation
-        setTimeout(() => {
-            document.addEventListener('click', handleTap);
-        }, 500);
-        
-        function handleTap(event) {
-                var screenWidth = window.innerWidth;
-            var tapX = event.clientX;
-    
-            // Calculate the threshold for dividing the screen into left and right sides
-            var threshold = screenWidth / 2;
-    
-            if (tapX < threshold) {
-                currentImageIndex = (currentImageIndex - 1 + commentData.length) % commentData.length;
-            } else {
-                currentImageIndex = (currentImageIndex + 1) % commentData.length;
-            }
-            
-            updateImage();
-        }
-        
-        fullScreenCommentImage.addEventListener('click', handleTap);
-
-        returnButton.onclick = () => {
-            comment_Info_Image.src = fullScreenCommentImage.src;
-            document.body.removeChild(fullScreenCommentDiv);
-        };
-
-        updateImage();
-    };
-
-    function updateImageAndReply() {
-        comment_Info_Image.src = commentData[commentNum].image;
-        my_Reply.querySelector('h1').textContent = commentData[commentNum].reply;
-    }
-}
-
-updateCommentInfo();
+        <div id="people_Comments_Div"></div>
+    </div>
+    `;a.innerHTML=t,a.appendChild(i),document.body.scrollIntoView(),all_Comments_Page_Div.appendChild(a),ahjoz_Mkany.style.display="none",all_Comments_Page_Div.style.display="block",comments_Note=function(){alert("1- يرجى اظهار الاحترامي وعدم الاساءة للاخرين\n2- يرجى الانتباه بانك لن تكون قادر على حذف تعليقك بعد النشر، ونحن فقط من نستطيع حذف التعليقات")},clear_Comments_Input.onclick=function(){name_Input.value="",comments_Input.value=""},post_Comment_Btn.onclick=function(){let e=name_Input.value,a=comments_Input.value;if(""===e.trim()||""===a.trim()){console.log("SORRY");let i=document.createElement("div");i.classList.add("floatingMessage"),i.textContent="تأكد من ملئ جميع البيانات",document.body.appendChild(i),Object.assign(i.style,{color:"red",opacity:0}),setTimeout(function(){i.style.opacity=1},10),setTimeout(function(){i.style.opacity=0},2e3)}else{let t=document.createElement("div");t.classList.add("floatingMessage"),t.textContent="تمت اضافة التعليق",document.body.appendChild(t),Object.assign(t.style,{color:"rgb(0, 255, 0)",opacity:0}),setTimeout(function(){t.style.opacity=1},10),setTimeout(function(){t.style.opacity=0},2e3);let l=document.createElement("div");l.classList.add("posted_Comments_Div");let n=document.createElement("h1"),o=document.createElement("span");o.classList.add("green-text"),o.innerText=e;let s=document.createElement("span");s.classList.add("orange-text"),s.innerText="يقول",n.innerHTML=o.outerHTML+" "+s.outerHTML+" : "+a;let c=document.createElement("button");var d,r,p="green-text",m="orange-text";let g;c.classList.add("remove_Comments_Btn"),c.innerText="حذف",c.onclick=function(){let i=prompt("فقط موقع احجز مكاني قادر على حذف التعليقات \n- ادخل كلمة السر");if("bndr"===i||"aymn"===i){let t=comments.findIndex(i=>i.name===e&&i.comment===a);-1!==t&&(comments.splice(t,1),localStorage.setItem("comments",JSON.stringify(comments))),l.remove()}},l.appendChild(n),l.appendChild(c),people_Comments_Div.appendChild(l),name_Input.value="",comments_Input.value="",d=e,r=a,(g=JSON.parse(localStorage.getItem("comments"))||[]).push({name:d,comment:r,nameStyle:p,saysStyle:m}),localStorage.setItem("comments",JSON.stringify(g))}};let l,n;l=JSON.parse(localStorage.getItem("comments"))||[],(n=document.getElementById("people_Comments_Div"))&&(n.innerHTML="",l.forEach((e,a)=>{let i=document.createElement("div");i.classList.add("posted_Comments_Div");let t=document.createElement("h1"),o=document.createElement("span");o.classList.add(e.nameStyle||"green-text"),o.innerText=e.name;let s=document.createElement("span");s.classList.add(e.saysStyle||"orange-text"),s.innerText="يقول",t.innerHTML=o.outerHTML+" "+s.outerHTML+" : "+e.comment;let c=document.createElement("button");c.classList.add("remove_Comments_Btn"),c.innerText="حذف",c.onclick=function(){let e=prompt("فقط موقع احجز مكاني قادر على حذف التعليقات \n- ادخل كلمة السر");("bndr"===e||"aymn"===e)&&(l.splice(a,1),localStorage.setItem("comments",JSON.stringify(l)),i.remove())},i.appendChild(t),i.appendChild(c),n.appendChild(i)}))};
