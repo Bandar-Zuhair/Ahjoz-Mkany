@@ -32,11 +32,11 @@ let allCardsDataCisarua = [
 /* Cipanas Card Data Create */
 let allCardsDataCipanas = [
     {
-        id: "Cipanas1",
+        id: "Cisarua1",
         cardNum: "1",
-        image: "",
-        location: "",
-        price: ""
+        image: "almadina_baFqih_ID1/1.jpg",
+        location: "خلف مطعم بافقيه",
+        price: "مليون واربع مئة وخمسين روبية يوميا",
     },
 ];
 
