@@ -32,11 +32,11 @@ let allCardsDataCisarua = [
 /* Cipanas Card Data Create */
 let allCardsDataCipanas = [
     {
-        id: "Cisarua1",
+        id: "Cipanas1",
         cardNum: "1",
-        image: "almadina_baFqih_ID1/1.jpg",
-        location: "خلف مطعم بافقيه",
-        price: "مليون واربع مئة وخمسين روبية يوميا",
+        image: "",
+        location: "",
+        price: ""
     },
 ];
 
@@ -93,7 +93,6 @@ let villaDetailsCipanas = [
 let ahjozly = document.getElementById("ahjozly");
 let ahjoz_Mkany = document.getElementById("ahjoz_Mkany");
 let big_Images_Page = document.getElementById("big_Images_Page");
-let all_Comments_Page = document.getElementById("all_Comments_Page");
 let custom_Cards_Page = document.getElementById("custom_Cards_Page");
 let other_Services_Page = document.getElementById("other_Services_Page");
 let pic_My_Maid_Page = document.getElementById("pic_My_Maid_Page");
@@ -102,7 +101,6 @@ let cipanas_villa_Area_Id = document.getElementById("cipanas_villa_Area_Id");
 let bigImgDiv = document.getElementById("big_Img_Div");
 let custom_Cisarua_Cards = document.getElementById("custom_Cisarua_Cards");
 let villa_Details_Area = document.getElementById("villa_Details_Area");
-let comments_Note_Btn = document.getElementById("comments_Note_Btn");
 
 
 pic_My_Villa_Link.onclick = function () {
@@ -312,13 +310,10 @@ rebuildAllCards = function (arrayName1, arrayName2) {
 
 /* Custom Cards */
 custom_Cards = function (goToThisArea) {
-
     custom_Cards_Page.innerHTML = "";
 
     ahjozly.style.display = 'none';
-    if (bigImgDiv) {
-        bigImgDiv.style.display = "none";
-    }
+    
 
     custom_Cards_Page.style.display = 'block';
 
@@ -332,11 +327,15 @@ custom_Cards = function (goToThisArea) {
     exit_Custom_Cards_Btn.innerText = "الغاء";
     exit_Custom_Cards_Btn.classList.add("exit_Full_Screen_Btn");
     exit_Custom_Cards_Btn.id = "exit_Custom_Cards_Btn";
+
+
+    if (bigImgDiv) {
+        bigImgDiv.style.display = "none";
+    }
     exit_Custom_Cards_Btn.onclick = function () {
 
         custom_Cards_Page.style.display = 'none';
         ahjozly.style.display = 'block';
-        bigImgDiv.style.display = "flex";
         custom_Cards_Overlay_Div.removeChild(exit_Custom_Cards_Btn);
         custom_Cards_Page.removeChild(custom_Cards_Overlay_Div);
 
@@ -344,11 +343,11 @@ custom_Cards = function (goToThisArea) {
         goToAreaName.scrollIntoView({
             block: 'center',
             inline: 'center',
+            behavior: 'instant',
         });
-
-
-
+        if (bigImgDiv) bigImgDiv.style.display = 'flex';
     }
+
 
     let custom_Cards_Title;
 
@@ -599,6 +598,7 @@ function rebuild_All_Villa_Cards(id, goToThisArea) {
     goToAreaName.scrollIntoView({
         block: 'center',
         inline: 'center',
+        behavior: 'instant',
     });
 
 }
