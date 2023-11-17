@@ -78,7 +78,7 @@
                 <!-- Note button and comment form -->
                 <a id="comments_Note_Btn" onclick="comments_Note()">ملاحظة</a>
 
-                <form action="index.php" method="POST" id="inputs_Form">
+                <form action="comments.php" method="POST" id="inputs_Form">
                     <input type="text" placeholder="اسمك" class="comments_Input" name="name" required>
                     <input type="text" placeholder="تعليقك" class="comments_Input" name="comment" required>
                     <div id="all_Input_Btn_Div">
