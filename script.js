@@ -1,3 +1,10 @@
+/*  How To Add Villa?
+    Make Sure You Enter The Villa Card Info And Villa Details Info
+    Make Sure You Enter Only The Villa Cards Info in Each Cards Filtter
+*/
+
+
+
 /* Cisarua Card Data Create */
 let allCardsDataCisarua = [
     {
@@ -348,7 +355,11 @@ pic_My_Villa_Link.onclick = function () {
         note_Btn.style.display = "block";
         goBackToSec1_Link.style.display = "block";
     }
-    sec4.style.backgroundColor = 'rgb(155, 155, 155)';
+    comments_Page_Div.style.paddingBottom = '0';
+    
+    setTimeout(() => {
+        sec4.style.backgroundColor = 'rgb(155, 155, 155)';
+    }, 100);
 
     setTimeout(() => {
         let goToAreaName = document.getElementById('areas');
@@ -362,6 +373,7 @@ pic_My_Villa_Link.onclick = function () {
     setTimeout(() => {
         sec4.style.backgroundColor = 'transparent';
     }, 700);
+
 }
 function createOverlay(title, serviceType, bigImgDiv) {
     let overlayDiv = document.createElement('div');
@@ -384,7 +396,10 @@ function createOverlay(title, serviceType, bigImgDiv) {
         other_Services_Page.removeChild(overlayDiv);
 
         let goToAreaName = document.getElementById('pic_Your_Service_Title');
-        goToAreaName.scrollIntoView({ block: 'center', inline: 'center' });
+        goToAreaName.scrollIntoView({
+            lock: 'center',
+            inline: 'center',
+        });
 
         if (bigImgDiv) bigImgDiv.style.display = 'flex';
     };
