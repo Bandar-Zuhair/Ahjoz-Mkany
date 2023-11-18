@@ -2,7 +2,7 @@
 
 /* html */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: initial;
 }
 
 /* All */
@@ -12,6 +12,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-weight: 400;
+    user-select: none;
 }
 
 /* Body */
@@ -43,14 +44,6 @@ body {
     border: 1px solid black;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 1px black;
-}
-
-.full_Screen_Comment_Div {
-    background: rgb(59, 59, 59);
-    width: 100%;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
 }
 
 .overlay {
@@ -112,12 +105,10 @@ header {
 #my_Location_Link,
 #how_To_Book_Driver,
 #comments_Page,
-#comments_Note_Btn,
-#post_Comment_Btn,
-#clear_Comments_Input,
 .custom_Cards_Class,
 #custom_Price_Div h1,
 .villa_Details_Text_Contact_Us,
+.other_Services_Contact_Us,
 #go_Back_Villa_Details,
 #go_Back_Card,
 .exit_Full_Screen_Btn {
@@ -140,12 +131,10 @@ header {
 #my_Location_Link:hover,
 #how_To_Book_Driver:hover,
 #comments_Page:hover,
-#comments_Note_Btn:hover,
-#post_Comment_Btn:hover,
-#clear_Comments_Input:hover,
 .custom_Cards_Class:hover,
 #custom_Price_Div h1:hover,
 .villa_Details_Text_Contact_Us:hover,
+.other_Services_Contact_Us:hover,
 #go_Back_Villa_Details:hover,
 #go_Back_Card:hover,
 .exit_Full_Screen_Btn:hover {
@@ -294,6 +283,13 @@ header {
     margin: 5px;
 }
 
+.other_Services_Contact_Us{
+    font-size: 15px;
+    padding: 8px 14px;
+    margin: 10px 0;
+    color: rgb(0, 255, 0);
+}
+
 #find_My_Location_Div{
     width: 100%;
     display: flex;
@@ -326,7 +322,7 @@ header {
 #how_To_Book_Driver{
     font-size: 18px;
     padding: 6px 12px;
-    margin: 20px;
+    margin: 5px 0 10px 0
 }
 
 #get_My_Location_Btn{
@@ -386,130 +382,6 @@ header {
     padding: 12px 18px;
 }
 
-#all_Comments_Info {
-    direction: rtl;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 60px 0;
-}
-
-#all_Comments_Title {
-    background: black;
-    font-size: 10px;
-    margin-bottom: 10px;
-    padding: 10px 18px;
-    color: rgb(0, 255, 0);
-    cursor: default;
-    box-shadow: 0px 0px 3px 1px white;
-    border-radius: 30px;
-}
-
-#comments_Image {
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-#comments_Image img {
-    width: 100%;
-}
-
-#comments_Input_Div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-#comments_Note_Btn {
-    margin-bottom: 15px;
-}
-
-#inputs_Form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.comments_Input {
-    margin: 5px;
-    padding: 6px 14px;
-    font-size: 17px;
-    border-radius: 30px;
-    width: 10%;
-    transition: all 0.4s ease;
-}
-
-.comments_Input:focus {
-    width: 30%;
-}
-
-.comments_Input::placeholder {
-    font-size: 20px;
-    text-align: center;
-    color: rgb(0, 0, 0, 0.7);
-}
-
-#all_Input_Btn_Div {
-    margin-top: 10px;
-    padding: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#all_Input_Btn_Div button {
-    padding: 10px 16px;
-    margin: 10px;
-    display: flex;
-
-}
-
-#people_Comments_Div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 95%;
-    padding: 30px 15px 20px 10px;
-    border: 2px solid white;
-    border-radius: 30px;
-}
-
-.posted_Comments_Div {
-    background: rgb(81, 81, 81);
-    margin-bottom: 15px;
-    box-shadow: 0px 0px 3px 1px black;
-    border-radius: 30px;
-    padding: 10px;
-}
-
-#people_Comments_Div h1 {
-    background: black;
-    margin-bottom: 2px;
-    font-size: 14px;
-    padding: 8px 14px;
-    border: 1px solid white;
-    border-radius: 30px;
-}
-
-.delete_Comment_Btn{
-    background: white;
-    padding: 2px;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: all 0.2s ease;
-}
-
-.delete_Comment_Btn:hover{
-    opacity: 1;
-}
 
 
 /* Choose Your Area */
@@ -750,7 +622,7 @@ header {
 
 .villa_Details_Text_Contact_Us {
     font-size: 15px;
-    padding: 10px 14px;
+    padding: 8px 14px;
     margin-bottom: 10px;
     color: rgb(0, 255, 0);
 }
@@ -865,39 +737,6 @@ header {
         width: 70%;
     }
 
-    #all_Comments_Title {
-        font-size: 8px;
-    }
-
-    #comments_Image {
-        width: 150px;
-    }
-
-    .comments_Input {
-        width: 20%;
-        font-size: 15px;
-    }
-
-    .comments_Input:focus {
-        width: 40%;
-    }
-
-    .comments_Input::placeholder {
-        font-size: 17px;
-    }
-
-    #all_Input_Btn_Div button {
-        margin: 8px;
-    }
-
-    #post_Comment_Btn {
-        font-size: 15px;
-    }
-
-    #clear_Comments_Input {
-        font-size: 15px;
-    }
-
     .villa_Card {
         width: 250px;
     }
@@ -948,10 +787,6 @@ header {
 @media(max-width:940px) {
     #big_Img_Div img {
         width: 40%;
-    }
-
-    #people_Comments_Div h1 {
-        font-size: 12px;
     }
 }
 
@@ -1009,10 +844,6 @@ header {
     #show_Btn {
         font-size: 14px;
         padding: 4px 8px;
-    }
-
-    #people_Comments_Div h1 {
-        font-size: 11px;
     }
 
     .custom_Cards_Class {
@@ -1102,6 +933,11 @@ header {
         font-size: 20px;
     }
 
+    .other_Services_Contact_Us{
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
     #how_To_Book_Driver{
         font-size: 15px;
         padding: 5px 10px;
@@ -1141,45 +977,6 @@ header {
     .exit_Full_Screen_Btn {
         font-size: 15px;
         padding: 6px 12px;
-    }
-
-    #all_Comments_Title {
-        font-size: 7px;
-        padding: 8px 16px;
-    }
-
-    #comments_Note_Btn{
-        font-size: 13px;
-    }
-
-    .comments_Input {
-        width: 30%;
-        font-size: 13px;
-    }
-
-    .comments_Input:focus {
-        width: 50%;
-    }
-
-    .comments_Input::placeholder {
-        font-size: 15px;
-    }
-
-    #all_Input_Btn_Div button {
-        margin: 6px;
-        padding: 8px 14px;
-    }
-
-    #post_Comment_Btn {
-        font-size: 12px;
-    }
-
-    #clear_Comments_Input {
-        font-size: 12px;
-    }
-
-    #people_Comments_Div {
-        padding: 30px 10px 20px 10px;
     }
 
     #sec4 {
@@ -1254,10 +1051,6 @@ header {
     #sec1_Web_Intro h1 {
         font-size: 15px;
         margin-bottom: 15px;
-    }
-
-    #people_Comments_Div h1 {
-        font-size: 9px;
     }
 
     #custom_Cards_Title {
@@ -1444,10 +1237,6 @@ header {
         padding: 5px 10px;
     }
 
-    #people_Comments_Div h1 {
-        font-size: 8px;
-    }
-
     #custom_Cards_Title {
         font-size: 13px;
         padding: 6px 14px;
@@ -1540,6 +1329,11 @@ header {
         font-size: 17px;
     }
 
+    .other_Services_Contact_Us{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
     #how_To_Book_Driver{
         font-size: 12px;
     }
@@ -1573,49 +1367,6 @@ header {
 
     #comments_Page {
         font-size: 13px;
-        padding: 6px 12px;
-    }
-
-    #all_Comments_Title {
-        font-size: 6px;
-    }
-
-    #comments_Image {
-        width: 100px;
-    }
-
-    #comments_Note_Btn{
-        font-size: 11px;
-    }
-
-    .comments_Input {
-        width: 40%;
-        font-size: 10px;
-    }
-
-    .comments_Input:focus {
-        width: 60%;
-    }
-
-    .comments_Input::placeholder {
-        font-size: 13px;
-    }
-
-    #all_Input_Btn_Div button {
-        margin: 4px;
-        padding: 6px 12px;
-    }
-
-    #post_Comment_Btn {
-        font-size: 10px;
-    }
-
-    #clear_Comments_Input {
-        font-size: 10px;
-    }
-
-    #people_Comments_Div h1 {
-        font-size: 7px;
         padding: 6px 12px;
     }
 
