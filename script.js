@@ -89,6 +89,240 @@ let villaDetailsCipanas = [
 ];
 
 
+function rebuild_All_Villa_Cards(id, goToThisArea) {
+
+    if (id === "all_Price") {
+
+        cisarua_villa_Area_Id.innerHTML = "";
+        cipanas_villa_Area_Id.innerHTML = "";
+
+        allCardsDataCisarua = [
+            {
+                id: "Cisarua1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+            {
+                id: "Cisarua2",
+                cardNum: "2",
+                image: "taxas1_choprial_ID2/2.jpg",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "اربعة مليون وخمس مئة روبية يوميا",
+            },
+            {
+                id: "Cisarua3",
+                cardNum: "3",
+                image: "real_choprial_ID3/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "سبع مية وخمسين روبية يوميا",
+            },
+            {
+                id: "Cisarua4",
+                cardNum: "4",
+                image: "harizbon_choprial_ID4/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "مليون وثلاث مئة وخمسين روبية يوميا",
+            },
+        ];
+        allCardsDataCipanas = [
+            {
+                id: "Cipanas1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+        ];
+
+        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
+        custom_Cisarua_Cards.innerText = "جميع الاسعار ▼";
+        custom_Cipanas_Cards.innerText = "جميع الاسعار ▼";
+        villa_Details_Area.innerHTML = "";
+    } else if (id === "four_Millons") {
+
+        cisarua_villa_Area_Id.innerHTML = "";
+        cipanas_villa_Area_Id.innerHTML = "";
+
+        allCardsDataCisarua = [
+            {
+                id: "Cisarua1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+            {
+                id: "Cisarua2",
+                cardNum: "2",
+                image: "taxas1_choprial_ID2/2.jpg",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "اربعة مليون وخمس مئة روبية يوميا",
+            },
+            {
+                id: "Cisarua3",
+                cardNum: "3",
+                image: "real_choprial_ID3/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "سبع مية وخمسين روبية يوميا",
+            },
+            {
+                id: "Cisarua4",
+                cardNum: "4",
+                image: "harizbon_choprial_ID4/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "مليون وثلاث مئة وخمسين روبية يوميا",
+            },
+        ];
+        allCardsDataCipanas = [
+            {
+                id: "Cisarua1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+        ];
+
+        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
+        custom_Cisarua_Cards.innerText = "اربع مليون روبية او اقل ▼";
+        custom_Cipanas_Cards.innerText = "اربع مليون روبية او اقل ▼";
+        villa_Details_Area.innerHTML = "";
+
+    } else if (id === "three_Millons") {
+
+        cisarua_villa_Area_Id.innerHTML = "";
+        cipanas_villa_Area_Id.innerHTML = "";
+
+        allCardsDataCisarua = [
+            {
+                id: "Cisarua1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+            {
+                id: "Cisarua3",
+                cardNum: "3",
+                image: "real_choprial_ID3/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "سبع مية وخمسين روبية يوميا",
+            },
+            {
+                id: "Cisarua4",
+                cardNum: "4",
+                image: "harizbon_choprial_ID4/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "مليون وثلاث مئة وخمسين روبية يوميا",
+            },
+        ];
+        allCardsDataCipanas = [
+            {
+                id: "Cisarua1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+        ];
+
+        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
+        custom_Cisarua_Cards.innerText = "ثلاث مليون روبية او اقل ▼";
+        custom_Cipanas_Cards.innerText = "ثلاث مليون روبية او اقل ▼";
+        villa_Details_Area.innerHTML = "";
+    } else if (id === "two_Millons") {
+
+        cisarua_villa_Area_Id.innerHTML = "";
+        cipanas_villa_Area_Id.innerHTML = "";
+
+        allCardsDataCisarua = [
+            {
+                id: "Cisarua1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+            {
+                id: "Cisarua3",
+                cardNum: "3",
+                image: "real_choprial_ID3/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "سبع مية وخمسين روبية يوميا",
+            },
+            {
+                id: "Cisarua4",
+                cardNum: "4",
+                image: "harizbon_choprial_ID4/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "مليون وثلاث مئة وخمسين روبية يوميا",
+            },
+        ];
+        allCardsDataCipanas = [
+            {
+                id: "Cisarua1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+        ];
+
+        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
+        custom_Cisarua_Cards.innerText = "مليونين روبية او اقل ▼";
+        custom_Cipanas_Cards.innerText = "مليونين روبية او اقل ▼";
+        villa_Details_Area.innerHTML = "";
+    } else if (id === "one_Millon") {
+
+        cisarua_villa_Area_Id.innerHTML = "";
+        cipanas_villa_Area_Id.innerHTML = "";
+
+        allCardsDataCisarua = [
+            {
+                id: "Cisarua3",
+                cardNum: "3",
+                image: "real_choprial_ID3/1.JPG",
+                location: "بداخل تشوبريال تشوكلت",
+                price: "سبع مية وخمسين روبية يوميا",
+            },
+        ];
+        allCardsDataCipanas = [
+            {
+                id: "Cisarua1",
+                cardNum: "1",
+                image: "almadina_baFqih_ID1/1.jpg",
+                location: "خلف مطعم بافقيه",
+                price: "مليون واربع مئة وخمسين روبية يوميا",
+            },
+        ];
+
+        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
+        custom_Cisarua_Cards.innerText = "مليون روبية او اقل ▼";
+        custom_Cipanas_Cards.innerText = "مليون روبية او اقل ▼";
+        villa_Details_Area.innerHTML = "";
+    }
+
+
+    
+    ahjozly.style.display = 'block';
+    custom_Cards_Page.style.display = 'none';
+    let exit_Custom_Cards_Btn = document.getElementById("exit_Custom_Cards_Btn");
+    let custom_Cards_Overlay_Div = document.getElementById("custom_Cards_Overlay_Div");
+    custom_Cards_Overlay_Div.removeChild(exit_Custom_Cards_Btn);
+    custom_Cards_Page.removeChild(custom_Cards_Overlay_Div);
+
+
+    let goToAreaName = document.getElementById(goToThisArea);
+    goToAreaName.scrollIntoView({
+        block: 'center',
+        inline: 'center',
+    });
+
+}
+
+
 
 let ahjozly = document.getElementById("ahjozly");
 let ahjoz_Mkany = document.getElementById("ahjoz_Mkany");
@@ -100,6 +334,7 @@ let cisarua_villa_Area_Id = document.getElementById("cisarua_villa_Area_Id");
 let cipanas_villa_Area_Id = document.getElementById("cipanas_villa_Area_Id");
 let bigImgDiv = document.getElementById("big_Img_Div");
 let custom_Cisarua_Cards = document.getElementById("custom_Cisarua_Cards");
+let custom_Cipanas_Cards = document.getElementById("custom_Cipanas_Cards");
 let villa_Details_Area = document.getElementById("villa_Details_Area");
 
 
@@ -120,6 +355,7 @@ pic_My_Villa_Link.onclick = function () {
         goToAreaName.scrollIntoView({
             block: 'center',
             inline: 'center',
+            behavior: 'smooth',
         });
     }, 200);
 
@@ -158,6 +394,7 @@ function createOverlay(title, serviceType, bigImgDiv) {
     let overlayInfo = `
         <div id="find_My_Location_Div">
             <h1 id="other_services_Page_Title">${title}</h1>
+            <a href="https://wa.me/+6282246117155" target="_blank" class="other_Services_Contact_Us">تواصل معنا</a>
             <a id="how_To_Book_Driver">كيف احجز؟</a>
             <div id="find_My_Location_Box">
                 <div id="get_My_Location_Div">
@@ -221,6 +458,7 @@ page_Scroll = function () {
 
         window.scrollBy({
             top: scrollY,
+            behavior: 'smooth',
         });
     }, 300);
 };
@@ -240,6 +478,7 @@ go_To_Area_Part = function (id) {
     goToAreaName.scrollIntoView({
         block: 'center',
         inline: 'center',
+        behavior: 'smooth',
     });
 }
 /* Booking Method */
@@ -314,10 +553,7 @@ custom_Cards = function (goToThisArea) {
 
     ahjozly.style.display = 'none';
     
-
     custom_Cards_Page.style.display = 'block';
-
-
 
     let custom_Cards_Overlay_Div = document.createElement('div');
     custom_Cards_Overlay_Div.classList.add('overlay');
@@ -327,7 +563,6 @@ custom_Cards = function (goToThisArea) {
     exit_Custom_Cards_Btn.innerText = "الغاء";
     exit_Custom_Cards_Btn.classList.add("exit_Full_Screen_Btn");
     exit_Custom_Cards_Btn.id = "exit_Custom_Cards_Btn";
-
 
     if (bigImgDiv) {
         bigImgDiv.style.display = "none";
@@ -343,11 +578,9 @@ custom_Cards = function (goToThisArea) {
         goToAreaName.scrollIntoView({
             block: 'center',
             inline: 'center',
-            behavior: 'instant',
         });
         if (bigImgDiv) bigImgDiv.style.display = 'flex';
     }
-
 
     let custom_Cards_Title;
 
@@ -367,240 +600,9 @@ custom_Cards = function (goToThisArea) {
         </div>
     `
 
-
     custom_Cards_Overlay_Div.innerHTML = custom_Cards_Info;
     custom_Cards_Overlay_Div.appendChild(exit_Custom_Cards_Btn);
     custom_Cards_Page.appendChild(custom_Cards_Overlay_Div);
-}
-
-
-
-function rebuild_All_Villa_Cards(id, goToThisArea) {
-
-    if (id === "all_Price") {
-
-        cisarua_villa_Area_Id.innerHTML = "";
-        cipanas_villa_Area_Id.innerHTML = "";
-
-        allCardsDataCisarua = [
-            {
-                id: "Cisarua1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-            {
-                id: "Cisarua2",
-                cardNum: "2",
-                image: "taxas1_choprial_ID2/2.jpg",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "اربعة مليون وخمس مئة روبية يوميا",
-            },
-            {
-                id: "Cisarua3",
-                cardNum: "3",
-                image: "real_choprial_ID3/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "سبع مية وخمسين روبية يوميا",
-            },
-            {
-                id: "Cisarua4",
-                cardNum: "4",
-                image: "harizbon_choprial_ID4/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "مليون وثلاث مئة وخمسين روبية يوميا",
-            },
-        ];
-        allCardsDataCipanas = [
-            {
-                id: "Cipanas1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-        ];
-
-        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
-        custom_Cisarua_Cards.innerText = "جميع الاسعار ▼";
-        villa_Details_Area.innerHTML = "";
-    } else if (id === "four_Millons") {
-
-        cisarua_villa_Area_Id.innerHTML = "";
-        cipanas_villa_Area_Id.innerHTML = "";
-
-        allCardsDataCisarua = [
-            {
-                id: "Cisarua1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-            {
-                id: "Cisarua2",
-                cardNum: "2",
-                image: "taxas1_choprial_ID2/2.jpg",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "اربعة مليون وخمس مئة روبية يوميا",
-            },
-            {
-                id: "Cisarua3",
-                cardNum: "3",
-                image: "real_choprial_ID3/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "سبع مية وخمسين روبية يوميا",
-            },
-            {
-                id: "Cisarua4",
-                cardNum: "4",
-                image: "harizbon_choprial_ID4/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "مليون وثلاث مئة وخمسين روبية يوميا",
-            },
-        ];
-        allCardsDataCipanas = [
-            {
-                id: "Cisarua1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-        ];
-
-        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
-        custom_Cisarua_Cards.innerText = "اربع مليون روبية او اقل ▼";
-        villa_Details_Area.innerHTML = "";
-
-    } else if (id === "three_Millons") {
-
-        cisarua_villa_Area_Id.innerHTML = "";
-        cipanas_villa_Area_Id.innerHTML = "";
-
-        allCardsDataCisarua = [
-            {
-                id: "Cisarua1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-            {
-                id: "Cisarua3",
-                cardNum: "3",
-                image: "real_choprial_ID3/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "سبع مية وخمسين روبية يوميا",
-            },
-            {
-                id: "Cisarua4",
-                cardNum: "4",
-                image: "harizbon_choprial_ID4/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "مليون وثلاث مئة وخمسين روبية يوميا",
-            },
-        ];
-        allCardsDataCipanas = [
-            {
-                id: "Cisarua1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-        ];
-
-        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
-        custom_Cisarua_Cards.innerText = "ثلاث مليون روبية او اقل ▼";
-        villa_Details_Area.innerHTML = "";
-    } else if (id === "two_Millons") {
-
-        cisarua_villa_Area_Id.innerHTML = "";
-        cipanas_villa_Area_Id.innerHTML = "";
-
-        allCardsDataCisarua = [
-            {
-                id: "Cisarua1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-            {
-                id: "Cisarua3",
-                cardNum: "3",
-                image: "real_choprial_ID3/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "سبع مية وخمسين روبية يوميا",
-            },
-            {
-                id: "Cisarua4",
-                cardNum: "4",
-                image: "harizbon_choprial_ID4/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "مليون وثلاث مئة وخمسين روبية يوميا",
-            },
-        ];
-        allCardsDataCipanas = [
-            {
-                id: "Cisarua1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-        ];
-
-        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
-        custom_Cisarua_Cards.innerText = "مليونين روبية او اقل ▼";
-        villa_Details_Area.innerHTML = "";
-    } else if (id === "one_Millon") {
-
-        cisarua_villa_Area_Id.innerHTML = "";
-        cipanas_villa_Area_Id.innerHTML = "";
-
-        allCardsDataCisarua = [
-            {
-                id: "Cisarua3",
-                cardNum: "3",
-                image: "real_choprial_ID3/1.JPG",
-                location: "بداخل تشوبريال تشوكلت",
-                price: "سبع مية وخمسين روبية يوميا",
-            },
-        ];
-        allCardsDataCipanas = [
-            {
-                id: "Cisarua1",
-                cardNum: "1",
-                image: "almadina_baFqih_ID1/1.jpg",
-                location: "خلف مطعم بافقيه",
-                price: "مليون واربع مئة وخمسين روبية يوميا",
-            },
-        ];
-
-        rebuildAllCards(allCardsDataCisarua, allCardsDataCipanas);
-        custom_Cisarua_Cards.innerText = "مليون روبية او اقل ▼";
-        villa_Details_Area.innerHTML = "";
-    }
-
-
-    custom_Cards_Page.style.display = 'none';
-    ahjozly.style.display = 'block';
-    let exit_Custom_Cards_Btn = document.getElementById("exit_Custom_Cards_Btn");
-    let custom_Cards_Overlay_Div = document.getElementById("custom_Cards_Overlay_Div");
-    custom_Cards_Overlay_Div.removeChild(exit_Custom_Cards_Btn);
-    custom_Cards_Page.removeChild(custom_Cards_Overlay_Div);
-
-
-    let goToAreaName = document.getElementById(goToThisArea);
-    goToAreaName.scrollIntoView({
-        block: 'center',
-        inline: 'center',
-        behavior: 'instant',
-    });
-
 }
 
 
@@ -650,6 +652,7 @@ function create_Big_Img(imgArray) {
         document.body.appendChild(bigImgDiv);
     } else {
         bigImgDiv.innerHTML = '';
+        bigImgDiv.style.display = 'flex';
     }
 
 
@@ -744,10 +747,8 @@ function create_Big_Img(imgArray) {
             let imageHeight = imageToScrollTo.clientHeight;
             let topOffset = (windowHeight - imageHeight) / 2;
 
-            // Use window.scrollTo with behavior: 'smooth' for smooth scrolling
             window.scrollTo({
                 top: imageToScrollTo.offsetTop - topOffset,
-                behavior: 'instant'
             });
         }
     }
@@ -759,7 +760,10 @@ function create_Big_Img(imgArray) {
 function take_Me_Back(id) {
     let card = document.getElementById(id);
     let offset = card.getBoundingClientRect().top - (window.innerHeight / 2 - card.clientHeight / 2);
-    window.scrollBy({ top: offset });
+    window.scrollBy({
+        top: offset,
+        behavior: 'smooth',
+    });
     card.style.backgroundColor = "green";
     card.style.borderColor = "orange";
 }
