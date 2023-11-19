@@ -582,7 +582,6 @@ header {
 }
 
 #villa_Details_Video_Area {
-    direction: rtl;
     width: 18%;
     display: flex;
     justify-content: center;
@@ -591,7 +590,6 @@ header {
 }
 
 #villa_Details_Video_Area video {
-    direction: rtl;
     width: 100%;
     border-radius: 30px;
     cursor: pointer;
