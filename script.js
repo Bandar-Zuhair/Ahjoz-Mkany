@@ -485,6 +485,7 @@ Scroll_Up = function () {
     let scrollY = elementRect.bottom - viewHeight + 50;
     window.scrollBy({
         top: scrollY,
+        behavior: 'smooth',
     });
 };
 /* Go To This Area */
