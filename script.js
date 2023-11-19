@@ -497,14 +497,14 @@ page_Scroll = function () {
         let elementRect = element.getBoundingClientRect();
         let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
-        let scrollY = elementRect.bottom - viewHeight + 50;
+        let scrollY = elementRect.bottom - viewHeight + 70;
 
         // Smoothly scroll to the specified area
         window.scrollBy({
             top: scrollY,
             behavior: 'smooth',
         });
-    }, 300);
+    }, 1000);
 };
 
 /* Go Back To The Villa Details */
@@ -513,7 +513,7 @@ scroll_Up = function () {
     let element = document.getElementById("villa_Details_Video_Area");
     let elementRect = element.getBoundingClientRect();
     let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    let scrollY = elementRect.bottom - viewHeight + 50;
+    let scrollY = elementRect.bottom - viewHeight + 70;
 
     // Smoothly scroll to the specified area
     window.scrollBy({
