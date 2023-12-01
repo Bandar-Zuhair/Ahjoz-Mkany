@@ -1,6 +1,6 @@
 /* How To Add Villa?
    Make Sure You Enter The Villa Card Info And Villa Details Info
-   Make Sure You Enter Only The Villa Cards Info in Each Cards Filtter
+   Make Sure You Enter Only The Villa Cards Info in Each Cards Filtter That Suits The Card Price
 */
 
 
@@ -365,7 +365,9 @@ pic_My_Villa_Link.onclick = function () {
         /* if yes then set all the header Btn to block */
         cisarua_Bar_Btn.style.display = "block";
         cipanas_Bar_Btn.style.display = "block";
+        booking_Method.style.display = "block";
         note_Btn.style.display = "block";
+        rules_Btn.style.display = "block";
         goBackToSec1_Link.style.display = "block";
     }
 
@@ -392,6 +394,23 @@ pic_My_Villa_Link.onclick = function () {
         sec4.style.backgroundColor = 'transparent';
     }, 700);
 
+
+    var lastScrollTop = 0;
+    window.addEventListener("scroll", function () {
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            header.style.top = "-500px"; // Adjust this value to control how much the header is hidden when scrolling down
+            hide_Btn.style.top = "-500px"; // Adjust this value to control how much the hide_Btn is hidden when scrolling down
+        } else {
+            // Scrolling up
+            header.style.top = "0";
+            hide_Btn.style.top = "12px";
+        }
+
+        lastScrollTop = scrollTop;
+    });
 }
 function create_Overlay(title, serviceType, bigImgDiv) {
     // Create a div element for the overlay
@@ -550,6 +569,11 @@ note_Btn.onclick = function () {
     let enNote = "\n \nVillas in Indonesia are often already booked, especially on Saturdays and Sundays, so the best solution for this problem is by booking more than one villa to guarantee your place in case if the villas you chose are already booked and one of them is available for you.";
     alert(arNote + enNote);
 };
+
+/* Rules Button */
+rules_Btn.onclick = function () {
+    alert('- دخول الفيلا يكون من بعد الساعة 2 ظهرا،\n - الخروج من الفيلا يكون قبل الساعة 12 ظهرا.\n\n- Entering the villa will be after 2 pm,\n- Leaving the villa will be before 12 pm.')
+}
 
 /* Hide & Show Header */
 hide_Btn.onclick = function () {
