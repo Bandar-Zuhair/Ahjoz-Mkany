@@ -66,7 +66,7 @@ header {
     width: 100%;
     padding: 0 0 10px 0;
     display: flex;
-
+    transition: all 0.6s ease-in-out;
 }
 
 #header_Info {
@@ -90,9 +90,11 @@ header {
 }
 
 #header_Nav {
-    width: 40%;
+    width: 100%;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -143,11 +145,16 @@ header {
     transform: scale(1.03);
 }
 
+#header_Nav a {
+    margin: 5px;
+}
+
 #hide_Btn {
     position: fixed;
     left: 12px;
     top: 12px;
     box-shadow: 0px 0px 10px 1px white;
+    transition: all 0.4s ease-in-out;
 }
 
 #show_Btn {
@@ -198,7 +205,7 @@ header {
 #sec1 {
     display: flex;
     justify-content: center;
-    padding: 150px 0 30px 0;
+    padding: 170px 0 30px 0;
     min-height: 100px;
 }
 
@@ -584,15 +591,12 @@ header {
 #villa_Details_Video_Area {
     width: 18%;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     margin-left: 200px;
 }
 
 #villa_Details_Video_Area video {
-    display: flex;
-    flex-direction: row-reverse;
     width: 100%;
     border-radius: 30px;
     cursor: pointer;
@@ -675,10 +679,6 @@ header {
 
 /* 1500px */
 @media(max-width:1500px) {
-    #header_Nav {
-        width: 60%;
-    }
-
     #villa_Details_Video_Area {
         width: 23%;
     }
@@ -736,10 +736,6 @@ header {
         width: 32%;
     }
 
-    #header_Nav {
-        width: 70%;
-    }
-
     .villa_Card {
         width: 250px;
     }
@@ -765,14 +761,6 @@ header {
 
 /* 1025px */
 @media(max-width:1025px) {
-    #header_Nav a {
-        font-size: 14px;
-    }
-
-    #sec1 {
-        padding: 145px 0 20px 0;
-    }
-
     .intro_Area h1 {
         font-size: 25px;
     }
@@ -818,6 +806,10 @@ header {
 
 /* 800px */
 @media(max-width:800px) {
+    #header_Nav a {
+        font-size: 15px;
+    }
+
     #villa_Details_Text h1 {
         font-size: 10px;
     }
@@ -835,8 +827,8 @@ header {
         width: 50%;
     }
 
-    #header_Nav {
-        width: 85%;
+    #header_Nav a {
+        font-size: 12px;
     }
 
     #hide_Btn,
@@ -882,6 +874,14 @@ header {
 
 
 
+/* 604px */
+@media(max-width:604px) {
+    #sec1 {
+        padding: 190px 0 30px 0;
+    }
+}
+
+
 /* 600px */
 @media(max-width:600px) {
     #big_Img_Div img {
@@ -892,15 +892,6 @@ header {
         font-size: 19px;
     }
 
-    #header_Nav {
-        width: 90%;
-    }
-
-    #header_Nav a {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-
     #hide_Btn,
     #go_Back_Card {
         font-size: 12px;
@@ -908,10 +899,6 @@ header {
 
     #show_Btn {
         font-size: 13px;
-    }
-
-    #sec1 {
-        padding: 130px 0 20px 0;
     }
 
     .web_Icon {
@@ -1037,20 +1024,6 @@ header {
 
 /* 534px */
 @media(max-width:534px) {
-    #header_Nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #header_Nav a {
-        margin: 3px;
-    }
-
-    #sec1 {
-        padding: 140px 0 20px 0;
-    }
-
     #sec1_Web_Intro h1 {
         font-size: 15px;
         margin-bottom: 15px;
@@ -1128,17 +1101,25 @@ header {
 
 /* 465px */
 @media(max-width:465px) {
-    #sec1 {
-        padding: 170px 0 20px 0;
+    #header_Nav {
+        padding: 0 10px;
+    }
+
+    #header_Nav a {
+        font-size: 9px;
     }
 
     #hide_Btn,
     #go_Back_Card {
         font-size: 10px;
     }
-
+    
     #show_Btn {
         font-size: 11px;
+    }
+
+    #sec1 {
+        padding: 170px 0 30px 0;
     }
 
     #discount_Text {
@@ -1202,14 +1183,6 @@ header {
 @media(max-width:410px) {
     #big_Img_Div img {
         width: 65%;
-    }
-
-    #header_Nav a {
-        font-size: 11px;
-    }
-
-    #sec1 {
-        padding: 160px 0 10px 0;
     }
 
     #sec1_Web_Intro h1 {
@@ -1302,7 +1275,7 @@ header {
     }
 
     #header_Nav a {
-        font-size: 9px;
+        font-size: 7px;
     }
 
     #hide_Btn,
@@ -1315,7 +1288,7 @@ header {
     }
 
     #sec1 {
-        padding: 150px 0 10px 0;
+        padding: 160px 0 30px 0;
     }
 
     #sec1_Web_Intro h1 {
@@ -1425,8 +1398,17 @@ header {
     #villa_Details_Video_Area {
         width: 80%;
     }
-
+    
     .full_Screen_Img_Div img {
         height: 75vh;
+    }
+}
+
+
+
+/* 261px */
+@media(max-width:261px) {
+    #sec1 {
+        padding: 190px 0 30px 0;
     }
 }
