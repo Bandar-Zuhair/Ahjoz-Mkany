@@ -23,11 +23,6 @@ body {
 
 
 /* Unknow Effects */
-.hide_Display {
-    display: none;
-}
-
-
 .full_Screen_Img_Div {
     width: 100%;
     height: 100vh;
@@ -66,7 +61,7 @@ header {
     width: 100%;
     padding: 0 0 10px 0;
     display: flex;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #header_Info {
@@ -82,10 +77,10 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(0, 255, 0);
     width: 100%;
     padding: 10px 10px 20px 10px;
-    font-size: 22px;
+    font-size: 25px;
     cursor: default;
 }
 
@@ -100,8 +95,6 @@ header {
 }
 
 #header_Nav a,
-#hide_Btn,
-#show_Btn,
 #other_Services_Div h1,
 #get_My_Location_Btn,
 #my_Location_Link,
@@ -126,8 +119,6 @@ header {
 }
 
 #header_Nav a:hover,
-#hide_Btn:hover,
-#show_Btn:hover,
 #other_Services_Div h1:hover,
 #get_My_Location_Btn:hover,
 #my_Location_Link:hover,
@@ -147,24 +138,6 @@ header {
 
 #header_Nav a {
     margin: 5px;
-}
-
-#hide_Btn {
-    position: fixed;
-    left: 12px;
-    top: 12px;
-    box-shadow: 0px 0px 10px 1px white;
-    transition: all 0.4s ease-in-out;
-}
-
-#show_Btn {
-    color: white;
-    background: rgb(0, 0, 0);
-    z-index: 996;
-    position: fixed;
-    left: 12px;
-    top: 12px;
-    box-shadow: 0px 0px 10px 1px white;
 }
 
 #go_Back_Card {
@@ -260,7 +233,8 @@ header {
     padding: 30px;
 }
 
-#other_Services_Title h1, #other_services_Page_Title {
+#other_Services_Title h1,
+#other_services_Page_Title {
     background: black;
     font-size: 25px;
     padding: 10px 16px;
@@ -285,19 +259,19 @@ header {
     align-items: center;
 }
 
-#other_services_Page_Title{
+#other_services_Page_Title {
     font-size: 30px;
     margin: 5px;
 }
 
-.other_Services_Contact_Us{
+.other_Services_Contact_Us {
     font-size: 15px;
     padding: 8px 14px;
     margin: 10px 0;
     color: rgb(0, 255, 0);
 }
 
-#find_My_Location_Div{
+#find_My_Location_Div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -305,10 +279,10 @@ header {
     align-items: center;
 }
 
-#find_My_Location_Box{
+#find_My_Location_Box {
     background: rgb(80, 80, 80);
     width: 90%;
-    padding: 50px 10px ;
+    padding: 50px 10px;
     border: 2px solid white;
     border-radius: 30px;
     display: flex;
@@ -317,7 +291,7 @@ header {
     align-items: center;
 }
 
-#get_My_Location_Div{
+#get_My_Location_Div {
     margin: 30px;
     width: 100%;
     display: flex;
@@ -326,23 +300,23 @@ header {
     align-items: center;
 }
 
-#how_To_Book_Driver{
+#how_To_Book_Driver {
     font-size: 18px;
     padding: 6px 12px;
     margin: 5px 0 10px 0
 }
 
-#get_My_Location_Btn{
+#get_My_Location_Btn {
     font-size: 20px;
     padding: 10px 16px;
 }
 
-#your_Location_Text{
+#your_Location_Text {
     font-size: 20px;
     cursor: default;
 }
 
-#my_Location_Link{
+#my_Location_Link {
     padding: 10px 16px;
     font-size: 20px;
     color: rgb(0, 255, 0);
@@ -831,14 +805,8 @@ header {
         font-size: 12px;
     }
 
-    #hide_Btn,
     #go_Back_Card {
         font-size: 13px;
-        padding: 4px 8px;
-    }
-
-    #show_Btn {
-        font-size: 14px;
         padding: 4px 8px;
     }
 
@@ -892,13 +860,8 @@ header {
         font-size: 19px;
     }
 
-    #hide_Btn,
     #go_Back_Card {
         font-size: 12px;
-    }
-
-    #show_Btn {
-        font-size: 13px;
     }
 
     .web_Icon {
@@ -920,30 +883,30 @@ header {
         margin: 0 10px;
     }
 
-    #other_services_Page_Title{
+    #other_services_Page_Title {
         font-size: 20px;
     }
 
-    .other_Services_Contact_Us{
+    .other_Services_Contact_Us {
         font-size: 12px;
         padding: 6px 12px;
     }
 
-    #how_To_Book_Driver{
+    #how_To_Book_Driver {
         font-size: 15px;
         padding: 5px 10px;
     }
 
-    #get_My_Location_Btn{
+    #get_My_Location_Btn {
         font-size: 15px;
         padding: 8px 14px;
     }
 
-    #your_Location_Text{
+    #your_Location_Text {
         font-size: 15px;
     }
 
-    #my_Location_Link{
+    #my_Location_Link {
         padding: 8px 14px;
         font-size: 16px;
     }
@@ -1109,13 +1072,8 @@ header {
         font-size: 9px;
     }
 
-    #hide_Btn,
     #go_Back_Card {
         font-size: 10px;
-    }
-    
-    #show_Btn {
-        font-size: 11px;
     }
 
     #sec1 {
@@ -1278,13 +1236,8 @@ header {
         font-size: 7px;
     }
 
-    #hide_Btn,
     #go_Back_Card {
         font-size: 8px;
-    }
-
-    #show_Btn {
-        font-size: 9px;
     }
 
     #sec1 {
@@ -1304,28 +1257,28 @@ header {
         padding: 4px 10px;
     }
 
-    #other_services_Page_Title{
+    #other_services_Page_Title {
         font-size: 17px;
     }
 
-    .other_Services_Contact_Us{
+    .other_Services_Contact_Us {
         font-size: 10px;
         padding: 5px 10px;
     }
 
-    #how_To_Book_Driver{
+    #how_To_Book_Driver {
         font-size: 12px;
     }
 
-    #get_My_Location_Btn{
+    #get_My_Location_Btn {
         font-size: 12px;
     }
 
-    #your_Location_Text{
+    #your_Location_Text {
         font-size: 12px;
     }
 
-    #my_Location_Link{
+    #my_Location_Link {
         padding: 6px 12px;
         font-size: 13px;
     }
@@ -1398,7 +1351,7 @@ header {
     #villa_Details_Video_Area {
         width: 80%;
     }
-    
+
     .full_Screen_Img_Div img {
         height: 75vh;
     }
