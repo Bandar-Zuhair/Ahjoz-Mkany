@@ -402,16 +402,15 @@ pic_My_Villa_Link.onclick = function () {
         if (scrollTop > lastScrollTop) {
             // Scrolling down
             header.style.top = "-500px"; // Adjust this value to control how much the header is hidden when scrolling down
-            hide_Btn.style.top = "-500px"; // Adjust this value to control how much the hide_Btn is hidden when scrolling down
         } else {
             // Scrolling up
             header.style.top = "0";
-            hide_Btn.style.top = "12px";
         }
 
         lastScrollTop = scrollTop;
     });
 }
+
 function create_Overlay(title, serviceType, bigImgDiv) {
     // Create a div element for the overlay
     let overlayDiv = document.createElement('div');
@@ -573,22 +572,16 @@ note_Btn.onclick = function () {
 /* Rules Button */
 rules_Btn.onclick = function () {
     alert('- دخول الفيلا يكون من بعد الساعة 2 ظهرا،\n - الخروج من الفيلا يكون قبل الساعة 12 ظهرا.\n\n- Entering the villa will be after 2 pm,\n- Leaving the villa will be before 12 pm.')
-}
-
-/* Hide & Show Header */
-hide_Btn.onclick = function () {
-    // Hide the header and header buttons
-    header.classList.add("hide_Display");
-    hide_Btn.classList.add("hide_Display");
-    show_Btn.classList.remove("hide_Display");
-};
-show_Btn.onclick = function () {
-    // Show the header and header buttons
-    header.classList.remove("hide_Display");
-    hide_Btn.classList.remove("hide_Display");
-    show_Btn.classList.add("hide_Display");
 };
 
+/* Go Back To Up Webpage */
+goBackToSec1_Link.onclick = function () {
+    // Scroll to the top of the webpage
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // This makes the scrolling smooth
+    });
+};
 
 
 
