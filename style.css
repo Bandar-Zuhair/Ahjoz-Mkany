@@ -24,7 +24,7 @@ body {
 
 /* Unknow Effects */
 .full_Screen_Img_Div {
-    background: yellow;
+    background: linear-gradient(to top, rgb(103, 103, 103) 50%, rgb(56, 56, 56) 50%);
     height: 100vh;
     display: flex;
     justify-content: center;
