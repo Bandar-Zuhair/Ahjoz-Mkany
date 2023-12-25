@@ -17,13 +17,14 @@
 
 <body>
 
-
+    
+    <div id="other_Services_Page" style="display: none;"></div>
+    
+    <div id="custom_Cards_Page" style="display: none;"></div>
+    
+    <div id="big_Vid_Page" style="display: none;"></div>
 
     <div id="big_Images_Page" style="display: none;"></div>
-
-    <div id="custom_Cards_Page" style="display: none;"></div>
-
-    <div id="other_Services_Page" style="display: none;"></div>
 
 
 
@@ -35,13 +36,12 @@
             <div id="header_Info">
                 <h1 id="web_Title">احجزلي</h1>
                 <nav id="header_Nav">
-                    <a id="cisarua_Bar_Btn" onclick="go_To_Area_Part('come_To_Cisarua')" style="display: none;">سيساروا</a>
-                    <a id="cipanas_Bar_Btn" onclick="go_To_Area_Part('come_To_Cipanas')" style="display: none;">شيباناس</a>
+                    <a id="go_To_Choose_Areas_Btn" onclick="choose_Areas.scrollIntoView({block: 'center',inline: 'center',behavior: 'smooth',});" style="display: none;">المنطقة</a>
                     <a id="booking_Method" style="display: none;">كيف احجز؟</a>
                     <a id="note_Btn" style="display: none;">ملاحظة</a>
                     <a id="rules_Btn" style="display: none;">الشروط والاحكام</a>
                     <a href="https://wa.me/+6282246117155" target="_blank">تواصل معنا</a>
-                    <a id="goBackToSec1_Link" style="display: none;">عودة</a>
+                    <a id="goBackToSec1_Link" onclick="window.scrollTo({top: 0,behavior: 'smooth'});" style="display: none;">عودة</a>
                 </nav>
             </div>
         </header>
@@ -58,9 +58,6 @@
                     <ion-icon class="web_Icon" name="home-outline"></ion-icon>
                     <ion-icon class="web_Icon" name="car-outline"></ion-icon>
                     <ion-icon class="web_Icon" name="woman-outline"></ion-icon>
-                </div>
-                <div>
-                    <h1 id="discount_Text">وفي كل مرة تحجز من عندنا بتحصل على خصم في السعر</h1>
                 </div>
             </div>
         </section>
@@ -84,7 +81,7 @@
             <div id="sec3_Intro">
                 <h1>تعليقك ونصيحتك راح يفيدونا بشكل جدا كبير</h1>
                 <div id="sec3_Icon_Div">
-                    <ion-icon onclick="open_Comments_Page()" id="sec3_Icon" name="chatbubbles-outline"></ion-icon>
+                    <ion-icon id="sec3_Icon" name="chatbubbles-outline"></ion-icon>
                 </div>
             </div>
             <div id="comments_Page_Div">
@@ -98,58 +95,28 @@
         <div id="ahjoz_Mkany" style="display: none;">
             <section id="sec4">
                 <div id="sec4_Content">
-                    <h1 class="choose_Area_Intro" id="areas">المنطقة</h1>
+                    <h1 id="choose_Areas">المنطقة</h1>
                     <div>
-                        <a onclick="go_To_Area_Part('come_To_Cipanas')">شيباناس</a>
-                        <a onclick="go_To_Area_Part('come_To_Cisarua')">سيساروا</a>
+                        <a onclick="build_Villa_Cards('Cipanas')">شيباناس</a>
+                        <a onclick="build_Villa_Cards('Cisarua')">سيساروا</a>
                     </div>
                 </div>
             </section>
 
-
-
-            <!-- Horizontal Line for Cisarua -->
-            <hr id="Indonesia_Cisarua_Area"
-                style="border: none; height: 60px; background-color: rgba(145, 145, 145, 0.4); box-shadow: 0 0 5px 5px rgba(145, 145, 145, 0.4);">
 
 
 
             <!-- Choosing Villa In Cisarua Section -->
-            <section id="sec5">
-                <div class="intro_Area" id="come_To_Cisarua">
-                    <h1>احجزلي فيلا في منطقة سيساروا</h1>
+            <section id="sec5" style="display: none;">
+                <div class="intro_Area" id="come_To_Villa_Cards">
+                    <h1 id="villa_Cards_Title"></h1>
                 </div>
 
                 <div class="all_Cards_Info">
-                    <a id="custom_Cisarua_Cards" onclick="custom_Cards(this.id)" class="custom_Cards_Class">التصنيفات
-                        (جميع الاسعار)▼</a>
+                    <a id="custom_Cards_Title" onclick="custom_Cards()">تصنيفات الفلل ▼</a>
 
-                    <div id="cisarua_villa_Area_Id" class="villa_Area">
-                        <!-- All Cisarua Villa Cards -->
-                    </div>
-                </div>
-            </section>
-
-
-
-            <!-- Horizontal Line for Cipanas -->
-            <hr id="Indonesia_Cipanas_Area"
-                style="border: none; height: 60px; background-color: rgba(145, 145, 145, 0.4); box-shadow: 0 0 1px 1px rgba(145, 145, 145, 0.4);">
-
-
-
-            <!-- Choosing Villa In Cipanas Section -->
-            <section id="sec6">
-                <div class="intro_Area" id="come_To_Cipanas">
-                    <h1>احجزلي فيلا في منطقة شيباناس</h1>
-                </div>
-
-                <div class="all_Cards_Info">
-                    <a id="custom_Cipanas_Cards" onclick="custom_Cards(this.id)" class="custom_Cards_Class">التصنيفات
-                        (جميع الاسعار)▼</a>
-
-                    <div id="cipanas_villa_Area_Id" class="villa_Area">
-                        <!-- All Cisarua Villa Cards -->
+                    <div id="villa_Cards_Area" class="villa_Area">
+                        <!-- All Villa Cards -->
                     </div>
                 </div>
             </section>
@@ -163,12 +130,13 @@
 
 
             <!-- Villa Details Section -->
-            <section id="sec7">
+            <section id="sec7" style="display: none;">
                 <div class="intro_Area">
-                    <h1>تفاصيل الفيلا</h1>
+                    <h1 id="villa_Details_Intro_Text">تفاصيل الفيلا</h1>
                 </div>
                 <div id="villa_Details_Area">
                     <!-- All Villa Details Info -->
+                    <h1 id="no_Filtered_Cards_Found_Text">عذراً، لاتوجد فلل بمثل هذه المواصفات</h1>
                 </div>
             </section>
 
