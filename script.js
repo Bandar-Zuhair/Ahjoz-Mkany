@@ -361,7 +361,7 @@ pic_My_Maid_Link.onclick = function () {
 /* Scroll Down To Villa Details */
 page_Scroll = function () {
     setTimeout(function () {
-        /* Scroll down to the middle of villa_Details_Area element after 1 second */
+        /* Scroll down to the middle of 'villa_Details_Title' element after 1 second */
         villa_Details_Title.scrollIntoView({
             block: 'center',
             inline: 'center',
@@ -520,7 +520,8 @@ custom_Cards = function () {
     let submit_Custom_Cards_Btn = document.createElement("a");
     submit_Custom_Cards_Btn.innerText = "بحث";
     submit_Custom_Cards_Btn.classList.add("exit_Full_Screen_Btn");
-    submit_Custom_Cards_Btn.style.top = "120px";
+    submit_Custom_Cards_Btn.style.opacity = "0";
+    submit_Custom_Cards_Btn.style.left = "30px";
     submit_Custom_Cards_Btn.id = "submit_Custom_Cards_Btn";
 
 
@@ -555,7 +556,7 @@ custom_Cards = function () {
             <h1 class="custom_Card_Box_Title">اسعار الفلل باليوم</h1>
 
             <div class="custom_Card_Box_Options">
-                <h1 id="all_price" onclick="change_Clicked_Price_Btn_Color('all_price')">الكل</h1>
+                <h1 id="all_price" onclick="change_Clicked_Price_Btn_Color('all_price')">كل الاسعار</h1>
                 <h1 id="four_million_and_less" onclick="change_Clicked_Price_Btn_Color('four_million_and_less')">اربع مليون روبيه او اقل</h1>
                 <h1 id="three_million_and_less" onclick="change_Clicked_Price_Btn_Color('three_million_and_less')">ثلاث مليون روبيه او اقل</h1>
                 <h1 id="two_million_and_less" onclick="change_Clicked_Price_Btn_Color('two_million_and_less')">مليونين روبيه او اقل</h1>
@@ -567,7 +568,7 @@ custom_Cards = function () {
             <h1 class="custom_Card_Box_Title">مكان الفلل</h1>
 
             <div class="custom_Card_Box_Options">
-                <h1 id="all_place" onclick="change_Clicked_Place_Btn_Color('all_place')">الكل</h1>
+                <h1 id="all_place" onclick="change_Clicked_Place_Btn_Color('all_place')">كل الاماكن</h1>
                 <h1 id="inside" onclick="change_Clicked_Place_Btn_Color('inside')">داخل مجمع</h1>
                 <h1 id="outside" onclick="change_Clicked_Place_Btn_Color('outside')">ليست بداخل مجمع</h1>
             </div>
@@ -581,7 +582,7 @@ custom_Cards = function () {
             <h1 class="custom_Card_Box_Title">نوع الفلل</h1>
 
             <div class="custom_Card_Box_Options">
-                <h1 id="all_people" onclick="change_Clicked_Type_Btn_Color('all_people')">الكل</h1>
+                <h1 id="all_people" onclick="change_Clicked_Type_Btn_Color('all_people')">كل الانواع</h1>
                 <h1 id="family" onclick="change_Clicked_Type_Btn_Color('family')">للعوائل فقط</h1>
             </div>
         </div>
@@ -590,7 +591,7 @@ custom_Cards = function () {
             <h1 class="custom_Card_Box_Title">ملحقات الفلل</h1>
 
             <div class="custom_Card_Box_Options">
-                <h1 id="all_pool" onclick="change_Clicked_Pool_Btn_Color('all_pool')">الكل</h1>
+                <h1 id="all_pool" onclick="change_Clicked_Pool_Btn_Color('all_pool')">كل الملحقات</h1>
                 <h1 id="with_pool" onclick="change_Clicked_Pool_Btn_Color('with_pool')">مع مسبح</h1>
                 <h1 id="without_pool" onclick="change_Clicked_Pool_Btn_Color('without_pool')">بدون مسبح</h1>
             </div>
@@ -634,6 +635,9 @@ custom_Cards = function () {
         clicked_Btn.style.backgroundColor = "green";
         clicked_Btn.style.borderColor = "orange";
 
+        /* Show 'submit_Custom_Cards_Btn' after clicking on any option from the custom cards options */
+        submit_Custom_Cards_Btn.style.opacity = "1";
+
     }
     change_Clicked_Type_Btn_Color = function (id) {
 
@@ -649,6 +653,9 @@ custom_Cards = function () {
 
         clicked_Btn.style.backgroundColor = "green";
         clicked_Btn.style.borderColor = "orange";
+
+        /* Show 'submit_Custom_Cards_Btn' after clicking on any option from the custom cards options */
+        submit_Custom_Cards_Btn.style.opacity = "1";
 
     }
     change_Clicked_Place_Btn_Color = function (id) {
@@ -667,6 +674,9 @@ custom_Cards = function () {
         clicked_Btn.style.backgroundColor = "green";
         clicked_Btn.style.borderColor = "orange";
 
+        /* Show 'submit_Custom_Cards_Btn' after clicking on any option from the custom cards options */
+        submit_Custom_Cards_Btn.style.opacity = "1";
+
     }
     change_Clicked_Pool_Btn_Color = function (id) {
 
@@ -684,6 +694,8 @@ custom_Cards = function () {
         clicked_Btn.style.backgroundColor = "green";
         clicked_Btn.style.borderColor = "orange";
 
+        /* Show 'submit_Custom_Cards_Btn' after clicking on any option from the custom cards options */
+        submit_Custom_Cards_Btn.style.opacity = "1";
 
     }
 
@@ -720,9 +732,16 @@ custom_Cards = function () {
                 block: 'center',
                 inline: 'center',
             });
+
+
+            /* Hide 'submit_Custom_Cards_Btn' in everytime you click on 'submit_Custom_Cards_Btn' */
+            submit_Custom_Cards_Btn.style.display = "none";
+
+
         } else {
             alert('الرجاء التحقق من تحديد جميع الخيارات');
         }
+
 
     }
 
@@ -745,34 +764,34 @@ custom_Cards = function () {
         // Make sure the 'areaName' is the same as the 'villa_Cards_Title' innerText
         let areaName = villa_Cards_Title.innerText === 'احجزلي في منطقة سيساروا' ? 'سيساروا' : 'شيباناس';
 
+
+        refresh_All_Cards_Btn.onclick = function () {
+            villa_Cards_Area.innerHTML = "";
+            create_Villa_Card(new_Filterd_Cards, areaName);
+        }
+
+
+
         // if there was no cards found then display 'no_Cards_Found_Div' element
         // Otherwise display the found cards
         if (filtered_Cards_Array.length === 0) {
 
-            // Create 
-            let no_Cards_Found_Div = document.createElement('div');
-            no_Cards_Found_Div.id = 'no_Cards_Found_Div';
+            refresh_All_Cards_Btn.style.marginTop = '0';
 
-            // Create h1 element
-            let no_Cards_Found_h1 = document.createElement('h1');
-            no_Cards_Found_h1.textContent = 'عذراً، لاتوجد فلل بمثل هذه المواصفات';
-            no_Cards_Found_h1.id = 'no_Cards_Found_h1';
+            no_Cards_Found_Div.classList.remove('dispaly_None_Class');
+            no_Cards_Found_h1.classList.remove('dispaly_None_Class');
+            refresh_All_Cards_Btn.classList.remove('dispaly_None_Class');
 
-            // Create a element
-            let refresh_All_Cards_Btn = document.createElement('a');
-            refresh_All_Cards_Btn.textContent = 'عرض كل الفلل';
-            refresh_All_Cards_Btn.id = 'refresh_All_Cards_Btn';
-            refresh_All_Cards_Btn.onclick = function () {
-                villa_Cards_Area.innerHTML = "";
-                create_Villa_Card(new_Filterd_Cards, areaName);
-            }
 
-            // Append all element to 'no_Cards_Found_Div' element
-            no_Cards_Found_Div.appendChild(refresh_All_Cards_Btn);
-            no_Cards_Found_Div.appendChild(no_Cards_Found_h1);
-            villa_Cards_Area.appendChild(no_Cards_Found_Div);
         } else {
+
+            no_Cards_Found_h1.classList.add('dispaly_None_Class');
+
+            no_Cards_Found_Div.classList.remove('dispaly_None_Class');
+            refresh_All_Cards_Btn.classList.remove('dispaly_None_Class');
+
             create_Villa_Card(filtered_Cards_Array, areaName);
+
         }
 
         // Reset all the variables values after submitting the filtering
@@ -783,23 +802,6 @@ custom_Cards = function () {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -828,9 +830,6 @@ function show_Villa_Details(pass, areaName, uniqueNumber) {
     // Craete the HTML content for the 'villa_Details_Card'.
     let villa_Details_Info = `
         <a onclick="take_Me_Back(${uniqueNumber});" id="go_Back_Card">فيلا رقم ${uniqueNumber}</a>
-
-
-        <div id="all_Villa_Details_Info">
 
 
             <div id="villa_Details_Title">
@@ -867,18 +866,13 @@ function show_Villa_Details(pass, areaName, uniqueNumber) {
             </div>
     `;
 
+    
     // Set the inner HTML of the 'villa_Details_Card' to the 'villa_details_info' HTML.
     villa_Details_Card.innerHTML = villa_Details_Info;
 
     // Clear to reset and then append the 'villa_Details_Card' to the villa_Details_Area
     villa_Details_Area.innerHTML = "";
     villa_Details_Area.appendChild(villa_Details_Card);
-
-
-
-    // Pass all the images from the 'clicked_Card_Details' to the 'create_Big_Img' function.
-    create_Big_Img(clicked_Card_Details.imgAraay);
-
 
 
 
@@ -930,6 +924,10 @@ function show_Villa_Details(pass, areaName, uniqueNumber) {
 
 
     }
+
+
+    // Pass all the images from the 'clicked_Card_Details' to the 'create_Big_Img' function.
+    create_Big_Img(clicked_Card_Details.imgAraay);
 }
 
 
@@ -952,18 +950,31 @@ function create_Big_Img(imgArray) {
     }
 
     // Add a title for the image section.
-    bigImgDiv.appendChild(createElem('h1', { textContent: 'صور الفيلا', id: 'big_Img_Title' }));
+    bigImgDiv.appendChild(createElem('a', { textContent: 'صور الفيلا', id: 'big_Img_Title' }));
 
-    // Create a link to go back to villa details section.
-    let goBackVillaDetails = createElem('a', { textContent: 'تفاصيل الفيلا', id: 'go_Back_Villa_Details' });
-    bigImgDiv.appendChild(goBackVillaDetails);
+    let go_Back_Villa_Details = createElem('a', { textContent: 'تفاصيل الفيلا', id: 'go_Back_Villa_Details' });
+    bigImgDiv.appendChild(go_Back_Villa_Details);
+    go_Back_Villa_Details.style.opacity = '0';
     go_Back_Villa_Details.onclick = function () {
-        villa_Details_Intro_Text.scrollIntoView({
+        villa_Details_Title.scrollIntoView({
             block: 'center',
             inline: 'center',
             behavior: 'smooth',
         });
     }
+
+    window.addEventListener('scroll', function () {
+        let bigImgTitle = document.querySelector('#big_Img_Title');
+
+        let scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+        let bigImgTitlePosition = bigImgTitle.getBoundingClientRect();
+
+        if (bigImgTitlePosition.top <= 0) {
+            go_Back_Villa_Details.style.opacity = '1';
+        } else {
+            go_Back_Villa_Details.style.opacity = '0';
+        }
+    });
 
     /* Set a value for the variable to keep tracking images changing */
     let allImgArray = imgArray;
@@ -990,19 +1001,6 @@ function create_Big_Img(imgArray) {
         // Append the image element to the bigImgDiv.
         bigImgDiv.appendChild(imgCreate);
     });
-
-    // Add a scroll event listener to handle visibility of 'goBackVillaDetails' based on the position of 'villa_Details_Video' element.
-    /* window.addEventListener('scroll', function () {
-        let bigVidTitle = document.getElementById('villa_Details_Video');
-        if (bigVidTitle) {
-            let titlePosition = bigVidTitle.getBoundingClientRect();
-            if (titlePosition.bottom <= 100) {
-                goBackVillaDetails.style.opacity = 1;
-            } else {
-                goBackVillaDetails.style.opacity = 0;
-            }
-        }
-    }); */
 
     // Function to open an image in full-screen mode.
     function openFullScreenImg(imageSrc) {
