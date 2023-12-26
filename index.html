@@ -17,11 +17,11 @@
 
 <body>
 
-    
+
     <div id="other_Services_Page" style="display: none;"></div>
-    
+
     <div id="custom_Cards_Page" style="display: none;"></div>
-    
+
     <div id="big_Vid_Page" style="display: none;"></div>
 
     <div id="big_Images_Page" style="display: none;"></div>
@@ -36,12 +36,15 @@
             <div id="header_Info">
                 <h1 id="web_Title">احجزلي</h1>
                 <nav id="header_Nav">
-                    <a id="go_To_Choose_Areas_Btn" onclick="choose_Areas.scrollIntoView({block: 'center',inline: 'center',behavior: 'smooth',});" style="display: none;">المنطقة</a>
+                    <a id="go_To_Choose_Areas_Btn"
+                        onclick="choose_Areas.scrollIntoView({block: 'center',inline: 'center',behavior: 'smooth',});"
+                        style="display: none;">المنطقة</a>
                     <a id="booking_Method" style="display: none;">كيف احجز؟</a>
                     <a id="note_Btn" style="display: none;">ملاحظة</a>
                     <a id="rules_Btn" style="display: none;">الشروط والاحكام</a>
                     <a href="https://wa.me/+6282246117155" target="_blank">تواصل معنا</a>
-                    <a id="goBackToSec1_Link" onclick="window.scrollTo({top: 0,behavior: 'smooth'});" style="display: none;">عودة</a>
+                    <a id="goBackToSec1_Link" onclick="window.scrollTo({top: 0,behavior: 'smooth'});"
+                        style="display: none;">عودة</a>
                 </nav>
             </div>
         </header>
@@ -112,8 +115,13 @@
                     <h1 id="villa_Cards_Title"></h1>
                 </div>
 
-                <div class="all_Cards_Info">
+                <div id="all_Cards_Info">
                     <a id="custom_Cards_Title" onclick="custom_Cards()">تصنيفات الفلل ▼</a>
+
+                    <div id="no_Cards_Found_Div" class="dispaly_None_Class">
+                        <h1 id="no_Cards_Found_h1" class="dispaly_None_Class">عذراً، لاتوجد فلل بمثل هذه المواصفات</h1>
+                        <a id="refresh_All_Cards_Btn" class="dispaly_None_Class">عرض جميع الفلل</a>
+                    </div>
 
                     <div id="villa_Cards_Area" class="villa_Area">
                         <!-- All Villa Cards -->
@@ -136,7 +144,6 @@
                 </div>
                 <div id="villa_Details_Area">
                     <!-- All Villa Details Info -->
-                    <h1 id="no_Filtered_Cards_Found_Text">عذراً، لاتوجد فلل بمثل هذه المواصفات</h1>
                 </div>
             </section>
 
