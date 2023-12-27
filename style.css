@@ -12,6 +12,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-weight: 400;
+    user-select: none;
 }
 
 /* Body */
@@ -53,8 +54,8 @@ body {
 
 .full_Screen_Vid_Div video {
     width: auto;
-    height: 100%;
-    max-width: 100%;
+    height: 95%;
+    max-width: 95%;
     object-fit: contain;
     z-index: 999;
     border: 1px solid black;
@@ -220,7 +221,6 @@ header,
 .intro_Area,
 #choose_Areas,
 #refresh_All_Cards_Btn,
-.custom_Card_Box_Title,
 #villa_Details_Title h1,
 .villa_Details_Text_Contact_Us,
 .villa_Details_Villa_Pass,
@@ -228,7 +228,7 @@ header,
 #big_Img_Title,
 #other_Services_Div h1,
 #comments_Page,
-.exit_Full_Screen_Btn, #go_Back_Villa_Details {
+.exit_Full_Screen_Btn, #go_Back_Villa_Details, .custom_Card_Box_Title h1, .custom_Card_Box_Options h1 {
     background: black;
 }
 
@@ -478,12 +478,13 @@ header,
 }
 
 .intro_Area h1,
-#choose_Areas {
+#choose_Areas, .custom_Card_Box_Title h1 {
     text-align: center;
     font-size: 30px;
     padding: 10px 16px;
     color: rgb(0, 255, 0);
     cursor: default;
+    border: 1px solid white;
     box-shadow: 0px 0px 3px 1px white;
     border-radius: 30px;
 }
@@ -493,7 +494,6 @@ header,
     flex-direction: column;
     align-items: center;
 }
-
 
 .villa_Area {
     display: flex;
@@ -509,49 +509,53 @@ header,
     padding: 10px 16px;
 }
 
-#refresh_All_Cards_Btn {
-    color: orange;
-    font-size: 18px;
-    padding: 8px 14px;
-    margin-top: 10px;
-}
-
-.all_Custom_Sec {
+#all_Custom_Sec {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0 25px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 50px;
 }
 
 .custom_Card_Box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 100px;
-    align-items: center;
-    height: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+    width: 250px;
 }
 
-.custom_Card_Box_Title {
-    font-size: 20px;
-    padding: 10px 16px;
-    color: rgb(0, 255, 0);
-    cursor: default;
-    box-shadow: 0px 0px 5px 1px white;
-    border-radius: 30px;
-}
 
-.custom_Card_Box_Options {
+.custom_Card_Box_Title{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10px;
 }
 
-.custom_Card_Box_Options h1 {
-    padding: 10px 16px;
-    margin: 5px;
+.custom_Card_Box_Title h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    width: fit-content;
+}
+
+.custom_Card_Box_Options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom_Card_Box_Options h1{
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    width: fit-content;
+}
+
+#refresh_All_Cards_Btn {
+    color: orange;
+    font-size: 18px;
+    padding: 8px 14px;
+    margin-top: 10px;
 }
 
 #no_Cards_Found_Div {
@@ -563,7 +567,7 @@ header,
 
 #no_Cards_Found_h1 {
     color: red;
-    padding: 50px;
+    padding: 30px;
     font-size: 20px;
 }
 
@@ -804,6 +808,20 @@ header,
         width: 32%;
     }
 
+    .custom_Card_Box {
+        width: 200px;
+    }
+
+    .custom_Card_Box_Title h1{
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .custom_Card_Box_Options h1{
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
     .villa_Card {
         width: 250px;
     }
@@ -953,28 +971,28 @@ header,
         padding: 4px 8px;
     }
 
-    .all_Custom_Sec {
-        margin: 0 20px;
-    }
-
     #custom_Cards_Title {
         font-size: 17px;
         padding: 8px 14px;
     }
 
+    .custom_Card_Box {
+        width: 150px;
+    }
+
+    .custom_Card_Box_Title h1{
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .custom_Card_Box_Options h1{
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
     #refresh_All_Cards_Btn {
         font-size: 15px;
         padding: 6px 12px;
-    }
-
-    .custom_Card_Box_Title {
-        font-size: 17px;
-        padding: 8px 14px;
-    }
-
-    .custom_Card_Box_Options h1 {
-        font-size: 15px;
-        padding: 8px 14px;
     }
 
     .villa_Card {
@@ -1120,18 +1138,9 @@ header,
         font-size: 23px;
     }
 
-    .all_Custom_Sec {
-        margin: 0 15px;
-    }
-
-    .custom_Card_Box_Title {
-        font-size: 15px;
-        padding: 6px 12px;
-    }
-
-    .custom_Card_Box_Options h1 {
-        font-size: 13px;
-        padding: 6px 12px;
+    #no_Cards_Found_h1 {
+        padding: 25px;
+        font-size: 17px;
     }
 
     .villa_Card {
@@ -1299,18 +1308,9 @@ header,
         padding: 8px 14px;
     }
 
-    .all_Custom_Sec {
-        margin: 0 10px;
-    }
-
-    .custom_Card_Box_Title {
-        font-size: 13px;
-        padding: 5px 10px;
-    }
-
-    .custom_Card_Box_Options h1 {
-        font-size: 11px;
-        padding: 5px 10px;
+    #no_Cards_Found_h1 {
+        padding: 20px;
+        font-size: 15px;
     }
 
     #villa_Details_Title h1 {
@@ -1346,6 +1346,20 @@ header,
 @media(max-width:447px) {
     #sec1 {
         padding: 150px 0 0 0;
+    }
+
+    .custom_Card_Box {
+        width: 140px;
+    }
+
+    .custom_Card_Box_Title h1{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .custom_Card_Box_Options h1{
+        font-size: 11px;
+        margin-bottom: 7px;
     }
 }
 
@@ -1399,6 +1413,11 @@ header,
     }
 
     #sec3_Intro h1 {
+        font-size: 13px;
+    }
+
+    #no_Cards_Found_h1 {
+        padding: 15px;
         font-size: 13px;
     }
 
@@ -1509,25 +1528,25 @@ header,
         font-size: 20px;
     }
 
-    .intro_Area h1 {
-        font-size: 14px;
-        padding: 5px 10px;
+    .custom_Card_Box {
+        width: 120px;
     }
 
-    .all_Custom_Sec {
-        margin: 0 5px;
-    }
-
-    .custom_Card_Box_Title {
+    .custom_Card_Box_Title h1{
         font-size: 12px;
     }
 
-    .custom_Card_Box_Options h1 {
+    .custom_Card_Box_Options h1{
         font-size: 10px;
     }
 
-    #custom_Cards_Title {
-        font-size: 13px;
+    #no_Cards_Found_h1 {
+        font-size: 11px;
+    }
+
+    .intro_Area h1 {
+        font-size: 14px;
+        padding: 5px 10px;
     }
 
     #refresh_All_Cards_Btn {
@@ -1590,6 +1609,10 @@ header,
 
     .intro_Area h1 {
         font-size: 12px;
+    }
+
+    #no_Cards_Found_h1 {
+        font-size: 10px;
     }
 
     #villa_Details_Title h1 {
