@@ -28,9 +28,9 @@ without_pool
 let cards_Array_Cisarua = [
     {
         pass: "cisarua_a",
-        image: "almadina_baFqih_ID1/1.jpg",
+        image: "almadina_baFqih/1.jpg",
         location: "خلف مطعم بافقيه",
-        price: "مليون واربع مئة وخمسين روبية باليوم",
+        IDRprice: "مليون واربع مئة وخمسين روبية باليوم",
         filterPrice: "two_million_and_less",
         filterPlace: "outside",
         filterPeople: "family",
@@ -38,9 +38,9 @@ let cards_Array_Cisarua = [
     },
     {
         pass: "cisarua_ab",
-        image: "taxas1_choprial_ID2/2.jpg",
+        image: "taxas1_choprial/2.jpg",
         location: "بداخل تشوبريال تشوكلت",
-        price: "اربعة مليون وخمس مئة روبية باليوم",
+        IDRprice: "اربعة مليون وخمس مئة روبية باليوم",
         filterPrice: "four_million_and_less",
         filterPlace: "outside",
         filterPeople: "all_people",
@@ -48,9 +48,9 @@ let cards_Array_Cisarua = [
     },
     {
         pass: "cisarua_abc",
-        image: "real_choprial_ID3/1.JPG",
+        image: "real_choprial/1.JPG",
         location: "بداخل تشوبريال تشوكلت",
-        price: "سبع مية وخمسين روبية باليوم",
+        IDRprice: "سبع مية وخمسين روبية باليوم",
         filterPrice: "one_million_and_less",
         filterPlace: "outside",
         filterPeople: "all_people",
@@ -58,9 +58,9 @@ let cards_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcd",
-        image: "harizbon_choprial_ID4/1.JPG",
+        image: "harizbon_choprial/1.JPG",
         location: "بداخل تشوبريال تشوكلت",
-        price: "مليون وثلاث مئة وخمسين روبية باليوم",
+        IDRprice: "مليون وثلاث مئة وخمسين روبية باليوم",
         filterPrice: "two_million_and_less",
         filterPlace: "outside",
         filterPeople: "all_people",
@@ -68,9 +68,9 @@ let cards_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcde",
-        image: "marseilia_v4_ID5/1.JPG",
+        image: "marseilia_v4/1.JPG",
         location: "خلف مطعم بافقيه",
-        price: "لم يتم تحديد السعر بعد",
+        IDRprice: "لم يتم تحديد السعر بعد",
         filterPrice: "three_million_and_less",
         filterPlace: "inside",
         filterPeople: "family",
@@ -78,9 +78,9 @@ let cards_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcdef",
-        image: "marina_v2_ID6/1.JPG",
+        image: "marina_v2/1.JPG",
         location: "بداخل تشوبريال",
-        price: "لم يتم تحديد السعر بعد",
+        IDRprice: "لم يتم تحديد السعر بعد",
         filterPrice: "five_million_and_less",
         filterPlace: "inside",
         filterPeople: "all_people",
@@ -88,12 +88,42 @@ let cards_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcdefg",
-        image: "marina_c1_ID7/1.JPG",
+        image: "marina_c1/1.JPG",
         location: "بداخل تشوبريال",
-        price: "لم يتم تحديد السعر بعد",
+        IDRprice: "لم يتم تحديد السعر بعد",
         filterPrice: "sex_million_and_less",
         filterPlace: "inside",
         filterPeople: "all_people",
+        filterPool: "with_pool",
+    },
+    {
+        pass: "cisarua_abcdefgh",
+        image: "perdana_6/1.JPG",
+        location: "خلف مطعم بافقيه",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        filterPrice: "sex_million_and_less",
+        filterPlace: "inside",
+        filterPeople: "all_people",
+        filterPool: "with_pool",
+    },
+    {
+        pass: "cisarua_abcdefghi",
+        image: "perdana_7/1.JPG",
+        location: "خلف مطعم بافقيه",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        filterPrice: "sex_million_and_less",
+        filterPlace: "inside",
+        filterPeople: "all_people",
+        filterPool: "with_pool",
+    },
+    {
+        pass: "cisarua_abcdefghij",
+        image: "amanah_101/1.JPG",
+        location: "خلف مطعم بافقيه",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        filterPrice: "sex_million_and_less",
+        filterPlace: "outside",
+        filterPeople: "family",
         filterPool: "with_pool",
     },
 ];
@@ -101,9 +131,9 @@ let cards_Array_Cisarua = [
 let cards_Array_Cipanas = [
     {
         pass: "cipanas_a",
-        image: "almadina_baFqih_ID1/1.jpg",
+        image: "almadina_baFqih/1.jpg",
         location: "خلف مطعم بافقيه",
-        price: "مليون واربع مئة وخمسين روبية باليوم",
+        IDRprice: "مليون واربع مئة وخمسين روبية باليوم",
         filterPrice: "two_million_and_less",
         filterPlace: "outside",
         filterPeople: "family",
@@ -115,70 +145,114 @@ let cards_Array_Cipanas = [
 let cards_Details_Array_Cisarua = [
     {
         pass: "cisarua_a",
-        video: "almadina_baFqih_ID1/vid.mp4",
-        imgAraay: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
-        location: "خلف مطعم عربي",
-        description: "ليست بداخل مجمع+للعوائل فقط+صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه في كل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - برادة مياه+تلفزيون بلازما+جلسة خارجية+مسبح+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنه",
-        price: "مليون واربع مئة وخمسين روبيه باليوم",
+        video: "almadina_baFqih/vid.mp4",
+        imgAraay: ["almadina_baFqih/1.jpg", "almadina_baFqih/2.jpg", "almadina_baFqih/3.jpg", "almadina_baFqih/4.jpg", "almadina_baFqih/5.jpg", "almadina_baFqih/6.jpg", "almadina_baFqih/7.jpg", "almadina_baFqih/8.jpg", "almadina_baFqih/9.jpg", "almadina_baFqih/10.jpg", "almadina_baFqih/11.jpg", "almadina_baFqih/12.jpg",],
+        location: "خلف مطعم بافقيه",
+        description: "ليست بداخل مجمع+للعوائل فقط+صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه في كل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - برادة مياه+تلفزيون بلازما+جلسة خارجية+مسبح خاص+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة",
+        IDRprice: "مليون واربع مئة وخمسين روبيه باليوم",
+        SARprice: "تقريبا 369 ريال سعودي باليوم",
+        USDprice: "تقريبا 94 دولار امريكي باليوم",
     },
     {
         pass: "cisarua_ab",
-        video: "taxas1_choprial_ID2/vid.mp4",
-        imgAraay: ["taxas1_choprial_ID2/2.jpg", "taxas1_choprial_ID2/3.jpg", "taxas1_choprial_ID2/4.jpg", "taxas1_choprial_ID2/5.jpg", "taxas1_choprial_ID2/6.jpg", "taxas1_choprial_ID2/7.jpg", "taxas1_choprial_ID2/8.jpg", "taxas1_choprial_ID2/9.jpg", "taxas1_choprial_ID2/10.jpg", "taxas1_choprial_ID2/11.jpg", "taxas1_choprial_ID2/12.jpg", "taxas1_choprial_ID2/13.jpg", "taxas1_choprial_ID2/14.jpg", "taxas1_choprial_ID2/15.jpg", "taxas1_choprial_ID2/16.jpg", "taxas1_choprial_ID2/17.jpg", "taxas1_choprial_ID2/18.jpg", "taxas1_choprial_ID2/19.jpg", "taxas1_choprial_ID2/20.jpg", "taxas1_choprial_ID2/21.jpg", "taxas1_choprial_ID2/22.jpg",],
-        location: "فيلا بداخل تشوبريال تشوكلت",
-        description: "ليست بداخل مجمع+ليست للعوائل فقط+في الدور الاول صالة كبيرة+غرفتين نوم مع مكيف مركزي ودورة مياه لكل غرفة+مطبخ+في الدور الثاني صالة كبيرة+اربع غرف نوم مع مكيف مركزي ودورة مياه لكل غرفة+مطبخين+طاولة بلياردو+جلسة خارجية+مسبح+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنه",
-        price: "اربعة مليون واربع مئة وخمسين روبية يوميا",
+        video: "taxas1_choprial/vid.mp4",
+        imgAraay: ["taxas1_choprial/2.jpg", "taxas1_choprial/3.jpg", "taxas1_choprial/4.jpg", "taxas1_choprial/5.jpg", "taxas1_choprial/6.jpg", "taxas1_choprial/7.jpg", "taxas1_choprial/8.jpg", "taxas1_choprial/9.jpg", "taxas1_choprial/10.jpg", "taxas1_choprial/11.jpg", "taxas1_choprial/12.jpg", "taxas1_choprial/13.jpg", "taxas1_choprial/14.jpg", "taxas1_choprial/15.jpg", "taxas1_choprial/16.jpg", "taxas1_choprial/17.jpg", "taxas1_choprial/18.jpg", "taxas1_choprial/19.jpg", "taxas1_choprial/20.jpg", "taxas1_choprial/21.jpg", "taxas1_choprial/22.jpg",],
+        location: "داخل منطقة تشوبريال تشوكلت",
+        description: "ليست بداخل مجمع+ليست للعوائل فقط+في الدور الاول صالة كبيرة+غرفتين نوم مع مكيف مركزي ودورة مياه لكل غرفة+مطبخ+في الدور الثاني صالة كبيرة+اربع غرف نوم مع مكيف مركزي ودورة مياه لكل غرفة+مطبخين+طاولة بلياردو+جلسة خارجية+مسبح خاص+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة",
+        IDRprice: "اربعة مليون واربع مئة وخمسين روبية يوميا",
+        SARprice: "تقريبا 369 ريال سعودي باليوم",
+        USDprice: "تقريبا 94 دولار امريكي باليوم",
     },
     {
         pass: "cisarua_abc",
-        video: "real_choprial_ID3/vid.mp4",
-        imgAraay: ["real_choprial_ID3/1.JPG", "real_choprial_ID3/2.jpg", "real_choprial_ID3/3.jpg", "real_choprial_ID3/4.jpg", "real_choprial_ID3/5.jpg", "real_choprial_ID3/6.jpg", "real_choprial_ID3/7.jpg", "real_choprial_ID3/8.jpg", "real_choprial_ID3/9.jpg", "real_choprial_ID3/10.jpg", "real_choprial_ID3/11.jpg",],
-        location: "فيلا بداخل تشوبريال تشوكلت",
-        description: "ليست بداخل مجمع+ليست للعوائل فقط+صالة+غرفتين نوم بسرير مزدوج مع دورة مياه لكل غرفة+مطبخ - ثلاجة صغيره - طاولة طعام+تلفزيون بلازما مع سماعات+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة جيده+منطقة آمنه",
-        price: "سبع مية وخمسين روبية باليوم",
+        video: "real_choprial/vid.mp4",
+        imgAraay: ["real_choprial/1.JPG", "real_choprial/2.jpg", "real_choprial/3.jpg", "real_choprial/4.jpg", "real_choprial/5.jpg", "real_choprial/6.jpg", "real_choprial/7.jpg", "real_choprial/8.jpg", "real_choprial/9.jpg", "real_choprial/10.jpg", "real_choprial/11.jpg",],
+        location: "داخل منطقة تشوبريال تشوكلت",
+        description: "ليست بداخل مجمع+ليست للعوائل فقط+صالة+غرفتين نوم بسرير مزدوج مع دورة مياه لكل غرفة+مطبخ - ثلاجة صغيره - طاولة طعام+تلفزيون بلازما مع سماعات+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة جيده+منطقة آمنة",
+        IDRprice: "سبع مية وخمسين روبية باليوم",
+        SARprice: "تقريبا 369 ريال سعودي باليوم",
+        USDprice: "تقريبا 94 دولار امريكي باليوم",
     },
     {
         pass: "cisarua_abcd",
-        video: "real_choprial_ID3/vid.mp4",
-        imgAraay: ["harizbon_choprial_ID4/1.JPG", "harizbon_choprial_ID4/2.JPG", "harizbon_choprial_ID4/3.JPG", "harizbon_choprial_ID4/4.JPG", "harizbon_choprial_ID4/5.JPG", "harizbon_choprial_ID4/6.JPG",],
-        location: "فيلا بداخل تشوبريال تشوكلت",
+        video: "real_choprial/vid.mp4",
+        imgAraay: ["harizbon_choprial/1.JPG", "harizbon_choprial/2.JPG", "harizbon_choprial/3.JPG", "harizbon_choprial/4.JPG", "harizbon_choprial/5.JPG", "harizbon_choprial/6.JPG",],
+        location: "داخل منطقة تشوبريال تشوكلت",
         description: "ليست باخل مجمع+ليست للعوائل فقط+صالة+ثلاث غرف نوم بسرير مزدوج مع دورة مياه لكل غرفة+مطبخ+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة جيده+منطقة جيده",
-        price: "مليون وثلاث مئة وخمسين روبية باليوم",
+        IDRprice: "مليون وثلاث مئة وخمسين روبية باليوم",
+        SARprice: "تقريبا 369 ريال سعودي باليوم",
+        USDprice: "تقريبا 94 دولار امريكي باليوم",
     },
     {
         pass: "cisarua_abcde",
-        video: "almadina_baFqih_ID1/vid.mp4",
-        imgAraay: ["marseilia_v4_ID5/1.JPG", "marseilia_v4_ID5/2.JPG", "marseilia_v4_ID5/3.JPG", "marseilia_v4_ID5/4.JPG", "marseilia_v4_ID5/5.JPG", "marseilia_v4_ID5/6.JPG", "marseilia_v4_ID5/7.JPG", "marseilia_v4_ID5/8.JPG", "marseilia_v4_ID5/9.JPG", "marseilia_v4_ID5/10.JPG", "marseilia_v4_ID5/11.JPG",],
-        location: "فيلا خلف مطعم بافقيه للعوائل فقط",
-        description: "بداخل مجمع+للعوائل فقط+في الدور الاول صالة كبيرة مع دورة مياه وغسالة ملابس+غرفة نوم بسرير مزدوج+مكيف مركزي ودورة مياه+سخلن مياه في كل دورة مياه+مطبخ+تلفزيون بلازما مع سماعات+مسبح خاص+في الدور الثاني ممر جميل+ثلاث غرف نوم بسرير مزدوج مع مكيف مركزي ودورة مياه لكل غرفة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنه",
-        price: "لم يتم تحديد السعر بعد",
+        video: "almadina_baFqih/vid.mp4",
+        imgAraay: ["marseilia_v4/1.JPG", "marseilia_v4/2.JPG", "marseilia_v4/3.JPG", "marseilia_v4/4.JPG", "marseilia_v4/5.JPG", "marseilia_v4/6.JPG", "marseilia_v4/7.JPG", "marseilia_v4/8.JPG", "marseilia_v4/9.JPG", "marseilia_v4/10.JPG", "marseilia_v4/11.JPG",],
+        location: "خلف مطعم بافقيه للعوائل فقط",
+        description: "بداخل مجمع+للعوائل فقط+في الدور الاول صالة كبيرة مع دورة مياه وغسالة ملابس+غرفة نوم بسرير مزدوج+مكيف مركزي ودورة مياه+سخلن مياه في كل دورة مياه+مطبخ+تلفزيون بلازما مع سماعات+مسبح خاص+في الدور الثاني ممر جميل+ثلاث غرف نوم بسرير مزدوج مع مكيف مركزي ودورة مياه لكل غرفة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
     },
     {
         pass: "cisarua_abcdef",
-        video: "almadina_baFqih_ID1/vid.mp4",
-        imgAraay: ["marina_v2_ID6/1.JPG", "marina_v2_ID6/2.JPG", "marina_v2_ID6/3.JPG", "marina_v2_ID6/4.JPG", "marina_v2_ID6/5.JPG", "marina_v2_ID6/6.JPG", "marina_v2_ID6/7.JPG", "marina_v2_ID6/8.JPG", "marina_v2_ID6/9.JPG", "marina_v2_ID6/10.JPG", "marina_v2_ID6/11.JPG", "marina_v2_ID6/12.JPG", "marina_v2_ID6/13.JPG", "marina_v2_ID6/14.JPG", "marina_v2_ID6/15.JPG", "marina_v2_ID6/16.JPG",],
-        location: "فيلا بداخل تشوبريال",
-        description: "بداخل مجمع+ليست للعوائل فقط+الدور الاول صالة كبيرة ودورة مياه مع غسالة+مكواة ملابس+غرفة نوم بسرير مزدوج+مكيف مركزي ودورة مياه+مطبخ - ثلاجة - مايكرويف+تلفزيون بلازما مع سماعات+مسبح خاص+في الدور الثاني صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنه+ممنوع استخدام الالعاب النارية+ممنوع رفع صوت الاغاني من بعد الساعة 12 ليلا",
-        price: "لم يتم تحديد السعر بعد",
+        video: "almadina_baFqih/vid.mp4",
+        imgAraay: ["marina_v2/1.JPG", "marina_v2/2.JPG", "marina_v2/3.JPG", "marina_v2/4.JPG", "marina_v2/5.JPG", "marina_v2/6.JPG", "marina_v2/7.JPG", "marina_v2/8.JPG", "marina_v2/9.JPG", "marina_v2/10.JPG", "marina_v2/11.JPG", "marina_v2/12.JPG", "marina_v2/13.JPG", "marina_v2/14.JPG", "marina_v2/15.JPG", "marina_v2/16.JPG",],
+        location: "داخل منطقة تشوبريال",
+        description: "بداخل مجمع+ليست للعوائل فقط+الدور الاول صالة كبيرة ودورة مياه مع غسالة+مكواة ملابس+غرفة نوم بسرير مزدوج+مكيف مركزي ودورة مياه+مطبخ - ثلاجة - مايكرويف+تلفزيون بلازما مع سماعات+مسبح خاص+في الدور الثاني صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع رفع صوت الاغاني من بعد الساعة 12 ليلا",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
     },
     {
         pass: "cisarua_abcdefg",
-        video: "almadina_baFqih_ID1/vid.mp4",
-        imgAraay: ["marina_c1_ID7/1.JPG", "marina_c1_ID7/2.JPG", "marina_c1_ID7/3.JPG", "marina_c1_ID7/4.JPG", "marina_c1_ID7/5.JPG", "marina_c1_ID7/6.JPG", "marina_c1_ID7/7.JPG",],
-        location: "فيلا بداخل تشوبريال",
-        description: "بداخل مجمع+ليست للعوائل فقط+صالة+غرفتين نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - طاولة طعام+تلفزيون بلازما+مسبح مشترك مع الفيلا العلوية+جلسة خارجية+مطله على منظر جميل+انترنت مجاني خاص+مواقف سيارات+خدمة ممتازة+منطقة آمنه+ممنوع استخدام الالعاب النارية+ممنوع رفع صوت الاغاني من بعد الساعة 12 ليلا",
-        price: "لم يتم تحديد السعر بعد",
+        video: "almadina_baFqih/vid.mp4",
+        imgAraay: ["marina_c1/1.JPG", "marina_c1/2.JPG", "marina_c1/3.JPG", "marina_c1/4.JPG", "marina_c1/5.JPG", "marina_c1/6.JPG", "marina_c1/7.JPG",],
+        location: "داخل منطقة تشوبريال",
+        description: "بداخل مجمع+ليست للعوائل فقط+صالة+غرفتين نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - طاولة طعام+تلفزيون بلازما+مسبح مشترك مع الفيلا العلوية+جلسة خارجية+مطله على منظر جميل+انترنت مجاني خاص+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع رفع صوت الاغاني من بعد الساعة 12 ليلا",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
+    },
+    {
+        pass: "cisarua_abcdefgh",
+        video: "almadina_baFqih/vid.mp4",
+        imgAraay: ["perdana_6/1.JPG", "perdana_6/2.JPG", "perdana_6/3.JPG", "perdana_6/4.JPG", "perdana_6/5.JPG", "perdana_6/6.JPG", "perdana_6/7.JPG", "perdana_6/8.JPG", "perdana_6/9.JPG", "perdana_6/10.JPG", "perdana_6/11.JPG", "perdana_6/12.JPG",],
+        location: "خلف مطعم بافقيه",
+        description: "بداخل مجمع+ليست للعوائل فقط+صالة+اربع غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - طاولة طعام - برادة مويه - معدات الشواء+تلفزيون بلازما+مسبح خاص+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع ادخال الحيوانات الاليفه داخل الفيلا",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
+    },
+    {
+        pass: "cisarua_abcdefghi",
+        video: "almadina_baFqih/vid.mp4",
+        imgAraay: ["perdana_7/1.JPG", "perdana_7/2.JPG", "perdana_7/3.JPG", "perdana_7/4.JPG", "perdana_7/5.JPG", "perdana_7/6.JPG", "perdana_7/7.JPG", "perdana_7/8.JPG", "perdana_7/9.JPG", "perdana_7/10.JPG", "perdana_7/11.JPG", "perdana_7/12.JPG", "perdana_7/13.JPG",],
+        location: "خلف مطعم بافقيه",
+        description: "بداخل مجمع+ليست للعوائل فقط+صالة+اربع غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - طاولة طعام - برادة مويه - معدات الشواء+تلفزيون بلازما+مسبح خاص+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع ادخال الحيوانات الاليفه داخل الفيلا",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
+    },
+    {
+        pass: "cisarua_abcdefghij",
+        video: "almadina_baFqih/vid.mp4",
+        imgAraay: ["amanah_101/1.JPG", "amanah_101/2.JPG", "amanah_101/3.JPG", "amanah_101/4.JPG", "amanah_101/5.JPG", "amanah_101/6.JPG", "amanah_101/7.JPG", "amanah_101/8.JPG", "amanah_101/9.JPG", "amanah_101/10.JPG", "amanah_101/11.JPG", "amanah_101/12.JPG", "amanah_101/13.JPG", "amanah_101/14.JPG", "amanah_101/15.JPG",],
+        location: "خلف مطعم بافقيه",
+        description: "ليست بداخل مجمع+للعوائل فقط+صالة+دورة مياه+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+غسالة+مكواة ملابس+مطبخ - ثلاجة - برادة مويه+طاولة طعام+تلفزيون بلازما+مسبح مشترك خاص+جلسة خارجية+مطله على منظر جميل+انترنت مجاني خاص+مواقف سيارات+خدمة ممتازة+منطقة آمنة",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
     },
 ];
 /* Cipanas Villa Details Create */
 let cards_Details_Array_Cipanas = [
     {
         pass: "cipanas_a",
-        video: "almadina_baFqih_ID1/vid.mp4",
-        imgAraay: ["almadina_baFqih_ID1/1.jpg", "almadina_baFqih_ID1/2.jpg", "almadina_baFqih_ID1/3.jpg", "almadina_baFqih_ID1/4.jpg", "almadina_baFqih_ID1/5.jpg", "almadina_baFqih_ID1/6.jpg", "almadina_baFqih_ID1/7.jpg", "almadina_baFqih_ID1/8.jpg", "almadina_baFqih_ID1/9.jpg", "almadina_baFqih_ID1/10.jpg", "almadina_baFqih_ID1/11.jpg", "almadina_baFqih_ID1/12.jpg",],
+        video: "almadina_baFqih/vid.mp4",
+        imgAraay: ["almadina_baFqih/1.jpg", "almadina_baFqih/2.jpg", "almadina_baFqih/3.jpg", "almadina_baFqih/4.jpg", "almadina_baFqih/5.jpg", "almadina_baFqih/6.jpg", "almadina_baFqih/7.jpg", "almadina_baFqih/8.jpg", "almadina_baFqih/9.jpg", "almadina_baFqih/10.jpg", "almadina_baFqih/11.jpg", "almadina_baFqih/12.jpg",],
         location: "خلف مطعم عربي",
-        description: "ليست بداخل مجمع+للعوائل فقط+صالة+ثلاث غرف نوم بسرير مزدوج مع مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - برادة مياه+تلفزيون بلازما+جلسة خارجية+مسبح+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنه+تواصل معنا للمزيد من المعلومات",
-        price: "مليون واربع مئة وخمسين روبيه يوميا",
+        description: "ليست بداخل مجمع+للعوائل فقط+صالة+ثلاث غرف نوم بسرير مزدوج مع مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - برادة مياه+تلفزيون بلازما+جلسة خارجية+مسبح+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+تواصل معنا للمزيد من المعلومات",
+        IDRprice: "مليون واربع مئة وخمسين روبيه يوميا",
     },
 ];
 
@@ -412,7 +486,7 @@ function create_Villa_Card(data, areaName) {
     // Go through each item in the 'data' value array (All Villa Cards Array Cisarua And Cipanas)
     data.forEach((item, i) => {
         // Get all the properties from each item in the object from the array
-        let { pass, image, location, price } = item;
+        let { pass, image, location, IDRprice } = item;
 
         // Create a new div element for the villa card
         let villaCard = document.createElement("div");
@@ -427,7 +501,7 @@ function create_Villa_Card(data, areaName) {
                 <img src="${image}" alt="احجز مكاني في فلل اندونيسيا" title="احجز مكاني في فلل اندونيسيا">
                 <div class="villa_Info">
                     <h1>${location}</h1>
-                    <h1 class="price">${price}</h1>
+                    <h1 class="price">${IDRprice}</h1>
                     <h1 class="villa_id">فيلا رقم ${uniqueNumber}</h1>
                     <h1 class="villa_Area_Name">${areaName}</h1>
                 </div>
@@ -550,54 +624,64 @@ custom_Cards = function () {
     // Create the HTML content for the 'custom_Cards_Overlay_Div'
     // Any spellings mistakes might cause problems later
     let custom_Cards_Info = `
-    <div class="all_Custom_Sec">
+        <div id="all_Custom_Sec">
 
-        <div class="custom_Card_Box">
-            <h1 class="custom_Card_Box_Title">اسعار الفلل باليوم</h1>
+            <div class="custom_Card_Box">
 
-            <div class="custom_Card_Box_Options">
-                <h1 id="all_price" onclick="change_Clicked_Price_Btn_Color('all_price')">كل الاسعار</h1>
-                <h1 id="four_million_and_less" onclick="change_Clicked_Price_Btn_Color('four_million_and_less')">اربع مليون روبيه او اقل</h1>
-                <h1 id="three_million_and_less" onclick="change_Clicked_Price_Btn_Color('three_million_and_less')">ثلاث مليون روبيه او اقل</h1>
-                <h1 id="two_million_and_less" onclick="change_Clicked_Price_Btn_Color('two_million_and_less')">مليونين روبيه او اقل</h1>
-                <h1 id="one_million_and_less" onclick="change_Clicked_Price_Btn_Color('one_million_and_less')">مليون روبيه او اقل</h1>
+                <div class="custom_Card_Box_Title">
+                    <h1>اسعار الفلل باليوم</h1>
+                </div>
+
+                <div class="custom_Card_Box_Options">
+                    <h1 id="all_price" onclick="change_Clicked_Price_Btn_Color('all_price')">كل الاسعار</h1>
+                    <h1 id="four_million_and_less" onclick="change_Clicked_Price_Btn_Color('four_million_and_less')">اربع مليون روبيه او اقل</h1>
+                    <h1 id="three_million_and_less" onclick="change_Clicked_Price_Btn_Color('three_million_and_less')">ثلاث مليون روبيه او اقل</h1>
+                    <h1 id="two_million_and_less" onclick="change_Clicked_Price_Btn_Color('two_million_and_less')">مليونين روبيه او اقل</h1>
+                    <h1 id="one_million_and_less" onclick="change_Clicked_Price_Btn_Color('one_million_and_less')">مليون روبيه او اقل</h1>
+                </div>
             </div>
-        </div>
 
-        <div class="custom_Card_Box">
-            <h1 class="custom_Card_Box_Title">مكان الفلل</h1>
+            <div class="custom_Card_Box">
 
-            <div class="custom_Card_Box_Options">
-                <h1 id="all_place" onclick="change_Clicked_Place_Btn_Color('all_place')">كل الاماكن</h1>
-                <h1 id="inside" onclick="change_Clicked_Place_Btn_Color('inside')">داخل مجمع</h1>
-                <h1 id="outside" onclick="change_Clicked_Place_Btn_Color('outside')">ليست بداخل مجمع</h1>
+                <div class="custom_Card_Box_Title">
+                    <h1>مكان الفلل</h1>
+                </div>
+
+                <div class="custom_Card_Box_Options">
+                    <h1 id="all_place" onclick="change_Clicked_Place_Btn_Color('all_place')">كل الاماكن</h1>
+                    <h1 id="inside" onclick="change_Clicked_Place_Btn_Color('inside')">داخل مجمع</h1>
+                    <h1 id="outside" onclick="change_Clicked_Place_Btn_Color('outside')">ليست بداخل مجمع</h1>
+                </div>
             </div>
-        </div>
 
-    </div>
+        
 
-    <div class="all_Custom_Sec">
+            <div class="custom_Card_Box">
 
-        <div class="custom_Card_Box">
-            <h1 class="custom_Card_Box_Title">نوع الفلل</h1>
+                <div class="custom_Card_Box_Title">
+                    <h1>نوع الفلل</h1>
+                </div>
 
-            <div class="custom_Card_Box_Options">
-                <h1 id="all_people" onclick="change_Clicked_Type_Btn_Color('all_people')">كل الانواع</h1>
-                <h1 id="family" onclick="change_Clicked_Type_Btn_Color('family')">للعوائل فقط</h1>
+                <div class="custom_Card_Box_Options">
+                    <h1 id="all_people" onclick="change_Clicked_Type_Btn_Color('all_people')">كل الانواع</h1>
+                    <h1 id="family" onclick="change_Clicked_Type_Btn_Color('family')">للعوائل فقط</h1>
+                </div>
             </div>
-        </div>
 
-        <div class="custom_Card_Box">
-            <h1 class="custom_Card_Box_Title">ملحقات الفلل</h1>
+            <div class="custom_Card_Box">
 
-            <div class="custom_Card_Box_Options">
-                <h1 id="all_pool" onclick="change_Clicked_Pool_Btn_Color('all_pool')">كل الملحقات</h1>
-                <h1 id="with_pool" onclick="change_Clicked_Pool_Btn_Color('with_pool')">مع مسبح</h1>
-                <h1 id="without_pool" onclick="change_Clicked_Pool_Btn_Color('without_pool')">بدون مسبح</h1>
+                <div class="custom_Card_Box_Title">
+                    <h1>ملحقات الفلل</h1>
+                </div>
+
+                <div class="custom_Card_Box_Options">
+                    <h1 id="all_pool" onclick="change_Clicked_Pool_Btn_Color('all_pool')">كل الملحقات</h1>
+                    <h1 id="with_pool" onclick="change_Clicked_Pool_Btn_Color('with_pool')">مع مسبح</h1>
+                    <h1 id="without_pool" onclick="change_Clicked_Pool_Btn_Color('without_pool')">بدون مسبح</h1>
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
     `;
 
     // Set the inner HTML of custom_Cards_Overlay_Div to custom_Cards_Info
@@ -739,7 +823,7 @@ custom_Cards = function () {
 
 
         } else {
-            alert('الرجاء التحقق من تحديد جميع الخيارات');
+            alert('- الرجاء التحقق من تحديد جميع الخيارات\n\n- Please ensure all the options are selected');
         }
 
 
@@ -766,6 +850,8 @@ custom_Cards = function () {
 
 
         refresh_All_Cards_Btn.onclick = function () {
+            no_Cards_Found_h1.classList.add('dispaly_None_Class');
+            
             villa_Cards_Area.innerHTML = "";
             create_Villa_Card(new_Filterd_Cards, areaName);
         }
@@ -776,7 +862,6 @@ custom_Cards = function () {
         // Otherwise display the found cards
         if (filtered_Cards_Array.length === 0) {
 
-            refresh_All_Cards_Btn.style.marginTop = '0';
 
             no_Cards_Found_Div.classList.remove('dispaly_None_Class');
             no_Cards_Found_h1.classList.remove('dispaly_None_Class');
@@ -853,7 +938,9 @@ function show_Villa_Details(pass, areaName, uniqueNumber) {
                 <div id="villa_Details_Description">
                 
                     <h1>${newDescription}</h1>
-                    <h1 class="price">${clicked_Card_Details.price}</h1>
+                    <h1 class="price">${clicked_Card_Details.IDRprice}</h1>
+                    <h1 class="price">${clicked_Card_Details.SARprice}</h1>
+                    <h1 class="price">${clicked_Card_Details.USDprice}</h1>
                     <a class="Contact_For_More_Info_Btn" href="https://wa.me/+6282246117155" target="_blank">تواصل معنا للمزيد من المعلومات</a>
 
                 </div>
@@ -891,7 +978,6 @@ function show_Villa_Details(pass, areaName, uniqueNumber) {
         bigVid.src = clicked_Card_Details.video;
         bigVid.setAttribute('controls', true);
         bigVid.setAttribute('title', 'احجزلي في فلل اندونيسيا');
-        bigVid.setAttribute('id', 'villa_Details_Video');
 
         // Append the video element to a specific location in your HTML document
         fullScreenVidOverlay.appendChild(bigVid);
