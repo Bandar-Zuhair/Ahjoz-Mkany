@@ -33,7 +33,7 @@ body {
 
 .full_Screen_Img_Div img {
     width: auto;
-    height: 95%;
+    height: 85%;
     max-width: 95%;
     z-index: 999;
     border: 1px solid black;
@@ -54,7 +54,7 @@ body {
 
 .full_Screen_Vid_Div video {
     width: auto;
-    height: 95%;
+    height: 85%;
     max-width: 95%;
     object-fit: contain;
     z-index: 999;
