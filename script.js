@@ -849,18 +849,19 @@ custom_Cards = function () {
         let areaName = villa_Cards_Title.innerText === 'احجزلي في منطقة سيساروا' ? 'سيساروا' : 'شيباناس';
 
 
-        refresh_All_Cards_Btn.onclick = function () {
-            no_Cards_Found_h1.classList.add('dispaly_None_Class');
-            
-            villa_Cards_Area.innerHTML = "";
-            create_Villa_Card(new_Filterd_Cards, areaName);
-        }
-
-
 
         // if there was no cards found then display 'no_Cards_Found_Div' element
         // Otherwise display the found cards
         if (filtered_Cards_Array.length === 0) {
+
+
+           refresh_All_Cards_Btn.onclick = function () {
+            no_Cards_Found_h1.classList.add('dispaly_None_Class');
+            
+            villa_Cards_Area.innerHTML = "";
+            refresh_All_Cards_Btn.classList.add('dispaly_None_Class');
+            create_Villa_Card(new_Filterd_Cards, areaName);
+        }
 
 
             no_Cards_Found_Div.classList.remove('dispaly_None_Class');
