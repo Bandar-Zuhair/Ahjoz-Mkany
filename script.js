@@ -5,10 +5,15 @@
    Make Sure To Focus On The Spellings While You're Entering Each Info in English
 */
 
+/* How To Remove Villa?
+   Make Sure To Remove The Villa From The Cards Array And The Card Details Array
+   make Sure To Remove The Villa From The Villa List That Matches The Same Pass Value
+*/
 
 /* 
 Filtering Keywords To Copy And Paste (MUST BE THE SAME):
 
+five_million_and_less
 four_million_and_less
 three_million_and_less
 two_million_and_less
@@ -30,7 +35,7 @@ let cards_Array_Cisarua = [
         pass: "cisarua_a",
         image: "almadina_baFqih/1.jpg",
         location: "خلف مطعم بافقيه",
-        IDRprice: "مليون واربع مئة وخمسين روبية باليوم",
+        IDRprice: "مليون واربع مئة وخمسين الف روبية باليوم",
         filterPrice: "two_million_and_less",
         filterPlace: "outside",
         filterPeople: "family",
@@ -40,8 +45,8 @@ let cards_Array_Cisarua = [
         pass: "cisarua_ab",
         image: "taxas1_choprial/2.jpg",
         location: "بداخل تشوبريال تشوكلت",
-        IDRprice: "اربعة مليون وخمس مئة روبية باليوم",
-        filterPrice: "four_million_and_less",
+        IDRprice: "اربعة مليون وخمس مئة الف روبية باليوم",
+        filterPrice: "five_million_and_less",
         filterPlace: "outside",
         filterPeople: "all_people",
         filterPool: "with_pool",
@@ -50,7 +55,7 @@ let cards_Array_Cisarua = [
         pass: "cisarua_abc",
         image: "real_choprial/1.JPG",
         location: "بداخل تشوبريال تشوكلت",
-        IDRprice: "سبع مية وخمسين روبية باليوم",
+        IDRprice: "سبع مية وخمسين الف روبية باليوم",
         filterPrice: "one_million_and_less",
         filterPlace: "outside",
         filterPeople: "all_people",
@@ -60,7 +65,7 @@ let cards_Array_Cisarua = [
         pass: "cisarua_abcd",
         image: "harizbon_choprial/1.JPG",
         location: "بداخل تشوبريال تشوكلت",
-        IDRprice: "مليون وثلاث مئة وخمسين روبية باليوم",
+        IDRprice: "مليون وثلاث مئة وخمسين الف روبية باليوم",
         filterPrice: "two_million_and_less",
         filterPlace: "outside",
         filterPeople: "all_people",
@@ -71,7 +76,7 @@ let cards_Array_Cisarua = [
         image: "marseilia_v4/1.JPG",
         location: "خلف مطعم بافقيه",
         IDRprice: "لم يتم تحديد السعر بعد",
-        filterPrice: "three_million_and_less",
+        filterPrice: "one_million_and_less",
         filterPlace: "inside",
         filterPeople: "family",
         filterPool: "with_pool",
@@ -81,7 +86,7 @@ let cards_Array_Cisarua = [
         image: "marina_v2/1.JPG",
         location: "بداخل تشوبريال",
         IDRprice: "لم يتم تحديد السعر بعد",
-        filterPrice: "five_million_and_less",
+        filterPrice: "one_million_and_less",
         filterPlace: "inside",
         filterPeople: "all_people",
         filterPool: "with_pool",
@@ -91,7 +96,7 @@ let cards_Array_Cisarua = [
         image: "marina_c1/1.JPG",
         location: "بداخل تشوبريال",
         IDRprice: "لم يتم تحديد السعر بعد",
-        filterPrice: "sex_million_and_less",
+        filterPrice: "one_million_and_less",
         filterPlace: "inside",
         filterPeople: "all_people",
         filterPool: "with_pool",
@@ -101,7 +106,7 @@ let cards_Array_Cisarua = [
         image: "perdana_6/1.JPG",
         location: "خلف مطعم بافقيه",
         IDRprice: "لم يتم تحديد السعر بعد",
-        filterPrice: "sex_million_and_less",
+        filterPrice: "one_million_and_less",
         filterPlace: "inside",
         filterPeople: "all_people",
         filterPool: "with_pool",
@@ -111,7 +116,7 @@ let cards_Array_Cisarua = [
         image: "perdana_7/1.JPG",
         location: "خلف مطعم بافقيه",
         IDRprice: "لم يتم تحديد السعر بعد",
-        filterPrice: "sex_million_and_less",
+        filterPrice: "one_million_and_less",
         filterPlace: "inside",
         filterPeople: "all_people",
         filterPool: "with_pool",
@@ -121,10 +126,60 @@ let cards_Array_Cisarua = [
         image: "amanah_101/1.JPG",
         location: "خلف مطعم بافقيه",
         IDRprice: "لم يتم تحديد السعر بعد",
-        filterPrice: "sex_million_and_less",
+        filterPrice: "one_million_and_less",
         filterPlace: "outside",
         filterPeople: "family",
         filterPool: "with_pool",
+    },
+    {
+        pass: "cisarua_abcdefghijk",
+        image: "perdana_3/1.JPG",
+        location: "خلف مطعم بافقيه",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        filterPrice: "one_million_and_less",
+        filterPlace: "inside",
+        filterPeople: "all_people",
+        filterPool: "with_pool",
+    },
+    {
+        pass: "cisarua_abcdefghijkl",
+        image: "perdana_2/1.JPG",
+        location: "خلف مطعم بافقيه",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        filterPrice: "one_million_and_less",
+        filterPlace: "inside",
+        filterPeople: "all_people",
+        filterPool: "with_pool",
+    },
+    {
+        pass: "cisarua_abcdefghijklm",
+        image: "golf_tulip/1.JPG",
+        location: "خلف مطعم بافقيه",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        filterPrice: "one_million_and_less",
+        filterPlace: "inside",
+        filterPeople: "family",
+        filterPool: "without_pool",
+    },
+    {
+        pass: "cisarua_abcdefghijklmn",
+        image: "golf_adenium/1.JPG",
+        location: "خلف مطعم بافقيه",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        filterPrice: "one_million_and_less",
+        filterPlace: "inside",
+        filterPeople: "family",
+        filterPool: "without_pool",
+    },
+    {
+        pass: "cisarua_abcdefghijklmno",
+        image: "nn/1.JPG",
+        location: "خلف مطعم بافقيه",
+        IDRprice: "سبع مئة الف روبية",
+        filterPrice: "one_million_and_less",
+        filterPlace: "outside",
+        filterPeople: "all_people",
+        filterPool: "without_pool",
     },
 ];
 /* Cipanas Card Data Create */
@@ -145,59 +200,59 @@ let cards_Array_Cipanas = [
 let cards_Details_Array_Cisarua = [
     {
         pass: "cisarua_a",
-        video: "almadina_baFqih/vid.mp4",
+        video: "almadina_baFqih/video.mp4",
         imgAraay: ["almadina_baFqih/1.jpg", "almadina_baFqih/2.jpg", "almadina_baFqih/3.jpg", "almadina_baFqih/4.jpg", "almadina_baFqih/5.jpg", "almadina_baFqih/6.jpg", "almadina_baFqih/7.jpg", "almadina_baFqih/8.jpg", "almadina_baFqih/9.jpg", "almadina_baFqih/10.jpg", "almadina_baFqih/11.jpg", "almadina_baFqih/12.jpg",],
-        location: "خلف مطعم بافقيه",
+        location: "فيلا ثلاث غرف خلف مطعم بافقيه",
         description: "ليست بداخل مجمع+للعوائل فقط+صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه في كل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - برادة مياه+تلفزيون بلازما+جلسة خارجية+مسبح خاص+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة",
-        IDRprice: "مليون واربع مئة وخمسين روبيه باليوم",
+        IDRprice: "مليون واربع مئة وخمسين الف روبيه باليوم",
         SARprice: "تقريبا 369 ريال سعودي باليوم",
         USDprice: "تقريبا 94 دولار امريكي باليوم",
     },
     {
         pass: "cisarua_ab",
-        video: "taxas1_choprial/vid.mp4",
+        video: "taxas1_choprial/video.mp4",
         imgAraay: ["taxas1_choprial/2.jpg", "taxas1_choprial/3.jpg", "taxas1_choprial/4.jpg", "taxas1_choprial/5.jpg", "taxas1_choprial/6.jpg", "taxas1_choprial/7.jpg", "taxas1_choprial/8.jpg", "taxas1_choprial/9.jpg", "taxas1_choprial/10.jpg", "taxas1_choprial/11.jpg", "taxas1_choprial/12.jpg", "taxas1_choprial/13.jpg", "taxas1_choprial/14.jpg", "taxas1_choprial/15.jpg", "taxas1_choprial/16.jpg", "taxas1_choprial/17.jpg", "taxas1_choprial/18.jpg", "taxas1_choprial/19.jpg", "taxas1_choprial/20.jpg", "taxas1_choprial/21.jpg", "taxas1_choprial/22.jpg",],
-        location: "داخل منطقة تشوبريال تشوكلت",
+        location: "فيلا ستة غرف بداخل منطقة تشوبريال تشوكلت",
         description: "ليست بداخل مجمع+ليست للعوائل فقط+في الدور الاول صالة كبيرة+غرفتين نوم مع مكيف مركزي ودورة مياه لكل غرفة+مطبخ+في الدور الثاني صالة كبيرة+اربع غرف نوم مع مكيف مركزي ودورة مياه لكل غرفة+مطبخين+طاولة بلياردو+جلسة خارجية+مسبح خاص+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة",
-        IDRprice: "اربعة مليون واربع مئة وخمسين روبية يوميا",
+        IDRprice: "اربعة مليون واربع مئة وخمسين الف روبية يوميا",
         SARprice: "تقريبا 369 ريال سعودي باليوم",
         USDprice: "تقريبا 94 دولار امريكي باليوم",
     },
     {
         pass: "cisarua_abc",
-        video: "real_choprial/vid.mp4",
+        video: "real_choprial/video.mp4",
         imgAraay: ["real_choprial/1.JPG", "real_choprial/2.jpg", "real_choprial/3.jpg", "real_choprial/4.jpg", "real_choprial/5.jpg", "real_choprial/6.jpg", "real_choprial/7.jpg", "real_choprial/8.jpg", "real_choprial/9.jpg", "real_choprial/10.jpg", "real_choprial/11.jpg",],
-        location: "داخل منطقة تشوبريال تشوكلت",
+        location: "فيلا ثلاث غرف بداخل منطقة تشوبريال تشوكلت",
         description: "ليست بداخل مجمع+ليست للعوائل فقط+صالة+غرفتين نوم بسرير مزدوج مع دورة مياه لكل غرفة+مطبخ - ثلاجة صغيره - طاولة طعام+تلفزيون بلازما مع سماعات+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة جيده+منطقة آمنة",
-        IDRprice: "سبع مية وخمسين روبية باليوم",
+        IDRprice: "سبع مية وخمسين الف روبية باليوم",
         SARprice: "تقريبا 369 ريال سعودي باليوم",
         USDprice: "تقريبا 94 دولار امريكي باليوم",
     },
     {
         pass: "cisarua_abcd",
-        video: "real_choprial/vid.mp4",
+        video: "real_choprial/video.mp4",
         imgAraay: ["harizbon_choprial/1.JPG", "harizbon_choprial/2.JPG", "harizbon_choprial/3.JPG", "harizbon_choprial/4.JPG", "harizbon_choprial/5.JPG", "harizbon_choprial/6.JPG",],
-        location: "داخل منطقة تشوبريال تشوكلت",
+        location: "فيلا ثلاث غرف بداخل منطقة تشوبريال تشوكلت",
         description: "ليست باخل مجمع+ليست للعوائل فقط+صالة+ثلاث غرف نوم بسرير مزدوج مع دورة مياه لكل غرفة+مطبخ+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة جيده+منطقة جيده",
-        IDRprice: "مليون وثلاث مئة وخمسين روبية باليوم",
+        IDRprice: "مليون وثلاث مئة وخمسين الف روبية باليوم",
         SARprice: "تقريبا 369 ريال سعودي باليوم",
         USDprice: "تقريبا 94 دولار امريكي باليوم",
     },
     {
         pass: "cisarua_abcde",
-        video: "almadina_baFqih/vid.mp4",
+        video: "marseilia_v4/video.mp4",
         imgAraay: ["marseilia_v4/1.JPG", "marseilia_v4/2.JPG", "marseilia_v4/3.JPG", "marseilia_v4/4.JPG", "marseilia_v4/5.JPG", "marseilia_v4/6.JPG", "marseilia_v4/7.JPG", "marseilia_v4/8.JPG", "marseilia_v4/9.JPG", "marseilia_v4/10.JPG", "marseilia_v4/11.JPG",],
-        location: "خلف مطعم بافقيه للعوائل فقط",
-        description: "بداخل مجمع+للعوائل فقط+في الدور الاول صالة كبيرة مع دورة مياه وغسالة ملابس+غرفة نوم بسرير مزدوج+مكيف مركزي ودورة مياه+سخلن مياه في كل دورة مياه+مطبخ+تلفزيون بلازما مع سماعات+مسبح خاص+في الدور الثاني ممر جميل+ثلاث غرف نوم بسرير مزدوج مع مكيف مركزي ودورة مياه لكل غرفة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة",
+        location: "فيلا اربع غرف خلف مطعم بافقيه للعوائل فقط",
+        description: "بداخل مجمع+للعوائل فقط+في الدور الاول صالة كبيرة مع دورة مياه وغسالة ملابس+غرفة نوم بسرير مزدوج+مكيف مركزي ودورة مياه+سخان مياه في دورة المياه+مطبخ+تلفزيون بلازما مع سماعات+مسبح خاص+في الدور الثاني ممر جميل+ثلاث غرف نوم بسرير مزدوج مع مكيف مركزي ودورة مياه لكل غرفة+سخان مياه لكل دورة مياه+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع رفع صوت الاغاني من بعد الساعة 12 ليلا+ممنوع استخدام الالعاب النارية",
         IDRprice: "لم يتم تحديد السعر بعد",
         SARprice: "لم يتم تحديد السعر بعد",
         USDprice: "لم يتم تحديد السعر بعد",
     },
     {
         pass: "cisarua_abcdef",
-        video: "almadina_baFqih/vid.mp4",
+        video: "marina_v2/video.mp4",
         imgAraay: ["marina_v2/1.JPG", "marina_v2/2.JPG", "marina_v2/3.JPG", "marina_v2/4.JPG", "marina_v2/5.JPG", "marina_v2/6.JPG", "marina_v2/7.JPG", "marina_v2/8.JPG", "marina_v2/9.JPG", "marina_v2/10.JPG", "marina_v2/11.JPG", "marina_v2/12.JPG", "marina_v2/13.JPG", "marina_v2/14.JPG", "marina_v2/15.JPG", "marina_v2/16.JPG",],
-        location: "داخل منطقة تشوبريال",
+        location: "فيلا اربع غرف بداخل منطقة تشوبريال",
         description: "بداخل مجمع+ليست للعوائل فقط+الدور الاول صالة كبيرة ودورة مياه مع غسالة+مكواة ملابس+غرفة نوم بسرير مزدوج+مكيف مركزي ودورة مياه+مطبخ - ثلاجة - مايكرويف+تلفزيون بلازما مع سماعات+مسبح خاص+في الدور الثاني صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع رفع صوت الاغاني من بعد الساعة 12 ليلا",
         IDRprice: "لم يتم تحديد السعر بعد",
         SARprice: "لم يتم تحديد السعر بعد",
@@ -205,9 +260,9 @@ let cards_Details_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcdefg",
-        video: "almadina_baFqih/vid.mp4",
+        video: "marina_c1/video.mp4",
         imgAraay: ["marina_c1/1.JPG", "marina_c1/2.JPG", "marina_c1/3.JPG", "marina_c1/4.JPG", "marina_c1/5.JPG", "marina_c1/6.JPG", "marina_c1/7.JPG",],
-        location: "داخل منطقة تشوبريال",
+        location: "فيلا غرفتين بداخل منطقة تشوبريال",
         description: "بداخل مجمع+ليست للعوائل فقط+صالة+غرفتين نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - طاولة طعام+تلفزيون بلازما+مسبح مشترك مع الفيلا العلوية+جلسة خارجية+مطله على منظر جميل+انترنت مجاني خاص+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع رفع صوت الاغاني من بعد الساعة 12 ليلا",
         IDRprice: "لم يتم تحديد السعر بعد",
         SARprice: "لم يتم تحديد السعر بعد",
@@ -215,9 +270,9 @@ let cards_Details_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcdefgh",
-        video: "almadina_baFqih/vid.mp4",
+        video: "perdana_6/video.mp4",
         imgAraay: ["perdana_6/1.JPG", "perdana_6/2.JPG", "perdana_6/3.JPG", "perdana_6/4.JPG", "perdana_6/5.JPG", "perdana_6/6.JPG", "perdana_6/7.JPG", "perdana_6/8.JPG", "perdana_6/9.JPG", "perdana_6/10.JPG", "perdana_6/11.JPG", "perdana_6/12.JPG",],
-        location: "خلف مطعم بافقيه",
+        location: "فيلا اربع غرف خلف مطعم بافقيه",
         description: "بداخل مجمع+ليست للعوائل فقط+صالة+اربع غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - طاولة طعام - برادة مويه - معدات الشواء+تلفزيون بلازما+مسبح خاص+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع ادخال الحيوانات الاليفه داخل الفيلا",
         IDRprice: "لم يتم تحديد السعر بعد",
         SARprice: "لم يتم تحديد السعر بعد",
@@ -225,9 +280,9 @@ let cards_Details_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcdefghi",
-        video: "almadina_baFqih/vid.mp4",
+        video: "perdana_7/video.mp4",
         imgAraay: ["perdana_7/1.JPG", "perdana_7/2.JPG", "perdana_7/3.JPG", "perdana_7/4.JPG", "perdana_7/5.JPG", "perdana_7/6.JPG", "perdana_7/7.JPG", "perdana_7/8.JPG", "perdana_7/9.JPG", "perdana_7/10.JPG", "perdana_7/11.JPG", "perdana_7/12.JPG", "perdana_7/13.JPG",],
-        location: "خلف مطعم بافقيه",
+        location: "فيلا اربع غرف خلف مطعم بافقيه",
         description: "بداخل مجمع+ليست للعوائل فقط+صالة+اربع غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - طاولة طعام - برادة مويه - معدات الشواء+تلفزيون بلازما+مسبح خاص+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع ادخال الحيوانات الاليفه داخل الفيلا",
         IDRprice: "لم يتم تحديد السعر بعد",
         SARprice: "لم يتم تحديد السعر بعد",
@@ -235,22 +290,72 @@ let cards_Details_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcdefghij",
-        video: "almadina_baFqih/vid.mp4",
+        video: "amanah_101/video.mp4",
         imgAraay: ["amanah_101/1.JPG", "amanah_101/2.JPG", "amanah_101/3.JPG", "amanah_101/4.JPG", "amanah_101/5.JPG", "amanah_101/6.JPG", "amanah_101/7.JPG", "amanah_101/8.JPG", "amanah_101/9.JPG", "amanah_101/10.JPG", "amanah_101/11.JPG", "amanah_101/12.JPG", "amanah_101/13.JPG", "amanah_101/14.JPG", "amanah_101/15.JPG",],
-        location: "خلف مطعم بافقيه",
+        location: "فيلا ثلاث غرف خلف مطعم بافقيه",
         description: "ليست بداخل مجمع+للعوائل فقط+صالة+دورة مياه+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+غسالة+مكواة ملابس+مطبخ - ثلاجة - برادة مويه+طاولة طعام+تلفزيون بلازما+مسبح مشترك خاص+جلسة خارجية+مطله على منظر جميل+انترنت مجاني خاص+مواقف سيارات+خدمة ممتازة+منطقة آمنة",
         IDRprice: "لم يتم تحديد السعر بعد",
         SARprice: "لم يتم تحديد السعر بعد",
         USDprice: "لم يتم تحديد السعر بعد",
+    },
+    {
+        pass: "cisarua_abcdefghijk",
+        video: "perdana_3/video.mp4",
+        imgAraay: ["perdana_3/1.JPG", "perdana_3/2.JPG", "perdana_3/3.JPG", "perdana_3/4.JPG", "perdana_3/5.JPG", "perdana_3/6.JPG", "perdana_3/7.JPG", "perdana_3/8.JPG", "perdana_3/9.JPG", "perdana_3/10.JPG", "perdana_3/11.JPG", "perdana_3/12.JPG", "perdana_3/13.JPG", "perdana_3/14.JPG", "perdana_3/15.JPG", "perdana_2/16.JPG", "perdana_2/17.JPG", "perdana_2/185.JPG", "perdana_2/19.JPG",],
+        location: "فيلا خمس غرف خلف مطعم بافقيه",
+        description: "بداخل مجمع+ليست للعوائل فقط+في الدور الاول صالة+دورة مياه+غرفتين نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+غسالة ملابس+مطبخ+ثلاجة+برادة موية+تلفزيون بلازما+مسبح خاص+جلسة خارجية+في الدور الثاني صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+جلسة خارجية+مطله على مظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع ادخال الحيوانات الاليفة داخل الفيلا",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
+    },
+    {
+        pass: "cisarua_abcdefghijkl",
+        video: "perdana_2/video.mp4",
+        imgAraay: ["perdana_2/1.JPG", "perdana_2/2.JPG", "perdana_2/3.JPG", "perdana_2/4.JPG", "perdana_2/5.JPG", "perdana_2/6.JPG", "perdana_2/7.JPG", "perdana_2/8.JPG", "perdana_2/9.JPG", "perdana_2/10.JPG", "perdana_2/11.JPG", "perdana_2/12.JPG", "perdana_2/13.JPG", "perdana_2/14.JPG", "perdana_2/15.JPG", "perdana_2/16.JPG", "perdana_2/17.JPG",],
+        location: "فيلا خمس غرف خلف مطعم بافقيه",
+        description: "بداخل مجمع+ليست للعوائل فقط+في الدور الاول صالة+مغسلة يد+غرفتين نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+غسالة ملابس+مطبخ+ثلاجة+طاولة طعام+تلفزيون بلازما+مسبح خاص+جلسة خارجية+في الدور الثاني صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+جلسة خارجية+مطله على مظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع ادخال الحيوانات الاليفة داخل الفيلا",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
+    },
+    {
+        pass: "cisarua_abcdefghijklm",
+        video: "golf_tulip/video.mp4",
+        imgAraay: ["golf_tulip/1.JPG", "golf_tulip/2.JPG", "golf_tulip/3.JPG", "golf_tulip/4.JPG", "golf_tulip/5.JPG", "golf_tulip/6.JPG", "golf_tulip/7.JPG", "golf_tulip/8.JPG", "golf_tulip/9.JPG", "golf_tulip/10.JPG", "golf_tulip/11.JPG", "golf_tulip/12.JPG", "golf_tulip/13.JPG",],
+        location: "فيلا اربع غرف خلف مطعم بافقيه",
+        description: "بداخل مجمع+للعوائل فقط+في الدور الاول صالة+مروحة سقفية+غرفتين نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ+ثلاجة+طاولة طعام+مكروويف+تلفزيون بلازما+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+خدمة ممتازة+منطقة آمنة+مواقف سيارات+ممنوع استخدام الالعاب النارية من بعد الساعة 8 ليلا",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
+    },
+    {
+        pass: "cisarua_abcdefghijklmn",
+        video: "golf_adenium/video.mp4",
+        imgAraay: ["golf_adenium/1.JPG", "golf_adenium/2.JPG", "golf_adenium/3.JPG", "golf_adenium/4.JPG", "golf_adenium/5.JPG", "golf_adenium/6.JPG", "golf_adenium/7.JPG", "golf_adenium/8.JPG", "golf_adenium/9.JPG", "golf_adenium/10.JPG",],
+        location: "فيلا ثلاث غرف خلف مطعم بافقيه",
+        description: "بداخل مجمع+للعوائل فقط+صالة+مروحة سقفية+ثلاث غرف نوم بسرير مزدوج+مروحة ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ+ثلاجة+طاولة طعام+مكروويف+تلفزيون بلازما+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+خدمة ممتازة+منطقة آمنة+مواقف سيارات+ممنوع استخدام الالعاب النارية من بعد الساعة 8 ليلا",
+        IDRprice: "لم يتم تحديد السعر بعد",
+        SARprice: "لم يتم تحديد السعر بعد",
+        USDprice: "لم يتم تحديد السعر بعد",
+    },
+    {
+        pass: "cisarua_abcdefghijklmno",
+        video: "nn/video.mp4",
+        imgAraay: ["nn/1.JPG", "nn/2.JPG", "n/3.JPG", "nn/4.JPG", "nn/5.JPG", "nn/6.JPG", "nn/7.JPG", "nn/8.JPG", "nn/9.JPG", "amanah_101/10.JPG", "nn/11.JPG", "nn/12.JPG",],
+        location: "فيلا ثلاث غرف خلف مطعم بافقيه",
+        description: "ليست بداخل مجمع+ليست للعوائل فقط+صالة+مغسلة يد+ثلاث غرف نوم بسرير مزدوج+دورتين مياه+سخان مياه لكل دورة مياه+مطبخ+ثلاجة+طاولة طعام+برادة موية+تلفزيون صغير+مدفأة+جلسة خارجية+انترنت مجاني+مواقف سيارات+خدمة جيدة+منطقة جيدة+ممنوع استخدام الالعاب النارية",
+        IDRprice: "سبع مئة الف روبية باليوم",
+        SARprice: "تقريبا 177 ريال سعودي باليوم",
+        USDprice: "تقريبا 48 دولار امريكي باليوم",
     },
 ];
 /* Cipanas Villa Details Create */
 let cards_Details_Array_Cipanas = [
     {
         pass: "cipanas_a",
-        video: "almadina_baFqih/vid.mp4",
+        video: "almadina_baFqih/video.mp4",
         imgAraay: ["almadina_baFqih/1.jpg", "almadina_baFqih/2.jpg", "almadina_baFqih/3.jpg", "almadina_baFqih/4.jpg", "almadina_baFqih/5.jpg", "almadina_baFqih/6.jpg", "almadina_baFqih/7.jpg", "almadina_baFqih/8.jpg", "almadina_baFqih/9.jpg", "almadina_baFqih/10.jpg", "almadina_baFqih/11.jpg", "almadina_baFqih/12.jpg",],
-        location: "خلف مطعم عربي",
+        location: "فيلا ثلاث غرف خلف مطعم عربي",
         description: "ليست بداخل مجمع+للعوائل فقط+صالة+ثلاث غرف نوم بسرير مزدوج مع مكيف مركزي ودورة مياه لكل غرفة+سخان مياه في كل دورة مياه+مطبخ - ثلاجة - برادة مياه+تلفزيون بلازما+جلسة خارجية+مسبح+حديقة بسيطة+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+تواصل معنا للمزيد من المعلومات",
         IDRprice: "مليون واربع مئة وخمسين روبيه يوميا",
     },
@@ -264,21 +369,6 @@ let stored_Filter_Pool_Id = null;
 
 // Defind the 'bigImgDiv' in the global scop so you can use i in separated different functions later
 let bigImgDiv = document.getElementById("big_Img_Div");
-
-
-// Not very important refrences
-/* let ahjozly = document.getElementById("ahjozly");
-let ahjoz_Mkany = document.getElementById("ahjoz_Mkany");
-let big_Images_Page = document.getElementById("big_Images_Page");
-let custom_Cards_Page = document.getElementById("custom_Cards_Page");
-let other_Services_Page = document.getElementById("other_Services_Page");
-let pic_My_Maid_Page = document.getElementById("pic_My_Maid_Page");
-let villa_Cards_Title = document.getElementById("villa_Cards_Title");
-let villa_Cards_Area = document.getElementById("villa_Cards_Area");
-let custom_Cards_Title = document.getElementById("custom_Cards_Title");
-let villa_Details_Area = document.getElementById("villa_Details_Area"); */
-
-
 
 pic_My_Villa_Link.onclick = function () {
     /* Fist check if 'ahjoz_Mkany' element is none or block */
@@ -514,7 +604,7 @@ function create_Villa_Card(data, areaName) {
 }
 
 
-
+/* Create The Cards Based On The 'theChoosenArea' Value */
 build_Villa_Cards = function (theChoosenArea) {
     // clear pervious content in these two Area div
     villa_Cards_Area.innerHTML = "";
@@ -555,10 +645,6 @@ build_Villa_Cards = function (theChoosenArea) {
         sec5.style.display = 'block';
     }
 }
-
-
-
-
 
 
 
@@ -634,6 +720,7 @@ custom_Cards = function () {
 
                 <div class="custom_Card_Box_Options">
                     <h1 id="all_price" onclick="change_Clicked_Price_Btn_Color('all_price')">كل الاسعار</h1>
+                    <h1 id="five_million_and_less" onclick="change_Clicked_Price_Btn_Color('five_million_and_less')">خمسة مليون روبيه او اقل</h1>
                     <h1 id="four_million_and_less" onclick="change_Clicked_Price_Btn_Color('four_million_and_less')">اربع مليون روبيه او اقل</h1>
                     <h1 id="three_million_and_less" onclick="change_Clicked_Price_Btn_Color('three_million_and_less')">ثلاث مليون روبيه او اقل</h1>
                     <h1 id="two_million_and_less" onclick="change_Clicked_Price_Btn_Color('two_million_and_less')">مليونين روبيه او اقل</h1>
@@ -703,6 +790,8 @@ custom_Cards = function () {
         // reset all the buttons style codes
         all_price.style.backgroundColor = "rgb(41, 38, 38)";
         all_price.style.borderColor = "white";
+        five_million_and_less.style.backgroundColor = "rgb(41, 38, 38)";
+        five_million_and_less.style.borderColor = "white";
         four_million_and_less.style.backgroundColor = "rgb(41, 38, 38)";
         four_million_and_less.style.borderColor = "white";
         three_million_and_less.style.backgroundColor = "rgb(41, 38, 38)";
@@ -855,15 +944,7 @@ custom_Cards = function () {
         if (filtered_Cards_Array.length === 0) {
 
 
-           refresh_All_Cards_Btn.onclick = function () {
-            no_Cards_Found_h1.classList.add('dispaly_None_Class');
-            
-            villa_Cards_Area.innerHTML = "";
-            refresh_All_Cards_Btn.classList.add('dispaly_None_Class');
-            create_Villa_Card(new_Filterd_Cards, areaName);
-        }
-
-
+            // Display All of These Elements if There Was No Cards Found
             no_Cards_Found_Div.classList.remove('dispaly_None_Class');
             no_Cards_Found_h1.classList.remove('dispaly_None_Class');
             refresh_All_Cards_Btn.classList.remove('dispaly_None_Class');
@@ -871,13 +952,31 @@ custom_Cards = function () {
 
         } else {
 
+            // if There Was Found Cards Then Do The Following
+            no_Cards_Found_h1.classList.add('dispaly_None_Class');
+            no_Cards_Found_Div.classList.remove('dispaly_None_Class');
+
+            // if All The filtering Values Are "All Kinds" Then Do The Following
+            if (stored_Filter_Price_Id == "all_price" & stored_Filter_Type_Id == "all_people" & stored_Filter_Place_Id == "all_place" & stored_Filter_Pool_Id == "all_pool") {
+
+                refresh_All_Cards_Btn.classList.add('dispaly_None_Class');
+                create_Villa_Card(filtered_Cards_Array, areaName);
+
+            } else {
+
+                refresh_All_Cards_Btn.classList.remove('dispaly_None_Class');
+                create_Villa_Card(filtered_Cards_Array, areaName);
+            }
+
+        }
+
+        // Reset And Then Reshow All The Orignal Cards For The Spicific Area
+        refresh_All_Cards_Btn.onclick = function () {
             no_Cards_Found_h1.classList.add('dispaly_None_Class');
 
-            no_Cards_Found_Div.classList.remove('dispaly_None_Class');
-            refresh_All_Cards_Btn.classList.remove('dispaly_None_Class');
-
-            create_Villa_Card(filtered_Cards_Array, areaName);
-
+            villa_Cards_Area.innerHTML = "";
+            refresh_All_Cards_Btn.classList.add('dispaly_None_Class');
+            create_Villa_Card(new_Filterd_Cards, areaName);
         }
 
         // Reset all the variables values after submitting the filtering
@@ -929,9 +1028,9 @@ function show_Villa_Details(pass, areaName, uniqueNumber) {
                 <div id="villa_Details_Location">
 
                     <h1 class="villa_Details_Villa_Pass">${clicked_Card_Details.pass}</h1>
-                    <h1>${clicked_Card_Details.location}</h1>
+                    <h1 id="clicked_Card_Details_Location_h1">${clicked_Card_Details.location}</h1>
                     <h1 class="villa_Details_Text_Villa_Id"> فيلا رقم ${uniqueNumber}</h1>
-                    <a class="villa_Details_Text_Contact_Us" href="https://wa.me/+6282246117155" target="_blank">احجز الان</a>
+                    <a class="villa_Details_Text_Contact_Us" href="https://wa.me/+6282246117155" target="_blank">تواصل معنا للحجز</a>
 
                 </div>
 
@@ -954,7 +1053,7 @@ function show_Villa_Details(pass, areaName, uniqueNumber) {
             </div>
     `;
 
-    
+
     // Set the inner HTML of the 'villa_Details_Card' to the 'villa_details_info' HTML.
     villa_Details_Card.innerHTML = villa_Details_Info;
 
@@ -1051,17 +1150,22 @@ function create_Big_Img(imgArray) {
     }
 
     window.addEventListener('scroll', function () {
-        let bigImgTitle = document.querySelector('#big_Img_Title');
+        // To Avoid Errors Make The Folowing Code Run Only If The 'sec7' Section Was Visible
+        if (sec7.style.display == 'block') {
+            let bigImgTitle = document.querySelector('#big_Img_Title');
 
-        let scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-        let bigImgTitlePosition = bigImgTitle.getBoundingClientRect();
+            let scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+            let bigImgTitlePosition = bigImgTitle.getBoundingClientRect();
 
-        if (bigImgTitlePosition.top <= 0) {
-            go_Back_Villa_Details.style.opacity = '1';
-        } else {
-            go_Back_Villa_Details.style.opacity = '0';
+            // Keep Tracking The 'go_Back_Villa_Details' Button To Hide Or SHow it Using The 'opacity' Property
+            if (bigImgTitlePosition.top <= 0) {
+                go_Back_Villa_Details.style.opacity = '1';
+            } else {
+                go_Back_Villa_Details.style.opacity = '0';
+            }
         }
     });
+
 
     /* Set a value for the variable to keep tracking images changing */
     let allImgArray = imgArray;
