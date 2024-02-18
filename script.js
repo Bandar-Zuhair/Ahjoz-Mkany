@@ -250,7 +250,7 @@ let cards_Details_Array_Cisarua = [
     },
     {
         pass: "cisarua_abcdef",
-        video: "marina_v2/video.mp4",
+        video: "marina_v2/video1.mp4",
         imgAraay: ["marina_v2/1.JPG", "marina_v2/2.JPG", "marina_v2/3.JPG", "marina_v2/4.JPG", "marina_v2/5.JPG", "marina_v2/6.JPG", "marina_v2/7.JPG", "marina_v2/8.JPG", "marina_v2/9.JPG", "marina_v2/10.JPG", "marina_v2/11.JPG", "marina_v2/12.JPG", "marina_v2/13.JPG", "marina_v2/14.JPG", "marina_v2/15.JPG", "marina_v2/16.JPG",],
         location: "فيلا اربع غرف بداخل منطقة تشوبريال",
         description: "بداخل مجمع+ليست للعوائل فقط+الدور الاول صالة كبيرة ودورة مياه مع غسالة+مكواة ملابس+غرفة نوم بسرير مزدوج+مكيف مركزي ودورة مياه+مطبخ - ثلاجة - مايكرويف+تلفزيون بلازما مع سماعات+مسبح خاص+في الدور الثاني صالة+ثلاث غرف نوم بسرير مزدوج+مكيف مركزي ودورة مياه لكل غرفة+جلسة خارجية+مطله على منظر جميل+انترنت مجاني+مواقف سيارات+خدمة ممتازة+منطقة آمنة+ممنوع استخدام الالعاب النارية+ممنوع رفع صوت الاغاني من بعد الساعة 12 ليلا",
